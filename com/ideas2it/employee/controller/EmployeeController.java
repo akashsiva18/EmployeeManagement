@@ -18,10 +18,8 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.ArrayList;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * <h2>EmployeeController</h2>
@@ -39,6 +37,7 @@ public class EmployeeController {
     private static Scanner userInput = new Scanner(System.in);
     private TrainerServiceIntf trainerService = new TrainerServiceImpl();
     private TraineeServiceIntf traineeService = new TraineeServiceImpl();
+    private static final Logger logger = LogManager.getLogger(EmployeeController.class);
 
     public static void main(String[] args) { 
         EmployeeController employeeControl = new EmployeeController();
@@ -57,7 +56,7 @@ public class EmployeeController {
         String userMenu = "run";
 	do {
             int userChoice = 0;    
-            System.out.print("\nSelect Option\n\n" +
+            logger.info("\nSelect Option\n\n" +
 		             "1. Add Trainer Details\n" + 
 		             "2. Add Trainee Details\n" + 
                              "3. View Trainer Details\n" + 
@@ -105,12 +104,12 @@ public class EmployeeController {
                 break; 
                 
             case 9:
-                System.out.println("Exited");
+                logger.info("Exited");
                 userMenu = "stop";
                 break; 
                 
             default:
-                System.out.println("\nInvalid Option");
+                logger.info("\nInvalid Option");
                 break;          
             }
         } while (userMenu == "run");     
@@ -133,38 +132,38 @@ public class EmployeeController {
         String trainingPeriod = "";
         List<Integer> validationError = new ArrayList<>();
         List<String> trainerIdAsList = new ArrayList<>();
-        System.out.println((employee == EmployeeType.TRAINER.type) 
+        logger.info((employee == EmployeeType.TRAINER.type) 
                            ? "Enter Trainer Details" 
                            : "Enter Trainee Details");
         userInput.nextLine();
-        System.out.println("Name :");
+        logger.info("Name :");
         String name = userInput.nextLine();
-        System.out.println("Date Of Birth (DD/MM/YYYY) : ");
+        logger.info("Date Of Birth (DD/MM/YYYY) : ");
         String dateOfBirth = userInput.nextLine();
         String gender = getValidGender();
-        System.out.println("Qualification :");
+        logger.info("Qualification :");
         String qualification = userInput.nextLine();
-        System.out.println("Address :");
+        logger.info("Address :");
         String address = userInput.nextLine();
-        System.out.println("Mobile Number :");
+        logger.info("Mobile Number :");
         String mobileNumber = userInput.nextLine();
-        System.out.println("Email Id");
+        logger.info("Email Id");
         String emailId = userInput.nextLine();
-        System.out.println("Date Of Joining(DD/MM/YYYY) :");
+        logger.info("Date Of Joining(DD/MM/YYYY) :");
         String dateOfJoining = userInput.nextLine();
         if (employee.equals(EmployeeType.TRAINEE.type)) {
-            System.out.println("No of trainer to add :");
+            logger.info("No of trainer to add :");
             do {
                 String temp = userInput.nextLine();
                 if (StringUtil.isvalidNumberInput(temp) && temp != "") {
                     noOfTrainers = Integer.parseInt(temp);
                 } else {
-                    System.out.println("Plese enter a valid input");
+                    logger.info("Plese enter a valid input");
                     noOfTrainers = -1;
                 }
             } while (noOfTrainers == -1);
             trainerIdAsList = addTrainersIdAsList(noOfTrainers);
-            System.out.println("Training Period in months");
+            logger.info("Training Period in months");
             trainingPeriod = userInput.nextLine();
         }
 
@@ -182,37 +181,37 @@ public class EmployeeController {
                                       trainerIdAsList, trainingPeriod);     
                 }
             } catch (BadRequest e) {
-                System.out.println(e.getMessage());
+                logger.info(e.getMessage());
                 validationError = e.errors;
             } catch (EmployeeNotFound e1) {
-                System.out.println(e1.getMessage());
+                logger.info(e1.getMessage());
             }  
             
             if (validationError.size() != 0) {
                 for (Integer errors : validationError) {
                     switch (errors) {
                     case 1:
-                        System.out.println("Name (Must in Capital Letters):");
+                        logger.info("Name (Must in Capital Letters):");
                         name = userInput.nextLine();
                         break;
                  
                     case 2:
-                        System.out.println("Date Of Birth (DD/MM/YYYY) : ");
+                        logger.info("Date Of Birth (DD/MM/YYYY) : ");
                         dateOfBirth = userInput.nextLine();
                         break;
 
                     case 3:
-                        System.out.println("Mobile Number :");
+                        logger.info("Mobile Number :");
                         mobileNumber = userInput.nextLine();
                         break;
  
                     case 4:
-                        System.out.println("Enter Company Email Id");
+                        logger.info("Enter Company Email Id");
                         emailId = userInput.nextLine();
                         break;
  
                     case 5:
-                        System.out.println("Date Of Joining(DD/MM/YYYY) :");
+                        logger.info("Date Of Joining(DD/MM/YYYY) :");
                         dateOfJoining = userInput.nextLine();
                         break;
                    
@@ -225,7 +224,7 @@ public class EmployeeController {
 
                     case 7:
                         if (employee.equals(EmployeeType.TRAINEE.type)) {
-                            System.out.println("Training Period in months");
+                            logger.info("Training Period in months");
                             trainingPeriod = userInput.nextLine();
                             break;
                         }
@@ -233,7 +232,7 @@ public class EmployeeController {
                 }
             }
         } while (validationError.size() != 0);
-        System.out.println("Deatils Of " + employee + " Added Successfully.");
+        logger.info("Deatils Of " + employee + " Added Successfully.");
     }
 
     /**
@@ -247,7 +246,7 @@ public class EmployeeController {
     private List<String> addTrainersIdAsList(int noOfTrainers) {
         List<String> trainersId = new ArrayList<>(); 
         for (int i = 1; i <= noOfTrainers; i++) {
-            System.out.println("id of Trainer " + i + " :");
+            logger.info("id of Trainer " + i + " :");
             trainersId.add(userInput.nextLine());
         }
         return trainersId;
@@ -267,9 +266,8 @@ public class EmployeeController {
         if (listOfTrainers.isEmpty()) {
             System.out.print("\nNo Trainer Data Found\n");
         } else {
-            System.out.println("\nDetails of Trainer\n");
-            listOfTrainers.forEach( (trainer) -> System.out.println(trainer));
-            System.out.println("------------------------------");
+            logger.info("\nDetails of Trainer\n");
+            listOfTrainers.forEach( (trainer) -> logger.info(trainer));
         }
     }
    
@@ -287,9 +285,8 @@ public class EmployeeController {
         if (listOfTrainees.isEmpty()) {
             System.out.print("\nNo Trainee Data Found\n");
         } else {
-            System.out.println("\nDetails of Trainee\n");
-            listOfTrainees.forEach( (trainee) -> System.out.println(trainee));
-            System.out.println("------------------------------");
+            logger.info("\nDetails of Trainee\n");
+            listOfTrainees.forEach( (trainee) -> logger.info(trainee));
         }
     }
     
@@ -309,13 +306,13 @@ public class EmployeeController {
         if (listOfTrainers.isEmpty()) {
             System.out.print("\nNo Trainer Data Found\n");
         } else { 
-            System.out.println("\nEnter Trainer Id to delete data\n"); 
+            logger.info("\nEnter Trainer Id to delete data\n"); 
             int id = getValidNumber();
             try {
                 trainerService.removeTrainerById(id);
-                System.out.println("Trainer " + id + " Successfully deleted.");
+                logger.info("Trainer " + id + " Successfully deleted.");
             } catch (EmployeeNotFound e) {
-                System.out.println(e.getMessage());
+                logger.info(e.getMessage());
             }
         }
     }
@@ -335,13 +332,13 @@ public class EmployeeController {
         if (listOfTrainees.isEmpty()) {
             System.out.print("\nNo Trainee Data Found\n");
         } else { 
-            System.out.println("\nEnter Trainee Id to delete data\n");
+            logger.info("\nEnter Trainee Id to delete data\n");
             int id = getValidNumber();
             try {
                 traineeService.removeTraineeById(id);
-                System.out.println("Trainee " + id + " Successfully deleted.");
+                logger.info("Trainee " + id + " Successfully deleted.");
             } catch (EmployeeNotFound e) {
-                System.out.println(e.getMessage());
+                logger.info(e.getMessage());
             }
         }
     }
@@ -357,7 +354,7 @@ public class EmployeeController {
      **/
     private String getValidGender() {
         String gender = null;
-        System.out.println(Constant.AVAILABLE_GENDER);
+        logger.info(Constant.AVAILABLE_GENDER);
         do {
             String genderOption = userInput.nextLine();
             switch(genderOption) {
@@ -374,7 +371,7 @@ public class EmployeeController {
                 break;
 
             default:
-                System.out.println("Please Select valid Option");           
+                logger.info("Please Select valid Option");           
             }
         } while (null == gender);
         return gender;
@@ -394,17 +391,17 @@ public class EmployeeController {
     private void updateTrainerDetailsById() {
         List<Trainer> listOfTrainers = trainerService.getTrainers();
         if (listOfTrainers.size() != 0) {
-            System.out.println("Please enter Trainer Id to Update Details");
+            logger.info("Please enter Trainer Id to Update Details");
             int id = getValidNumber();
             try {
                 Trainer oldTrainer = trainerService.getTrainerById(id);
-                System.out.println(oldTrainer);
+                logger.info(oldTrainer);
                 updateAllDetailsOfEmployee(EmployeeType.TRAINER.type, oldTrainer);              
             } catch (EmployeeNotFound e) {
-                System.out.println(e.getMessage());
+                logger.info(e.getMessage());
             }
         } else {
-            System.out.println("No Trainer Details found to Update.");
+            logger.info("No Trainer Details found to Update.");
         }
     }
 
@@ -422,17 +419,17 @@ public class EmployeeController {
     private void updateTraineeDetailsById() {
         List<Trainee> listOfTrainees = traineeService.getTrainees();
         if (listOfTrainees.size() != 0) {
-            System.out.println("Please enter Trainee Id to Update Details");
+            logger.info("Please enter Trainee Id to Update Details");
             int id = getValidNumber();
             try {
                 Trainee oldTrainee = traineeService.getTraineeById(id);
-                System.out.println(oldTrainee);
+                logger.info(oldTrainee);
                 updateAllDetailsOfEmployee(EmployeeType.TRAINEE.type, oldTrainee);      
             } catch (EmployeeNotFound e) {
-                System.out.println(e.getMessage());
+                logger.info(e.getMessage());
             }
         } else {
-            System.out.println("No Trainee Details found to Update.");
+            logger.info("No Trainee Details found to Update.");
         }
     }
     
@@ -458,23 +455,23 @@ public class EmployeeController {
         int noOfTrainers = 0;
         List<Integer> validationErrorInUpdate = new ArrayList<Integer>();
         List<String> trainerIdAsList = new ArrayList<>();
-        System.out.println("Updation fields. (press enter button to skip)");
+        logger.info("Updation fields. (press enter button to skip)");
         userInput.nextLine();
-        System.out.println("Qualification :");
+        logger.info("Qualification :");
         String qualification = userInput.nextLine();
-        System.out.println("Address :");
+        logger.info("Address :");
         String address = userInput.nextLine();
-        System.out.println("Mobile Number :");
+        logger.info("Mobile Number :");
         String mobileNumber = userInput.nextLine();
         if (employee.equals(EmployeeType.TRAINEE.type)) {
             boolean isNumber = false;
-            System.out.println("No of trainer names to add :");
+            logger.info("No of trainer names to add :");
             do {
                 String temp = userInput.nextLine();
                 if (StringUtil.isvalidNumberInput(temp) && temp != "") {
                     noOfTrainers = Integer.parseInt(temp);
                 } else {
-                    System.out.println("Plese enter a valid input");
+                    logger.info("Plese enter a valid input");
                     noOfTrainers = -1;
                 }
             } while (noOfTrainers == -1);
@@ -495,14 +492,14 @@ public class EmployeeController {
                                               trainerIdAsList, trainee);
                }
             } catch (BadRequest e) {
-                System.out.println(e.getMessage());
+                logger.info(e.getMessage());
                 validationErrorInUpdate = e.errors;
             }
             if (validationErrorInUpdate.size() != 0) {
                 for (Integer error : validationErrorInUpdate) {
                     switch (error) {
                     case 1:
-                        System.out.println("Mobile Number :");
+                        logger.info("Mobile Number :");
                         mobileNumber = userInput.nextLine();
                         break;
 
@@ -516,7 +513,7 @@ public class EmployeeController {
                 }
             }
         } while (validationErrorInUpdate.size() != 0);
-        System.out.println("Details of " + employee + " Updated Successfully.");
+        logger.info("Details of " + employee + " Updated Successfully.");
     } 
 
     /**
@@ -531,7 +528,7 @@ public class EmployeeController {
         String string;
         do {
             string = userInput.next();
-            System.out.println(StringUtil.isvalidNumberInput(string)
+            logger.info(StringUtil.isvalidNumberInput(string)
                                ? "" 
                                : "Please Enter Numnber only");
         } while (!StringUtil.isvalidNumberInput(string));
