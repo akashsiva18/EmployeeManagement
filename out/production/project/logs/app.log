@@ -2752,33 +2752,3 @@ Select Option
 8. Update Trainee Details
 9. Exit
 
-[INFO]	2022-09-15 19:58:11 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
-[INFO]	2022-09-15 19:58:11 Environment:213 - HHH000206: hibernate.properties not found
-[INFO]	2022-09-15 19:58:11 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
-[WARN]	2022-09-15 19:58:12 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-[INFO]	2022-09-15 19:58:12 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
-[INFO]	2022-09-15 19:58:12 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
-[INFO]	2022-09-15 19:58:12 pooling:143 - HHH10001003: Autocommit mode: false
-[INFO]	2022-09-15 19:58:13 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-[INFO]	2022-09-15 19:58:13 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-[INFO]	2022-09-15 19:58:14 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5dbab232] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[WARN]	2022-09-15 19:58:15 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-[INFO]	2022-09-15 19:58:15 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
-[INFO]	2022-09-15 19:58:15 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
-[INFO]	2022-09-15 19:58:15 pooling:143 - HHH10001003: Autocommit mode: false
-[INFO]	2022-09-15 19:58:15 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-[INFO]	2022-09-15 19:58:15 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-[INFO]	2022-09-15 19:58:15 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5882b202] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[INFO]	2022-09-15 19:58:15 EmployeeController:57 - 
-Select Option
-
-1. Add Trainer Details
-2. Add Trainee Details
-3. View Trainer Details
-4. View Trainee Details
-5. Remove Trainer Details
-6. Remove Trainee Details
-7. Update Trainer Details
-8. Update Trainee Details
-9. Exit
-

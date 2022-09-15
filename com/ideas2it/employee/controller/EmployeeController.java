@@ -1,6 +1,5 @@
 package com.ideas2it.employee.controller;
 
-import com.ideas2it.employee.model.Employee;
 import com.ideas2it.employee.model.Trainee;
 import com.ideas2it.employee.model.Trainer;
 import com.ideas2it.employee.service.intf.TrainerServiceIntf;
@@ -15,7 +14,6 @@ import com.ideas2it.employee.exception.EmployeeNotFound;
 import com.ideas2it.employee.exception.BadRequest;
 
 import java.util.Scanner;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.ArrayList;
 import org.apache.logging.log4j.Logger;
@@ -105,11 +103,11 @@ public class EmployeeController {
                 
             case 9:
                 logger.info("Exited");
-                userMenu = "stop";
+                System. exit(0);
                 break; 
                 
             default:
-                logger.info("\nInvalid Option");
+                logger.warn("Invalid Option\n");
                 break;          
             }
         } while (userMenu == "run");     
@@ -181,10 +179,10 @@ public class EmployeeController {
                                       trainerIdAsList, trainingPeriod);     
                 }
             } catch (BadRequest e) {
-                logger.info(e.getMessage());
+                logger.warn(e.getMessage());
                 validationError = e.errors;
             } catch (EmployeeNotFound e1) {
-                logger.info(e1.getMessage());
+                logger.warn(e1.getMessage());
             }  
             
             if (validationError.size() != 0) {
@@ -264,10 +262,10 @@ public class EmployeeController {
     private void showTrainerDetails() {
         List<Trainer> listOfTrainers = trainerService.getTrainers();
         if (listOfTrainers.isEmpty()) {
-            System.out.print("\nNo Trainer Data Found\n");
+            logger.info("\nNo Trainer Data Found\n");
         } else {
             logger.info("\nDetails of Trainer\n");
-            listOfTrainers.forEach( (trainer) -> logger.info(trainer));
+            listOfTrainers.forEach( (trainer) -> logger.info(trainer + "\n"));
         }
     }
    
@@ -283,10 +281,10 @@ public class EmployeeController {
     private void showTraineeDetails() {
         List<Trainee> listOfTrainees = traineeService.getTrainees();
         if (listOfTrainees.isEmpty()) {
-            System.out.print("\nNo Trainee Data Found\n");
+            logger.info("\nNo Trainee Data Found\n");
         } else {
             logger.info("\nDetails of Trainee\n");
-            listOfTrainees.forEach( (trainee) -> logger.info(trainee));
+            listOfTrainees.forEach( (trainee) -> logger.info(trainee + "\n"));
         }
     }
     
@@ -304,7 +302,7 @@ public class EmployeeController {
         String tempId;
         List<Trainer> listOfTrainers = trainerService.getTrainers();
         if (listOfTrainers.isEmpty()) {
-            System.out.print("\nNo Trainer Data Found\n");
+            logger.info("\nNo Trainer Data Found\n");
         } else { 
             logger.info("\nEnter Trainer Id to delete data\n"); 
             int id = getValidNumber();
@@ -330,7 +328,7 @@ public class EmployeeController {
     private void deleteTraineeDetailsById() {
         List<Trainee> listOfTrainees = traineeService.getTrainees();
         if (listOfTrainees.isEmpty()) {
-            System.out.print("\nNo Trainee Data Found\n");
+            logger.info("\nNo Trainee Data Found\n");
         } else { 
             logger.info("\nEnter Trainee Id to delete data\n");
             int id = getValidNumber();
@@ -338,7 +336,7 @@ public class EmployeeController {
                 traineeService.removeTraineeById(id);
                 logger.info("Trainee " + id + " Successfully deleted.");
             } catch (EmployeeNotFound e) {
-                logger.info(e.getMessage());
+                logger.error(e.getMessage());
             }
         }
     }
@@ -371,7 +369,7 @@ public class EmployeeController {
                 break;
 
             default:
-                logger.info("Please Select valid Option");           
+                logger.warn("Please Select valid Option");           
             }
         } while (null == gender);
         return gender;
@@ -398,7 +396,7 @@ public class EmployeeController {
                 logger.info(oldTrainer);
                 updateAllDetailsOfEmployee(EmployeeType.TRAINER.type, oldTrainer);              
             } catch (EmployeeNotFound e) {
-                logger.info(e.getMessage());
+                logger.error(e.getMessage());
             }
         } else {
             logger.info("No Trainer Details found to Update.");
@@ -426,7 +424,7 @@ public class EmployeeController {
                 logger.info(oldTrainee);
                 updateAllDetailsOfEmployee(EmployeeType.TRAINEE.type, oldTrainee);      
             } catch (EmployeeNotFound e) {
-                logger.info(e.getMessage());
+                logger.error(e.getMessage());
             }
         } else {
             logger.info("No Trainee Details found to Update.");
@@ -492,7 +490,7 @@ public class EmployeeController {
                                               trainerIdAsList, trainee);
                }
             } catch (BadRequest e) {
-                logger.info(e.getMessage());
+                logger.warn(e.getMessage());
                 validationErrorInUpdate = e.errors;
             }
             if (validationErrorInUpdate.size() != 0) {
@@ -528,7 +526,7 @@ public class EmployeeController {
         String string;
         do {
             string = userInput.next();
-            logger.info(StringUtil.isvalidNumberInput(string)
+            logger.warn(StringUtil.isvalidNumberInput(string)
                                ? "" 
                                : "Please Enter Numnber only");
         } while (!StringUtil.isvalidNumberInput(string));
