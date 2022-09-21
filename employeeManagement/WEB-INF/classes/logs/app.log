@@ -1,0 +1,4051 @@
+[INFO]	2022-09-14 22:47:42 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-14 22:47:42 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-14 22:47:43 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-14 22:47:44 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-14 22:47:44 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-14 22:47:44 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-14 22:47:44 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-14 22:47:44 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-14 22:47:45 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-14 22:47:46 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1533338c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-14 22:47:47 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-14 22:47:47 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-14 22:47:47 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-14 22:47:47 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-14 22:47:47 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-14 22:47:47 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-14 22:47:47 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2fa879ed] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-14 22:47:47 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-14 22:47:49 QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-14 22:47:49 EmployeeController - 
+Details of Trainer
+
+[INFO]	2022-09-14 22:47:49 EmployeeController - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-14 22:47:49 EmployeeController - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+[INFO]	2022-09-14 22:47:49 EmployeeController - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+[INFO]	2022-09-14 22:47:49 EmployeeController - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-14 22:47:49 EmployeeController - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+[INFO]	2022-09-14 22:47:49 EmployeeController - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-14 22:47:49 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-14 22:47:50 QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-14 22:47:50 EmployeeController - 
+Details of Trainee
+
+[INFO]	2022-09-14 22:47:50 EmployeeController - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+[INFO]	2022-09-14 22:47:50 EmployeeController - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+[INFO]	2022-09-14 22:47:50 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO ] 2022-09-14 22:54:45.396 [main] Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO ] 2022-09-14 22:54:45.402 [main] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2022-09-14 22:54:46.075 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN ] 2022-09-14 22:54:47.078 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] 2022-09-14 22:54:47.089 [main] pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO ] 2022-09-14 22:54:47.090 [main] pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2022-09-14 22:54:47.091 [main] pooling - HHH10001003: Autocommit mode: false
+[INFO ] 2022-09-14 22:54:47.099 [main] DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO ] 2022-09-14 22:54:47.739 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO ] 2022-09-14 22:54:49.048 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@e72fb04] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN ] 2022-09-14 22:54:49.508 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] 2022-09-14 22:54:49.508 [main] pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO ] 2022-09-14 22:54:49.508 [main] pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2022-09-14 22:54:49.508 [main] pooling - HHH10001003: Autocommit mode: false
+[INFO ] 2022-09-14 22:54:49.520 [main] DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO ] 2022-09-14 22:54:49.559 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO ] 2022-09-14 22:54:49.618 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@a99c42c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO ] 2022-09-14 22:54:49.825 [main] EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-14 22:56:00 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-14 22:56:00 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-14 22:56:01 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-14 22:56:02 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-14 22:56:02 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-14 22:56:02 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-14 22:56:02 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-14 22:56:02 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-14 22:56:03 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-14 22:56:04 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1533338c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-14 22:56:04 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-14 22:56:04 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-14 22:56:04 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-14 22:56:04 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-14 22:56:04 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-14 22:56:04 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-14 22:56:04 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2fa879ed] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-14 22:56:05 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-14 22:56:08 QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-14 22:56:08 EmployeeController - 
+Details of Trainer
+
+[INFO]	2022-09-14 22:56:08 EmployeeController - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-14 22:56:08 EmployeeController - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+[INFO]	2022-09-14 22:56:08 EmployeeController - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+[INFO]	2022-09-14 22:56:08 EmployeeController - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-14 22:56:08 EmployeeController - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+[INFO]	2022-09-14 22:56:08 EmployeeController - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-14 22:56:08 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-14 22:56:12 QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-14 22:56:12 EmployeeController - 
+Details of Trainee
+
+[INFO]	2022-09-14 22:56:12 EmployeeController - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+[INFO]	2022-09-14 22:56:12 EmployeeController - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+[INFO]	2022-09-14 22:56:12 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:41:17 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 09:41:17 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 09:41:18 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 09:41:19 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:41:19 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:41:19 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:41:19 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:41:19 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:41:20 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:41:21 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1533338c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 09:41:22 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:41:22 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:41:22 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:41:22 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:41:22 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:41:22 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:41:22 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2fa879ed] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 09:41:22 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:49:49 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 09:49:49 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 09:49:50 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 09:49:51 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:49:51 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:49:51 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:49:51 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:49:51 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:49:52 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:49:53 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1533338c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 09:49:54 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:49:54 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:49:54 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:49:54 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:49:54 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:49:54 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:49:54 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2fa879ed] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 09:49:54 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:50:43 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 09:50:43 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 09:50:44 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 09:50:45 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:50:45 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:50:45 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:50:45 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:50:45 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:50:45 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:50:47 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1533338c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 09:50:47 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:50:47 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:50:47 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:50:47 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:50:47 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:50:47 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:50:47 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2fa879ed] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 09:50:47 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:50:52 QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 09:50:53 EmployeeController - 
+Details of Trainer
+
+[INFO]	2022-09-15 09:50:53 EmployeeController - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-15 09:50:53 EmployeeController - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+[INFO]	2022-09-15 09:50:53 EmployeeController - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+[INFO]	2022-09-15 09:50:53 EmployeeController - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-15 09:50:53 EmployeeController - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+[INFO]	2022-09-15 09:50:53 EmployeeController - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-15 09:50:53 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:50:56 QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 09:50:56 EmployeeController - 
+Details of Trainee
+
+[INFO]	2022-09-15 09:50:56 EmployeeController - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+[INFO]	2022-09-15 09:50:56 EmployeeController - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+[INFO]	2022-09-15 09:50:56 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:51:14 EmployeeController - Enter Trainee Details
+[INFO]	2022-09-15 09:51:14 EmployeeController - Name :
+[INFO]	2022-09-15 09:51:20 EmployeeController - Date Of Birth (DD/MM/YYYY) : 
+[INFO]	2022-09-15 09:51:23 EmployeeController - Gender : 
+1. Male
+2. Female
+3. Others
+[INFO]	2022-09-15 09:51:24 EmployeeController - Qualification :
+[INFO]	2022-09-15 09:51:25 EmployeeController - Address :
+[INFO]	2022-09-15 09:51:27 EmployeeController - Mobile Number :
+[INFO]	2022-09-15 09:51:29 EmployeeController - Email Id
+[INFO]	2022-09-15 09:51:32 EmployeeController - Date Of Joining(DD/MM/YYYY) :
+[INFO]	2022-09-15 09:51:34 EmployeeController - No of trainer to add :
+[INFO]	2022-09-15 09:51:36 EmployeeController - id of Trainer 1 :
+[INFO]	2022-09-15 09:51:37 EmployeeController - id of Trainer 2 :
+[INFO]	2022-09-15 09:51:38 EmployeeController - Training Period in months
+[WARN]	2022-09-15 09:51:39 deprecation - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[WARN]	2022-09-15 09:51:39 deprecation - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[WARN]	2022-09-15 09:51:39 deprecation - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[INFO]	2022-09-15 09:51:40 EmployeeController - 
+Invalid Trainer Id.
+34
+[INFO]	2022-09-15 09:51:40 EmployeeController - Deatils Of trainee Added Successfully.
+[INFO]	2022-09-15 09:51:40 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:52:18 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 09:52:18 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 09:52:19 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 09:52:20 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:52:20 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:52:20 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:52:20 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:52:20 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:52:21 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:52:22 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1533338c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 09:52:22 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:52:22 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:52:22 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:52:22 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:52:22 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:52:22 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:52:22 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2fa879ed] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 09:52:23 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:52:24 QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 09:52:24 EmployeeController - 
+Details of Trainer
+
+[INFO]	2022-09-15 09:52:24 EmployeeController - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-15 09:52:24 EmployeeController - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+[INFO]	2022-09-15 09:52:24 EmployeeController - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+[INFO]	2022-09-15 09:52:24 EmployeeController - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-15 09:52:24 EmployeeController - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+[INFO]	2022-09-15 09:52:24 EmployeeController - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-15 09:52:24 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:53:03 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 09:53:03 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 09:53:04 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 09:53:05 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:53:05 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:53:05 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:53:05 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:53:05 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:53:06 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:53:07 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4df0d9f8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 09:53:07 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:53:07 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:53:07 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:53:07 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:53:07 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:53:07 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:53:07 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@661db63e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 09:53:07 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:53:09 QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 09:53:09 EmployeeController - 
+Details of Trainer
+
+[INFO]	2022-09-15 09:53:09 EmployeeController - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 09:53:09 EmployeeController - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-15 09:53:09 EmployeeController - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-15 09:53:09 EmployeeController - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 09:53:09 EmployeeController - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-15 09:53:09 EmployeeController - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 09:53:09 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:57:46 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 09:57:46 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 09:57:47 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 09:57:47 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:57:47 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:57:47 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:57:47 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:57:47 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:57:48 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:57:49 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@603d25db] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 09:57:50 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 09:57:50 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 09:57:50 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 09:57:50 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 09:57:50 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 09:57:50 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 09:57:50 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3add5e17] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 09:57:50 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:57:52 QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 09:57:52 EmployeeController - 
+Details of Trainer
+
+[INFO]	2022-09-15 09:57:52 EmployeeController - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 09:57:52 EmployeeController - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-15 09:57:52 EmployeeController - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-15 09:57:52 EmployeeController - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 09:57:52 EmployeeController - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-15 09:57:52 EmployeeController - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 09:57:52 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 09:58:15 EmployeeController - Please enter Trainer Id to Update Details
+[WARN]	2022-09-15 09:58:18 EmployeeController - 
+[WARN]	2022-09-15 09:58:18 deprecation - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[ERROR]	2022-09-15 09:58:19 EmployeeController - Trainer Id 42 Not Found.
+[INFO]	2022-09-15 09:58:19 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 10:18:54 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 10:18:54 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 10:18:55 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 10:18:56 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:18:56 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:18:56 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:18:56 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:18:56 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:18:56 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:18:57 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@603d25db] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 10:18:58 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:18:58 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:18:58 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:18:58 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:18:58 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:18:58 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:18:58 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3add5e17] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 10:18:58 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 10:19:00 EmployeeController - Enter Trainer Details
+[INFO]	2022-09-15 10:19:00 EmployeeController - Name :
+[INFO]	2022-09-15 10:19:02 EmployeeController - Date Of Birth (DD/MM/YYYY) : 
+[INFO]	2022-09-15 10:19:03 EmployeeController - Gender : 
+1. Male
+2. Female
+3. Others
+[INFO]	2022-09-15 10:19:04 EmployeeController - Please Select valid Option
+[INFO]	2022-09-15 10:19:09 EmployeeController - Qualification :
+[INFO]	2022-09-15 10:19:13 EmployeeController - Address :
+[INFO]	2022-09-15 10:19:14 EmployeeController - Mobile Number :
+[INFO]	2022-09-15 10:19:14 EmployeeController - Email Id
+[INFO]	2022-09-15 10:19:15 EmployeeController - Date Of Joining(DD/MM/YYYY) :
+[WARN]	2022-09-15 10:19:16 EmployeeController - 
+Validation Errors
+1. Invalid Date Of Birth.
+	a) Date must in DD/MM/YYYY format.
+	b) Age must above 18.
+2. Invalid Mobile Number. It must contain only Numbers
+3. Invalid Mail Id.
+4. Invalid Date Of Joining.
+
+[INFO]	2022-09-15 10:19:16 EmployeeController - Date Of Birth (DD/MM/YYYY) : 
+[INFO]	2022-09-15 10:19:51 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 10:19:51 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 10:19:52 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 10:19:53 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:19:53 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:19:53 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:19:53 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:19:53 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:19:54 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:19:55 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@603d25db] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 10:19:55 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:19:55 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:19:55 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:19:55 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:19:55 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:19:56 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:19:56 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3add5e17] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 10:19:56 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[WARN]	2022-09-15 10:20:00 EmployeeController - 
+Invalid Option
+[INFO]	2022-09-15 10:20:00 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 10:20:25 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 10:20:25 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 10:20:25 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 10:20:26 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:20:26 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:20:26 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:20:26 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:20:26 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:20:27 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:20:28 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@603d25db] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 10:20:29 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:20:29 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:20:29 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:20:29 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:20:29 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:20:29 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:20:29 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3add5e17] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 10:20:29 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[WARN]	2022-09-15 10:20:32 EmployeeController - Invalid Option
+
+[INFO]	2022-09-15 10:20:32 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[WARN]	2022-09-15 10:20:36 EmployeeController - Invalid Option
+
+[INFO]	2022-09-15 10:20:36 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[WARN]	2022-09-15 10:20:37 EmployeeController - Invalid Option
+
+[INFO]	2022-09-15 10:20:37 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 10:22:51 Version - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 10:22:51 Environment - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 10:22:52 Version - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 10:22:53 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:22:53 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:22:53 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:22:53 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:22:53 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:22:54 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:22:55 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@48b3b1b8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 10:22:56 pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:22:56 pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:22:56 pooling - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:22:56 pooling - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:22:56 DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:22:56 Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:22:56 access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@61b8c9de] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 10:22:56 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[WARN]	2022-09-15 10:22:57 EmployeeController - Invalid Option
+
+[INFO]	2022-09-15 10:22:57 EmployeeController - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 10:22:59 EmployeeController - Exited
+[INFO]	2022-09-15 10:34:50 Version46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 10:34:50 Environment213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 10:34:51 Version49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 10:34:52 pooling73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:34:52 pooling129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:34:52 pooling138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:34:52 pooling143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:34:52 DriverManagerConnectionProviderImpl281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:34:53 Dialect161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:34:54 access47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4404a6b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 10:34:54 pooling73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:34:54 pooling129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:34:54 pooling138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:34:54 pooling143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:34:54 DriverManagerConnectionProviderImpl281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:34:55 Dialect161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:34:55 access47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b808af5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 10:34:55 EmployeeController59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 10:37:17 Version	46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 10:37:17 Environment	213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 10:37:18 Version	49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 10:37:19 pooling	73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:37:19 pooling	129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:37:19 pooling	138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:37:19 pooling	143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:37:19 DriverManagerConnectionProviderImpl	281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:37:19 Dialect	161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:37:21 access	47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4404a6b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 10:37:21 pooling	73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 10:37:21 pooling	129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 10:37:21 pooling	138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 10:37:21 pooling	143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 10:37:21 DriverManagerConnectionProviderImpl	281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 10:37:21 Dialect	161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 10:37:21 access	47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b808af5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 10:37:21 EmployeeController	59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 10:37:27 QueryTranslatorFactoryInitiator	47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 10:37:28 EmployeeController	269 - 
+Details of Trainer
+
+[INFO]	2022-09-15 10:37:28 EmployeeController	270 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 10:37:28 EmployeeController	270 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-15 10:37:28 EmployeeController	270 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-15 10:37:28 EmployeeController	270 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 10:37:28 EmployeeController	270 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-15 10:37:28 EmployeeController	270 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 10:37:28 EmployeeController	59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[WARN]	2022-09-15 10:37:53 pooling	73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN]	2022-09-15 10:37:55 pooling	73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:40:52 Version	46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 11:40:52 Environment	213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 11:40:52 Version	49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 11:40:53 pooling	73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:40:53 pooling	129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:40:53 pooling	138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:40:53 pooling	143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:40:53 DriverManagerConnectionProviderImpl	281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:40:54 Dialect	161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 11:40:55 access	47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@29c244e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 11:40:56 pooling	73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:40:56 pooling	129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:40:56 pooling	138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:40:56 pooling	143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:40:56 DriverManagerConnectionProviderImpl	281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:40:56 Dialect	161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 11:40:56 access	47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b490d5e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 11:40:56 EmployeeController	59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 11:41:00 QueryTranslatorFactoryInitiator	47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 11:41:00 EmployeeController	269 - 
+Details of Trainer
+
+[INFO]	2022-09-15 11:41:00 EmployeeController	270 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 11:41:00 EmployeeController	270 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-15 11:41:00 EmployeeController	270 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-15 11:41:00 EmployeeController	270 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 11:41:00 EmployeeController	270 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-15 11:41:00 EmployeeController	270 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 11:41:00 EmployeeController	59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 11:41:02 QueryTranslatorFactoryInitiator	47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 11:41:02 EmployeeController	288 - 
+Details of Trainee
+
+[INFO]	2022-09-15 11:41:02 EmployeeController	289 - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+
+[INFO]	2022-09-15 11:41:02 EmployeeController	289 - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-15 11:41:02 EmployeeController	289 - 
+ID of Employee : 42
+Name of the Trainee : rithi
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafjsdf
+Mobile Number : 9876543211
+Email Id : akfsdskjf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-15 11:41:02 EmployeeController	59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 11:44:25 Version	46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 11:44:25 Environment	213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 11:44:25 Version	49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 11:44:27 pooling	73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:44:27 pooling	129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:44:27 pooling	138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:44:27 pooling	143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:44:27 DriverManagerConnectionProviderImpl	281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:44:27 Dialect	161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 11:44:29 access	47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@686b1e2d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 11:44:29 pooling	73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:44:29 pooling	129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:44:29 pooling	138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:44:29 pooling	143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:44:29 DriverManagerConnectionProviderImpl	281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:44:29 Dialect	161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 11:44:29 access	47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@31b6fb14] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 11:44:29 EmployeeController	59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 11:55:06 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 11:55:06 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 11:55:07 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 11:55:08 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:55:08 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:55:08 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:55:08 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:55:08 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:55:08 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 11:55:10 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@29c244e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 11:55:10 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:55:10 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:55:10 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:55:10 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:55:10 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:55:10 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 11:55:10 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b490d5e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 11:55:10 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 11:56:14 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 11:56:14 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 11:56:15 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 11:56:16 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:56:16 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:56:16 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:56:16 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:56:16 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:56:41 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 11:56:41 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 11:56:42 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 11:56:43 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:56:43 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:56:43 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:56:43 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:56:43 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:56:44 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 11:56:45 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3c346c45] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 11:56:46 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:56:46 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:56:46 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:56:46 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:56:46 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:56:46 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 11:56:46 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3c4059a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 11:56:46 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 11:56:48 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 11:56:49 EmployeeController:269 - 
+Details of Trainer
+
+[INFO]	2022-09-15 11:56:49 EmployeeController:270 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 11:56:49 EmployeeController:270 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-15 11:56:49 EmployeeController:270 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-15 11:56:49 EmployeeController:270 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 11:56:49 EmployeeController:270 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-15 11:56:49 EmployeeController:270 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 11:56:49 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 11:56:51 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 11:56:51 EmployeeController:288 - 
+Details of Trainee
+
+[INFO]	2022-09-15 11:56:51 EmployeeController:289 - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+
+[INFO]	2022-09-15 11:56:51 EmployeeController:289 - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-15 11:56:51 EmployeeController:289 - 
+ID of Employee : 42
+Name of the Trainee : rithi
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafjsdf
+Mobile Number : 9876543211
+Email Id : akfsdskjf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-15 11:56:51 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 11:59:48 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 11:59:48 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 11:59:48 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 11:59:49 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:59:49 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:59:49 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:59:49 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:59:49 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:59:50 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 11:59:51 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6e7e0259] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 11:59:52 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 11:59:52 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 11:59:52 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 11:59:52 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 11:59:52 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 11:59:52 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 11:59:52 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3eee08f5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 11:59:52 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 12:01:36 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 12:01:36 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 12:01:37 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 12:01:38 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 12:01:38 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 12:01:38 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 12:01:38 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 12:01:38 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 12:01:38 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 12:01:40 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b32e983] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 12:01:40 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 12:01:40 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 12:01:40 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 12:01:40 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 12:01:40 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 12:01:40 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 12:01:40 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6ea3a513] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 12:01:41 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 12:01:50 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 12:01:50 EmployeeController:269 - 
+Details of Trainer
+
+[INFO]	2022-09-15 12:01:50 EmployeeController:270 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 12:01:50 EmployeeController:270 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-15 12:01:50 EmployeeController:270 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-15 12:01:50 EmployeeController:270 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 12:01:50 EmployeeController:270 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-15 12:01:50 EmployeeController:270 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 12:01:50 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 12:01:51 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 12:01:51 EmployeeController:288 - 
+Details of Trainee
+
+[INFO]	2022-09-15 12:01:51 EmployeeController:289 - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+
+[INFO]	2022-09-15 12:01:52 EmployeeController:289 - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-15 12:01:52 EmployeeController:289 - 
+ID of Employee : 42
+Name of the Trainee : rithi
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafjsdf
+Mobile Number : 9876543211
+Email Id : akfsdskjf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-15 12:01:52 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 12:02:15 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 12:02:15 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 12:02:16 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 12:02:17 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 12:02:17 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 12:02:17 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 12:02:17 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 12:02:17 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 12:02:18 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 12:02:19 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b32e983] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 12:02:20 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 12:02:20 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 12:02:20 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 12:02:20 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 12:02:20 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 12:02:20 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 12:02:20 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6ea3a513] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 12:02:20 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 12:02:26 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 12:02:26 EmployeeController:269 - 
+Details of Trainer
+
+[INFO]	2022-09-15 12:02:26 EmployeeController:270 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 12:02:26 EmployeeController:270 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-15 12:02:26 EmployeeController:270 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-15 12:02:26 EmployeeController:270 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 12:02:26 EmployeeController:270 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-15 12:02:26 EmployeeController:270 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 12:02:26 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 12:02:30 EmployeeController:309 - 
+Enter Trainer Id to delete data
+
+[WARN]	2022-09-15 12:02:32 EmployeeController:531 - 
+[WARN]	2022-09-15 12:02:32 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[INFO]	2022-09-15 12:02:32 EmployeeController:315 - Trainer Id 42 Not Found
+[INFO]	2022-09-15 12:02:32 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 12:02:53 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 12:02:53 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 12:02:54 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 12:02:55 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 12:02:55 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 12:02:55 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 12:02:55 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 12:02:55 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 12:02:55 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 12:02:57 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@29c244e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 12:02:57 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 12:02:57 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 12:02:57 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 12:02:57 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 12:02:57 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 12:02:57 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 12:02:57 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b490d5e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 12:02:57 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 12:57:39 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 12:57:39 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 12:57:40 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 12:57:41 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 12:57:41 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 12:57:41 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 12:57:41 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 12:57:41 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 12:57:41 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 12:57:42 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@29c244e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 12:57:43 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 12:57:43 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 12:57:43 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 12:57:43 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 12:57:43 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 12:57:43 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 12:57:43 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b490d5e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 12:57:43 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 13:00:13 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 13:00:13 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 13:00:14 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 13:00:15 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 13:00:15 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 13:00:15 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 13:00:15 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 13:00:15 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 13:00:15 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 13:00:16 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1b60d324] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 13:00:17 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 13:00:17 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 13:00:17 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 13:00:17 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 13:00:17 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 13:00:17 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 13:00:17 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@20231384] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 13:00:17 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:28:25 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 19:28:25 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 19:28:26 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 19:28:27 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:28:27 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:28:27 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:28:27 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:28:27 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:28:28 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:28:29 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1b60d324] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 19:28:30 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:28:30 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:28:30 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:28:30 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:28:30 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:28:30 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:28:30 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@20231384] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 19:28:30 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:34:11 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 19:34:11 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 19:34:12 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 19:34:13 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:34:13 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:34:13 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:34:13 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:34:13 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:34:14 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:34:15 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@62f9c790] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 19:34:15 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:34:15 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:34:15 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:34:15 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:34:15 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:34:15 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:34:16 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3db6dd52] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 19:34:16 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:34:20 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 19:34:20 EmployeeController:269 - 
+Details of Trainer
+
+[INFO]	2022-09-15 19:34:20 EmployeeController:270 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:34:21 EmployeeController:270 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-15 19:34:21 EmployeeController:270 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-15 19:34:21 EmployeeController:270 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:34:21 EmployeeController:270 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:34:21 EmployeeController:270 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:34:21 EmployeeController:59 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:36:53 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 19:36:53 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 19:36:53 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 19:36:54 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:36:54 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:36:54 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:36:54 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:36:54 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:36:55 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:36:56 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@62f9c790] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 19:36:56 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:36:56 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:36:56 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:36:56 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:36:56 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:36:56 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:36:56 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3db6dd52] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 19:36:56 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:37:11 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 19:37:11 EmployeeController:267 - 
+Details of Trainer
+
+[INFO]	2022-09-15 19:37:11 EmployeeController:268 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:37:11 EmployeeController:268 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-15 19:37:11 EmployeeController:268 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-15 19:37:11 EmployeeController:268 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:37:11 EmployeeController:268 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:37:11 EmployeeController:268 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:37:11 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:38:43 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 19:38:43 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 19:38:43 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 19:38:44 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:38:44 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:38:44 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:38:44 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:38:44 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:38:45 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:38:45 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5dbab232] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 19:38:46 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:38:46 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:38:46 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:38:46 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:38:46 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:38:46 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:38:46 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5882b202] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 19:38:46 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:47:49 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 19:47:49 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 19:47:50 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 19:47:52 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:47:52 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:47:52 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:47:52 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:47:52 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:47:53 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:47:54 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3dec3f87] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 19:47:54 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:47:54 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:47:54 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:47:54 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:47:54 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:47:54 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:47:55 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6bce4140] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 19:47:55 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:48:57 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 19:48:57 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 19:48:58 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 19:48:59 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:48:59 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:48:59 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:48:59 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:48:59 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:49:00 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:49:01 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5dbab232] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 19:49:02 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:49:02 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:49:02 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:49:02 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:49:02 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:49:02 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:49:02 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5882b202] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 19:49:02 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:54:33 EmployeeController:133 - Enter Trainer Details
+[INFO]	2022-09-15 19:54:33 EmployeeController:137 - Name :
+[INFO]	2022-09-15 19:54:37 EmployeeController:139 - Date Of Birth (DD/MM/YYYY) : 
+[INFO]	2022-09-15 19:54:41 EmployeeController:355 - Gender : 
+1. Male
+2. Female
+3. Others
+[INFO]	2022-09-15 19:54:42 EmployeeController:142 - Qualification :
+[INFO]	2022-09-15 19:54:44 EmployeeController:144 - Address :
+[INFO]	2022-09-15 19:54:45 EmployeeController:146 - Mobile Number :
+[INFO]	2022-09-15 19:54:46 EmployeeController:148 - Email Id
+[INFO]	2022-09-15 19:54:52 EmployeeController:150 - Date Of Joining(DD/MM/YYYY) :
+[WARN]	2022-09-15 19:54:56 EmployeeController:182 - 
+Validation Errors
+1. Invalid Mobile Number. It must contain only Numbers
+
+[INFO]	2022-09-15 19:54:56 EmployeeController:202 - Mobile Number :
+[WARN]	2022-09-15 19:54:59 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[WARN]	2022-09-15 19:54:59 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[INFO]	2022-09-15 19:55:00 EmployeeController:233 - Deatils Of trainer Added Successfully.
+[INFO]	2022-09-15 19:55:00 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:55:53 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-15 19:55:53 EmployeeController:267 - 
+Details of Trainer
+
+[INFO]	2022-09-15 19:55:54 EmployeeController:268 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:55:54 EmployeeController:268 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-15 19:55:54 EmployeeController:268 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-15 19:55:54 EmployeeController:268 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:55:54 EmployeeController:268 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:55:54 EmployeeController:268 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:55:54 EmployeeController:268 - 
+ID of Employee : 43
+Name of the Trainer : KISHORE
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JDSAFJKDSFD
+Mobile Number : 9876543211
+Email Id : dsahfds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-15 19:55:54 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-15 19:58:11 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-15 19:58:11 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-15 19:58:11 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-15 19:58:12 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:58:12 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:58:12 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:58:12 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:58:13 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:58:13 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:58:14 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5dbab232] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-15 19:58:15 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-15 19:58:15 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-15 19:58:15 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-15 19:58:15 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-15 19:58:15 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-15 19:58:15 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-15 19:58:15 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5882b202] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-15 19:58:15 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 08:46:18 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-16 08:46:18 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-16 08:46:19 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-16 08:46:20 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 08:46:20 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 08:46:20 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 08:46:20 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 08:46:20 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 08:46:21 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 08:46:23 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7db47323] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-16 08:46:23 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 08:46:23 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 08:46:23 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 08:46:23 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 08:46:23 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 08:46:23 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 08:46:23 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4db6348b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-16 08:46:23 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 08:47:16 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-16 08:47:16 EmployeeController:267 - 
+Details of Trainer
+
+[INFO]	2022-09-16 08:47:16 EmployeeController:268 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 08:47:16 EmployeeController:268 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-16 08:47:16 EmployeeController:268 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-16 08:47:16 EmployeeController:268 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 08:47:16 EmployeeController:268 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-16 08:47:16 EmployeeController:268 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 08:47:16 EmployeeController:268 - 
+ID of Employee : 43
+Name of the Trainer : KISHORE
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JDSAFJKDSFD
+Mobile Number : 9876543211
+Email Id : dsahfds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 08:47:16 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 08:47:18 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-16 08:47:18 EmployeeController:286 - 
+Details of Trainee
+
+[INFO]	2022-09-16 08:47:18 EmployeeController:287 - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+
+[INFO]	2022-09-16 08:47:18 EmployeeController:287 - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 08:47:18 EmployeeController:287 - 
+ID of Employee : 42
+Name of the Trainee : rithi
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafjsdf
+Mobile Number : 9876543211
+Email Id : akfsdskjf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 08:47:18 EmployeeController:57 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 10:28:44 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-16 10:28:44 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-16 10:28:45 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-16 10:28:46 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 10:28:46 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 10:28:46 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 10:28:46 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 10:28:46 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 10:28:47 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 10:28:48 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5939e24] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-16 10:28:49 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 10:28:49 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 10:28:49 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 10:28:49 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 10:28:49 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 10:28:49 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 10:28:49 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@120df990] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-16 10:28:49 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[WARN]	2022-09-16 10:28:59 EmployeeController:109 - Invalid Option
+
+[INFO]	2022-09-16 10:28:59 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 10:29:04 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-16 10:29:04 EmployeeController:391 - Please enter Trainer Id to Update Details
+[WARN]	2022-09-16 10:29:09 EmployeeController:528 - 
+[WARN]	2022-09-16 10:29:09 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[ERROR]	2022-09-16 10:29:09 EmployeeController:398 - Trainer Id 32 Not Found.
+[INFO]	2022-09-16 10:29:09 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 10:29:22 EmployeeController:104 - Exited
+[INFO]	2022-09-16 10:31:09 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-16 10:31:09 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-16 10:31:11 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-16 10:31:13 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 10:31:13 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 10:31:13 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 10:31:13 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 10:31:13 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 10:31:14 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 10:31:17 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5fd43e58] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-16 10:31:18 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 10:31:18 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 10:31:18 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 10:31:18 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 10:31:18 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 10:31:18 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 10:31:18 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4e48462d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-16 10:31:18 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[WARN]	2022-09-16 10:31:32 EmployeeController:109 - Invalid Option
+
+[INFO]	2022-09-16 10:31:32 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 10:47:25 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-16 10:47:25 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-16 10:47:26 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-16 10:47:27 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 10:47:27 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 10:47:27 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 10:47:27 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 10:47:27 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 10:47:28 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 10:47:30 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5939e24] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-16 10:47:30 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 10:47:30 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 10:47:30 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 10:47:30 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 10:47:30 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 10:47:30 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 10:47:30 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@120df990] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-16 10:47:30 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 10:47:39 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-16 10:47:40 EmployeeController:285 - 
+Details of Trainee
+
+[INFO]	2022-09-16 10:47:40 EmployeeController:286 - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+
+[INFO]	2022-09-16 10:47:40 EmployeeController:286 - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 10:47:40 EmployeeController:286 - 
+ID of Employee : 42
+Name of the Trainee : rithi
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafjsdf
+Mobile Number : 9876543211
+Email Id : akfsdskjf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 10:47:40 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 10:48:56 EmployeeController:419 - Please enter Trainee Id to Update Details
+[WARN]	2022-09-16 10:48:58 EmployeeController:525 - 
+[WARN]	2022-09-16 10:48:58 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[INFO]	2022-09-16 10:54:04 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-16 10:54:04 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-16 10:54:04 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-16 10:54:06 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 10:54:06 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 10:54:06 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 10:54:06 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 10:54:06 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 10:54:07 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 10:54:08 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5dbab232] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-16 10:54:09 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 10:54:09 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 10:54:09 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 10:54:09 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 10:54:09 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 10:54:09 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 10:54:09 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5882b202] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-16 10:54:09 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 10:59:27 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-16 10:59:27 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-16 10:59:28 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-16 10:59:29 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 10:59:29 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 10:59:29 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 10:59:29 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 10:59:29 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 10:59:30 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 10:59:31 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5dbab232] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-16 10:59:32 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 10:59:32 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 10:59:32 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 10:59:32 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 10:59:32 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 10:59:32 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 10:59:32 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5882b202] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-16 10:59:32 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 10:59:50 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-16 10:59:50 EmployeeController:266 - 
+Details of Trainer
+
+[INFO]	2022-09-16 10:59:50 EmployeeController:267 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 10:59:50 EmployeeController:267 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-16 10:59:50 EmployeeController:267 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-16 10:59:50 EmployeeController:267 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 10:59:50 EmployeeController:267 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-16 10:59:51 EmployeeController:267 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 10:59:51 EmployeeController:267 - 
+ID of Employee : 43
+Name of the Trainer : KISHORE
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JDSAFJKDSFD
+Mobile Number : 9876543211
+Email Id : dsahfds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 10:59:51 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 10:59:53 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-16 10:59:53 EmployeeController:285 - 
+Details of Trainee
+
+[INFO]	2022-09-16 10:59:53 EmployeeController:286 - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+
+[INFO]	2022-09-16 10:59:53 EmployeeController:286 - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 10:59:53 EmployeeController:286 - 
+ID of Employee : 42
+Name of the Trainee : rithi
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafjsdf
+Mobile Number : 9876543211
+Email Id : akfsdskjf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 10:59:53 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 10:59:56 EmployeeController:419 - Please enter Trainee Id to Update Details
+[WARN]	2022-09-16 10:59:57 EmployeeController:525 - 
+[WARN]	2022-09-16 10:59:57 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[INFO]	2022-09-16 11:04:05 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-16 11:04:05 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-16 11:04:06 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-16 11:04:07 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 11:04:07 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 11:04:07 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 11:04:07 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 11:04:07 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 11:04:08 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 11:04:09 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5dbab232] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-16 11:04:09 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 11:04:09 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 11:04:09 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 11:04:09 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 11:04:09 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 11:04:09 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 11:04:09 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5882b202] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-16 11:04:10 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 11:04:16 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-16 11:04:16 EmployeeController:285 - 
+Details of Trainee
+
+[INFO]	2022-09-16 11:04:16 EmployeeController:286 - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+
+[INFO]	2022-09-16 11:04:16 EmployeeController:286 - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 11:04:16 EmployeeController:286 - 
+ID of Employee : 42
+Name of the Trainee : rithi
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafjsdf
+Mobile Number : 9876543211
+Email Id : akfsdskjf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 11:04:16 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 11:04:20 EmployeeController:419 - Please enter Trainee Id to Update Details
+[WARN]	2022-09-16 11:04:22 EmployeeController:525 - 
+[WARN]	2022-09-16 11:04:22 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[ERROR]	2022-09-16 11:04:22 EmployeeController:426 - Trainee Id 43 Not Found.
+[INFO]	2022-09-16 11:04:22 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 11:04:24 EmployeeController:419 - Please enter Trainee Id to Update Details
+[WARN]	2022-09-16 11:04:26 EmployeeController:525 - 
+[WARN]	2022-09-16 11:04:26 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[INFO]	2022-09-16 11:04:26 EmployeeController:423 - 
+ID of Employee : 42
+Name of the Trainee : rithi
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafjsdf
+Mobile Number : 9876543211
+Email Id : akfsdskjf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+[INFO]	2022-09-16 11:04:26 EmployeeController:453 - Update fields. (press enter button to skip)
+[INFO]	2022-09-16 11:04:26 EmployeeController:455 - Qualification :
+[INFO]	2022-09-16 11:04:30 EmployeeController:457 - Address :
+[INFO]	2022-09-16 11:04:48 EmployeeController:459 - Mobile Number :
+[INFO]	2022-09-16 11:04:55 EmployeeController:462 - No of trainer names to add :
+[WARN]	2022-09-16 11:05:00 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[WARN]	2022-09-16 11:05:00 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[INFO]	2022-09-16 11:05:00 EmployeeController:510 - Details of trainee Updated Successfully.
+[INFO]	2022-09-16 11:05:00 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 11:05:03 EmployeeController:285 - 
+Details of Trainee
+
+[INFO]	2022-09-16 11:05:03 EmployeeController:286 - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+
+[INFO]	2022-09-16 11:05:03 EmployeeController:286 - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 11:05:03 EmployeeController:286 - 
+ID of Employee : 42
+Name of the Trainee : rithi
+Age : 21
+Gender : male
+Qualifications : bca
+Address : no.140, 6th block, nagoorar thotam
+Mobile Number : 6379220399
+Email Id : akfsdskjf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 11:05:03 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 11:06:21 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-16 11:06:21 EmployeeController:266 - 
+Details of Trainer
+
+[INFO]	2022-09-16 11:06:21 EmployeeController:267 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 11:06:21 EmployeeController:267 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-16 11:06:21 EmployeeController:267 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-16 11:06:21 EmployeeController:267 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 11:06:21 EmployeeController:267 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-16 11:06:21 EmployeeController:267 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 11:06:21 EmployeeController:267 - 
+ID of Employee : 43
+Name of the Trainer : KISHORE
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JDSAFJKDSFD
+Mobile Number : 9876543211
+Email Id : dsahfds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 11:06:21 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 11:06:28 EmployeeController:391 - Please enter Trainer Id to Update Details
+[WARN]	2022-09-16 11:06:30 EmployeeController:525 - 
+[WARN]	2022-09-16 11:06:30 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[INFO]	2022-09-16 11:06:30 EmployeeController:395 - 
+ID of Employee : 43
+Name of the Trainer : KISHORE
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JDSAFJKDSFD
+Mobile Number : 9876543211
+Email Id : dsahfds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+[INFO]	2022-09-16 11:06:30 EmployeeController:453 - Update fields. (press enter button to skip)
+[INFO]	2022-09-16 11:06:30 EmployeeController:455 - Qualification :
+[INFO]	2022-09-16 11:06:31 EmployeeController:457 - Address :
+[INFO]	2022-09-16 11:06:31 EmployeeController:459 - Mobile Number :
+[WARN]	2022-09-16 11:06:32 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[INFO]	2022-09-16 11:06:32 EmployeeController:510 - Details of trainer Updated Successfully.
+[INFO]	2022-09-16 11:06:32 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 11:06:37 EmployeeController:306 - 
+Enter Trainer Id to delete data
+
+[WARN]	2022-09-16 11:06:38 EmployeeController:525 - 
+[WARN]	2022-09-16 11:06:38 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[INFO]	2022-09-16 11:06:38 EmployeeController:310 - Trainer 43 Successfully deleted.
+[INFO]	2022-09-16 11:06:38 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 11:06:46 EmployeeController:266 - 
+Details of Trainer
+
+[INFO]	2022-09-16 11:06:46 EmployeeController:267 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 11:06:46 EmployeeController:267 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-16 11:06:46 EmployeeController:267 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-16 11:06:46 EmployeeController:267 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 11:06:46 EmployeeController:267 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-16 11:06:46 EmployeeController:267 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 11:06:46 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 22:04:05 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-16 22:04:05 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-16 22:04:06 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-16 22:04:07 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 22:04:07 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 22:04:07 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 22:04:07 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 22:04:07 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 22:04:08 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 22:04:09 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e9fb485] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-16 22:04:10 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-16 22:04:10 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-16 22:04:10 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-16 22:04:10 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-16 22:04:10 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-16 22:04:10 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-16 22:04:10 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c31e410] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-16 22:04:10 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 22:04:27 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-16 22:04:27 EmployeeController:266 - 
+Details of Trainer
+
+[INFO]	2022-09-16 22:04:27 EmployeeController:267 - 
+ID of Employee : 30
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safjdsaf
+Mobile Number : 9876543211
+Email Id : asfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 22:04:27 EmployeeController:267 - 
+ID of Employee : 31
+Name of the Trainer : ruban
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : dsafkdsf
+Mobile Number : 9876543211
+Email Id : sakfdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 2
+
+[INFO]	2022-09-16 22:04:27 EmployeeController:267 - 
+ID of Employee : 36
+Name of the Trainer : AMMAR
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : JFDSAJDSFSA
+Mobile Number : 9876543211
+Email Id : dsakjfkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 1
+
+[INFO]	2022-09-16 22:04:27 EmployeeController:267 - 
+ID of Employee : 38
+Name of the Trainer : soundhar
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : safkjdskjfsa
+Mobile Number : 9876543211
+Email Id : asjfsdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 22:04:27 EmployeeController:267 - 
+ID of Employee : 39
+Name of the Trainer : akash
+Age : 21
+Gender : male
+Qualifications : mcqa
+Address : askfdsakfsa
+Mobile Number : 9876543211
+Email Id : afkjdskj@gmail.com
+Date Of Joining : 18/09/2000
+Training Experience : 21
+No Of Trainees : 0
+
+[INFO]	2022-09-16 22:04:28 EmployeeController:267 - 
+ID of Employee : 41
+Name of the Trainer : AMMAR BAI
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : SAFKJDSAFDSA
+Mobile Number : 9876543211
+Email Id : jsadjfasj@gmail.com
+Date Of Joining : 18/09/2020
+Training Experience : 1
+No Of Trainees : 0
+
+[INFO]	2022-09-16 22:04:28 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 22:04:32 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-16 22:04:32 EmployeeController:285 - 
+Details of Trainee
+
+[INFO]	2022-09-16 22:04:32 EmployeeController:286 - 
+ID of Employee : 37
+Name of the Trainee : yogesh
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : sajfdsakfs
+Mobile Number : 9876543211
+Email Id : skjafdskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 36
+
+[INFO]	2022-09-16 22:04:32 EmployeeController:286 - 
+ID of Employee : 40
+Name of the Trainee : kishore
+Age : 21
+Gender : male
+Qualifications : MCA
+Address : asfddskfsa
+Mobile Number : 9876543211
+Email Id : sakfsd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 22:04:32 EmployeeController:286 - 
+ID of Employee : 42
+Name of the Trainee : rithi
+Age : 21
+Gender : male
+Qualifications : bca
+Address : no.140, 6th block, nagoorar thotam
+Mobile Number : 6379220399
+Email Id : akfsdskjf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 31
+
+[INFO]	2022-09-16 22:04:32 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+
+[INFO]	2022-09-16 22:04:40 EmployeeController:419 - Please enter Trainee Id to Update Details
+[WARN]	2022-09-16 22:04:41 EmployeeController:525 - Please Enter Number only
+[WARN]	2022-09-16 22:04:44 EmployeeController:525 - 
+[WARN]	2022-09-16 22:04:44 deprecation:1894 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+[ERROR]	2022-09-16 22:04:44 EmployeeController:426 - Trainee Id 21 Not Found.
+[INFO]	2022-09-16 22:04:44 EmployeeController:56 - 
+Select Option
+
+1. Add Trainer Details
+2. Add Trainee Details
+3. View Trainer Details
+4. View Trainee Details
+5. Remove Trainer Details
+6. Remove Trainee Details
+7. Update Trainer Details
+8. Update Trainee Details
+9. Exit
+

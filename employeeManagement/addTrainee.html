@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Add Trainee Details</h2>
+
+<form name = "AddTrainee" method = "get" action = "test">
+  <input type="hidden" id="flag" name="flag" value="addTrainee">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br><br>
+
+  <label for="dateOfBirth">Date Of Birth (DD/MM/YYYY):</label><br>
+  <input type="date" id="dateOfBirth" name="dateOFBirth" required><br><br>
+
+  <label for="gender">Gender :</label><br>
+  <input type="radio" id="Male" name="Gender" value="Male" required>
+  <label for="Male">Male</label><br>
+  <input type="radio" id="Female" name="Gender" value="Female" required>
+  <label for="Female">Female</label><br>
+  <input type="radio" id="Others" name="Gender" value="Others" required>
+  <label for="Others">Others</label><br><br>
+
+  <label for="qualification">Qualification :</label><br>
+  <input type="text" id="qualification" name="qualification" required><br><br>
+  
+  <label for="address">Address :</label><br>
+  <input type="text" id="address" name="address" required><br><br>
+
+
+  <label for="mobileNumber">Mobile Number :</label><br>
+  <input type="number" id="mobileNumber" name="mobileNumber" required><br><br>
+
+  <label for="emailid">Email ID :</label><br>
+  <input type="email" id="EmailId" name="EmailID" required><br><br>
+
+  <label for="dateOFJoining">Date of Joining (DD/MM/YYYY):</label><br>
+  <input type="date" id="DateOfJoining" name="DateOfJoining" required><br><br>
+
+  <label for= "TrainingPeriod">Training Period(in months)</label><br>
+  <input type ="number" id="TrainingPeriod" name= "TrainingPeriod" required><br><br>
+
+  <label for="TrainerIDs"> Trainer IDs </label><br>
+  <sub>(You can enter multiple Trainer ID with each seperated by comma)</sub><br>
+  <input type="text" id="TrainerIDs" name = "TrainerIDs" required<br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
