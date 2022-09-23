@@ -1,6 +1,7 @@
 package com.ideas2it.employee.service.impl;
 
 import com.ideas2it.employee.model.Trainee;
+import com.ideas2it.employee.model.Trainer;
 import com.ideas2it.employee.model.Employee;
 import com.ideas2it.employee.model.Qualification;
 import com.ideas2it.employee.model.Role;
@@ -11,10 +12,14 @@ import com.ideas2it.employee.util.DateUtil;
 import com.ideas2it.employee.util.StringUtil;
 import com.ideas2it.employee.exception.EmployeeNotFound;
 import com.ideas2it.employee.exception.BadRequest;
+import com.ideas2it.employee.service.impl.TrainerServiceImpl;
+import com.ideas2it.employee.service.intf.TrainerServiceIntf;
 
 import java.util.List;
 import java.util.ArrayList;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 import java.lang.NumberFormatException;
 
 /**
@@ -29,6 +34,7 @@ import java.lang.NumberFormatException;
  **/
 public class TraineeServiceImpl implements TraineeServiceIntf{  
     private TraineeDaoIntf dao = new TraineeDaoImpl();
+    private TrainerServiceIntf trainerService = new TrainerServiceImpl();
 
     /**
      * <p>
@@ -57,9 +63,13 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
             final String dateOfBirth, final String gender, final String qualification,
             final String address, final String mobileNumber, final String emailId, 
             final String dateOfJoining, final List<String> trainerIdAsList,
-            final String trainingPeriodInMonths) throws BadRequest, EmployeeNotFound {
+            final String trainingPeriodInMonths, Trainee oldTrainee) throws BadRequest, EmployeeNotFound {
+        
+        List<Trainer> trainerAsList = trainerService.getTrainers();
         List<Integer> validationErrorList = new ArrayList<>();
         List<Integer> validTrainerId = new ArrayList<>();
+        List<Integer> invalidTrainerId = new ArrayList<>();
+        Set<Trainer> trainersOfTheTrainee = new HashSet<>();
         Integer slNo = 1;
         StringBuilder errorMessage = new StringBuilder("\nValidation Errors\n");
         if (!StringUtil.isValidName(name)) {
@@ -108,9 +118,19 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
         for (String trainerId : trainerIdAsList) {
             try {
                 int validId = Integer.parseInt(trainerId);
-                validTrainerId.add(validId);
+                for (int i = 0; i < trainerAsList.size(); i++) {
+                    if (trainerAsList.get(i).getEmployee().getId() == validId) {
+                        trainersOfTheTrainee.add(trainerAsList.get(i));
+                        validTrainerId.add(validId);
+                        break;
+                    } else {
+                        if (i == trainerAsList.size() - 1) {
+                            invalidTrainerId.add(validId);
+                        }
+                    }
+                }
             } catch (NumberFormatException e) {
-                errorMessage.append(slNo++ + ". Invalid Trainer Id. Id must contain Numbers\n");
+                errorMessage.append(slNo++ + ". Invalid Trainer Id.\n");
                 validationErrorList.add(6);
                 break;
             }
@@ -127,13 +147,33 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
         Role role = new Role();
         role.setDescription("Trainee");
         if (validationErrorList.isEmpty()) {
-            Employee employee = new Employee(name, validDateOfBirth, gender, qualificationDetails,
-                                address, validMobileNumber, validEmailId, 
-                                validDateOfJoining, role);
-            Trainee trainee = new Trainee(employee, validTrainingPeriod, validTrainerId);
-            dao.insertTrainee(trainee);
+            if (null == oldTrainee) {
+                Employee employee = new Employee(name, validDateOfBirth, gender, qualificationDetails,
+                                    address, validMobileNumber, validEmailId, 
+                                    validDateOfJoining, role);
+                Trainee trainee = new Trainee(employee, validTrainingPeriod, validTrainerId);
+                trainee.setTrainers(trainersOfTheTrainee);
+                dao.insertTrainee(trainee);
+            } else {
+                oldTrainee.getEmployee().setName(name);
+                oldTrainee.getEmployee().setDateOfBirth(validDateOfBirth);
+                oldTrainee.getEmployee().setGender(gender);
+                oldTrainee.getEmployee().setQualification(qualificationDetails);
+                oldTrainee.getEmployee().setAddress(address);
+                oldTrainee.getEmployee().setMobileNumber(validMobileNumber);
+                oldTrainee.getEmployee().setEmailId(validEmailId);
+                oldTrainee.getEmployee().setDateOfJoining(validDateOfJoining);
+                oldTrainee.setTrainingPeriod(validTrainingPeriod);
+                oldTrainee.setTrainers(trainersOfTheTrainee);
+                oldTrainee.setTrainersId(validTrainerId);
+                dao.insertTrainee(oldTrainee);
+            }
         } else {
             throw new BadRequest(errorMessage.toString(), validationErrorList);
+        }
+        if (!invalidTrainerId.isEmpty()) {
+            throw new EmployeeNotFound("Invalid Trainer Id.\n"
+                        + invalidTrainerId.toString().replaceAll("[\\[\\]]",""));
         }
         return validationErrorList;
     }
@@ -184,65 +224,4 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
         }  
         return oldTrainee;
     }
-       
-    /**
-     * <p>
-     * It validate the details if no error found update the details in the object and sent to dao.
-     * else add errors to list. Return List of errors.
-     * </p>
-     *
-     * @param {@link String} qualification - qualification of the trainee.
-     * @param {@link String} address - address of the trainee.	
-     * @param {@link String} mobileNumber - mobile number of the trainee.
-     * @param {@link List<String>} trainerNamesAsList 
-     *                     - trainer Names who are in charge of the trainee.
-     * @param {@link Trainee} trainee - this is the object we're going to update all the detail.
-     *
-     * @return {@link List<Integer>} return List of errors.
-     * @throws BadRequest
-     * @throws EmployeeNotFound
-     **/
-    public List<Integer> updateAllDetailsOfTraineeById(final String qualification,
-            final String address, final String mobileNumber, final List<String> trainersIdAsList,
-            final Trainee trainee) throws BadRequest, EmployeeNotFound {
-        List<Integer> validationErrorList = new ArrayList<>();
-        List<Integer> validTrainersId = new ArrayList<>();
-        int slNo = 1;
-        StringBuilder errorMessage = new StringBuilder("\nValidation Errors\n");
-        if (qualification != "") {
-            trainee.getEmployee().getQualification().setCourse(qualification);
-        }
-        if (address != "") {
-            trainee.getEmployee().setAddress(address);
-        }
-        Long validMobileNumber = 0l;
-        if (mobileNumber != "") {
-            if (StringUtil.isValidMobileNumber(mobileNumber)) {
-                validMobileNumber = Long.parseLong(mobileNumber);
-                trainee.getEmployee().setMobileNumber(validMobileNumber);
-            } else {
-                errorMessage.append(slNo++ + ". Invalid Mobile Number. It must contains only Numbers\n");
-                validationErrorList.add(1);
-            }
-        }
-        if (!trainersIdAsList.isEmpty()) {
-            for (int i = 0; i < trainersIdAsList.size(); i++) {
-                if (!StringUtil.isValidId(trainersIdAsList.get(i))) {
-                    errorMessage.append(slNo++ + ". Invalid Trainer Id. Id must contain Numbers\n");
-                    validationErrorList.add(2);
-                    break;
-                } else {
-                    validTrainersId.add(Integer.parseInt(trainersIdAsList.get(i)));
-                }  
-            }
-            trainee.setTrainersId(validTrainersId);
-        }
-        if (!validationErrorList.isEmpty()) {
-            errorMessage.append("Please re-enter the valid information.\n");
-            throw new BadRequest(errorMessage.toString(), validationErrorList);
-        } else {
-            dao.updateTraineeDetails(trainee);
-        }
-        return validationErrorList;   
-    } 
 }

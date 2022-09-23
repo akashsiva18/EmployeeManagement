@@ -40,7 +40,7 @@ public interface TrainerServiceIntf {
     public List<Integer> validateAndAddTrainerDetails(final String name, final String dateOfBirth,
                                   final String gender, final String qualification, final String address, 
                                   final String mobileNumber, final String emailId, 
-                                  final String dateOfJoining) throws BadRequest;
+                                  final String dateOfJoining, Trainer oldTrainer) throws BadRequest;
 
    /**
      * <p>
@@ -74,24 +74,5 @@ public interface TrainerServiceIntf {
      *         - that contain a copy of the Trainer matches to the id.
      * @throws EmployeeNotFound
      **/
-    public Trainer getTrainerById(int id) throws EmployeeNotFound;
-
-    /**
-     * <p>
-     * It valid the details if no error found update the details in the object that sent to dao.
-     * else add errors to list. Return List of errors.
-     * </p>
-     *
-     * @param {@link String} qualification - qualification of the trainer.
-     * @param {@link String} address - address of the trainer.
-     * @param {@link String} mobileNumber - mobile number of the trainer.
-     * @param {@link Trainer} trainer - this is the object we going to update all the details.
-     *   
-     * @return {@link List<Integer>} return List of errors.
-     * @throws BadRequest
-     **/
-    public List<Integer> updateAllDetailsOfTrainerById( final String qualification, 
-                                              final String address, final String mobileNumber,
-                                              final Trainer trainer) throws BadRequest;
-    
+    public Trainer getTrainerById(int id) throws EmployeeNotFound;    
 }

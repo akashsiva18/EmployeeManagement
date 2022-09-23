@@ -3,6 +3,7 @@ package com.ideas2it.employee.dao.intf;
 import java.util.List;
 import com.ideas2it.employee.model.Trainee;
 import com.ideas2it.employee.exception.EmployeeNotFound;
+import com.ideas2it.employee.exception.BadRequest;
 
 /**
  * <h2>TraineeDaoIntf</h2>
@@ -26,7 +27,7 @@ public interface TraineeDaoIntf {
      * @return {@link void} return nothing 
      * @throws EmployeeNotFound
      **/
-    public void insertTrainee(Trainee trainee) throws EmployeeNotFound;
+    public void insertTrainee(Trainee trainee);
 
     /**
      * <p>
@@ -47,18 +48,6 @@ public interface TraineeDaoIntf {
      * @return {@link boolean} - if deleted return true else false
      **/
     public boolean deleteTraineeById(int id);
-
-    /**
-     * <p>
-     * Update Trainee details by id of the trainee in the database.
-     * </p>
-     * 
-     * @param {@link Trainee} newTrainee - trainee Object that contails all the details.
-     *
-     * @return {@link void} return nothing
-     * @throws EmployeeNotFound 
-     **/
-    public void updateTraineeDetails(Trainee trainee) throws EmployeeNotFound;
 
     /**
      * <p>

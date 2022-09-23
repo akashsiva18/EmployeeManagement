@@ -48,17 +48,6 @@ public interface TrainerDaoIntf {
 
     /**
      * <p>
-     * Update Trainer details by replace the object in the list by comparing the objects.
-     * </p>
-     * 
-     * @param {@link Trainer} trainer - trainer Object that contails all the details.
-     *
-     * @return {@link void} return nothing 
-     **/
-    public void updateTrainerDetails(Trainer trainer);
-
-    /**
-     * <p>
      * return new trainer object that conations the old information in the given id of the trainer.
      * </p>
      * 

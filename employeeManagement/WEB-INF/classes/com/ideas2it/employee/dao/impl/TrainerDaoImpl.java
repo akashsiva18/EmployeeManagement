@@ -41,23 +41,29 @@ public class TrainerDaoImpl implements TrainerDaoIntf {
     public void insertTrainer(Trainer trainer) {
         Qualification existingQualification = null;
         Role existingRole = null;
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        String qualification = trainer.getEmployee().getQualification().getCourse();
-        existingQualification = (Qualification)session.createCriteria(Qualification.class)
-                                    .add(Restrictions.eq("course",qualification)).uniqueResult();
-        if (null != existingQualification) {
-            trainer.getEmployee().setQualification(existingQualification);
-        }  
-        String role = trainer.getEmployee().getRole().getDescription();
-        existingRole = (Role)session.createCriteria(Role.class)
-                           .add(Restrictions.eq("description",role)).uniqueResult();
-        if (null != existingRole) {
-            trainer.getEmployee().setRole(existingRole);
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            String qualification = trainer.getEmployee().getQualification().getCourse();
+            existingQualification = (Qualification)session.createCriteria(Qualification.class)
+                    .add(Restrictions.eq("course",qualification)).uniqueResult();
+            if (null != existingQualification) {
+                trainer.getEmployee().setQualification(existingQualification);
+            }
+            String role = trainer.getEmployee().getRole().getDescription();
+            existingRole = (Role)session.createCriteria(Role.class)
+                    .add(Restrictions.eq("description",role)).uniqueResult();
+            if (null != existingRole) {
+                trainer.getEmployee().setRole(existingRole);
+            }
+            session.saveOrUpdate(trainer);
+            transaction.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
         }
-        session.save(trainer);
-        transaction.commit();
-        session.close();
     }
 
     /**
@@ -69,10 +75,16 @@ public class TrainerDaoImpl implements TrainerDaoIntf {
      **/
     public List<Trainer> retrieveTrainers() {
         List<Trainer> trainerDetails = new ArrayList<>();
-        Session session = sessionFactory.openSession();
-        String query = "From Trainer";
-        trainerDetails = session.createQuery(query).list();
-        session.close();
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+            String query = "From Trainer";
+            trainerDetails = session.createQuery(query).list();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
         return trainerDetails;
     }
 
@@ -87,40 +99,22 @@ public class TrainerDaoImpl implements TrainerDaoIntf {
      **/
     public boolean deleteTrainerById(int id) {
         Trainer trainer = null;
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        trainer = (Trainer)session.createCriteria(Trainer.class)
-                      .add(Restrictions.eq("employee.id", id)).uniqueResult();
-        if (null != trainer) {
-            session.remove(trainer);
-            transaction.commit();
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            trainer = (Trainer)session.createCriteria(Trainer.class)
+                         .add(Restrictions.eq("employee.id", id)).uniqueResult();
+            if (null != trainer) {
+                session.remove(trainer);
+                transaction.commit();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
         }
-        session.close();
         return (null != trainer);
-    }
-
-    /**
-     * <p>
-     * Update Trainer details by replace the object in the list by comparing the objects.
-     * </p>
-     * 
-     * @param {@link Trainer} trainer - trainer Object that contains all the details.
-     *
-     * @return {@link void} return nothing 
-     **/
-    public void updateTrainerDetails(Trainer trainer) {
-        Qualification existingQualification = null;
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        String qualification = trainer.getEmployee().getQualification().getCourse();
-        existingQualification = (Qualification)session.createCriteria(Qualification.class)
-                                    .add(Restrictions.eq("course",qualification)).uniqueResult();
-        if (null != existingQualification) {
-            trainer.getEmployee().setQualification(existingQualification);
-        }
-        session.merge(trainer);
-        transaction.commit();
-        session.close();
     }
 
     /**
@@ -134,10 +128,16 @@ public class TrainerDaoImpl implements TrainerDaoIntf {
      **/
     public Trainer retrieveTrainerById(int id) {
         Trainer trainer = null;
-        Session session = sessionFactory.openSession();
-        trainer = (Trainer)session.createCriteria(Trainer.class)
-                      .add(Restrictions.eq("employee.id", id)).uniqueResult();
-        session.close();
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+            trainer = (Trainer)session.createCriteria(Trainer.class)
+                          .add(Restrictions.eq("employee.id", id)).uniqueResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
         return trainer;
     }
 }

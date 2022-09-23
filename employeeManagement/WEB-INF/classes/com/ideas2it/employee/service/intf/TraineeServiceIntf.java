@@ -45,8 +45,8 @@ public interface TraineeServiceIntf {
     public List<Integer> validateAndAddTraineeDetails(final String name, final String dateOfBirth,
             final String gender, final String qualification, final String address, 
             final String mobileNumber, final String emailId, final String dateOfJoining,
-            final List<String> trainerIdAsList, final String trainingPeriodInMonths) 
-            throws BadRequest, EmployeeNotFound;
+            final List<String> trainerIdAsList, final String trainingPeriodInMonths,
+            Trainee oldTrainee) throws BadRequest, EmployeeNotFound;
 
     /**
      * <p>
@@ -79,26 +79,5 @@ public interface TraineeServiceIntf {
      * @return {@link Trainee}.
      * @throws EmployeeNotFound
      **/
-    public Trainee getTraineeById(int id) throws EmployeeNotFound;
-       
-    /**
-     * <p>
-     * It validate the details if no error found update the details in the object and sent to dao.
-     * else add errors to list. Return List of errors.
-     * </p>
-     *
-     * @param {@link String} qualification - qualification of the trainee.
-     * @param {@link String} address - address of the trainee.	
-     * @param {@link String} mobileNumber - mobile number of the trainee.
-     * @param {@link List<String>} trainerNamesAsList 
-     *                     - trainer Names who are in charge of the trainee.
-     * @param {@link Trainee} trainee - this is the object we going to update all the detail.
-     *
-     * @return {@link List<Integer>} return List of errors.
-     * @throws BadRequest
-     * @throws EmployeeNotFound
-     **/
-    public List<Integer> updateAllDetailsOfTraineeById(final String qualification,
-            final String address, final String mobileNumber, final List<String> trainersIdAsList,
-            final Trainee trainee) throws BadRequest, EmployeeNotFound;    
+    public Trainee getTraineeById(int id) throws EmployeeNotFound;       
 }

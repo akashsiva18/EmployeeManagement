@@ -42,52 +42,31 @@ public class TraineeDaoImpl implements TraineeDaoIntf {
      * @return {@link void} return nothing 
      * @throws EmployeeNotFound
      **/
-    public void insertTrainee(Trainee trainee) throws EmployeeNotFound {
-
-        Qualification existingQualification = null;
-        Role existingRole = null;
-        List<Trainer> trainers = new ArrayList<>();
-        List<Integer> validTrainersId = new ArrayList<>();
-        List<Integer> invalidTrainerId = new ArrayList<>();
-        Set<Trainer> trainersOfTheTrainee = new HashSet<>();
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        String qualification = trainee.getEmployee().getQualification().getCourse();
-        existingQualification = (Qualification)session.createCriteria(Qualification.class)
-                                .add(Restrictions.eq("course",qualification)).uniqueResult();
-        if (null != existingQualification) {
-            trainee.getEmployee().setQualification(existingQualification);
-        }
-        String role = trainee.getEmployee().getRole().getDescription();
-        existingRole = (Role)session.createCriteria(Role.class)
-                       .add(Restrictions.eq("description",role)).uniqueResult();
-        if (null != existingRole) {
-            trainee.getEmployee().setRole(existingRole);
-        }
-        trainers = session.createCriteria(Trainer.class).list();
-        boolean isValidTrainerId;
-        for (Integer trainerId : trainee.getTrainersId()) {
-            isValidTrainerId = false;
-            for (Trainer trainer : trainers) {
-                if (trainer.getEmployee().getId() == trainerId) {
-                    trainersOfTheTrainee.add(trainer);
-                    validTrainersId.add(trainerId);
-                    isValidTrainerId = true;
-                    break;
-                }
+    public void insertTrainee(Trainee trainee) {
+        Session session = null;
+        try {
+            Qualification existingQualification = null;
+            Role existingRole = null;
+            session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            String qualification = trainee.getEmployee().getQualification().getCourse();
+            existingQualification = (Qualification)session.createCriteria(Qualification.class)
+                    .add(Restrictions.eq("course",qualification)).uniqueResult();
+            if (null != existingQualification) {
+                trainee.getEmployee().setQualification(existingQualification);
             }
-            if (!isValidTrainerId) {
-                invalidTrainerId.add(trainerId);
+            String role = trainee.getEmployee().getRole().getDescription();
+            existingRole = (Role)session.createCriteria(Role.class)
+                    .add(Restrictions.eq("description",role)).uniqueResult();
+            if (null != existingRole) {
+                trainee.getEmployee().setRole(existingRole);
             }
-        }
-        trainee.setTrainersId(validTrainersId);
-        trainee.setTrainers(trainersOfTheTrainee);
-        session.save(trainee);
-        transaction.commit();
-        session.close();
-        if (!invalidTrainerId.isEmpty()) {
-            throw new EmployeeNotFound("\nInvalid Trainer Id.\n"
-                    + invalidTrainerId.toString().replaceAll("[\\[\\]]",""));
+            session.saveOrUpdate(trainee);
+            transaction.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
         }
     }
 
@@ -99,11 +78,18 @@ public class TraineeDaoImpl implements TraineeDaoIntf {
      * @return {@link List<Trainee>} return List of Trainees.
      **/
     public List<Trainee> retrieveTrainees() {
+        Session session = null;
         List<Trainee> traineeDetails = new ArrayList<>();
-        Session session = sessionFactory.openSession();
-        String query = "From Trainee";
-        traineeDetails = session.createQuery(query).list();
-        session.close();
+        try {
+            
+            session = sessionFactory.openSession();
+            String query = "From Trainee";
+            traineeDetails = session.createQuery(query).list();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
         return traineeDetails;
     }
 
@@ -118,67 +104,22 @@ public class TraineeDaoImpl implements TraineeDaoIntf {
      **/
     public boolean deleteTraineeById(int id) {
         Trainee trainee = null;
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        trainee = (Trainee)session.createCriteria(Trainee.class)
-                  .add(Restrictions.eq("employee.id", id)).uniqueResult();
-        if (null != trainee) {
-            session.remove(trainee);
-            transaction.commit();
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            trainee = (Trainee)session.createCriteria(Trainee.class)
+                    .add(Restrictions.eq("employee.id", id)).uniqueResult();
+            if (null != trainee) {
+                session.remove(trainee);
+                transaction.commit();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
         }
-        session.close();
         return (trainee != null);
-    }
-
-    /**
-     * <p>
-     * Update Trainee details by id of the trainee in the database.
-     * </p>
-     *
-     * @param {@link Trainee} newTrainee - trainee Object that contains all the details.
-     *
-     * @return {@link void} return nothing
-     * @throws EmployeeNotFound
-     **/
-    public void updateTraineeDetails(Trainee trainee) throws EmployeeNotFound {
-        Qualification existingQualification = null;
-        List<Trainer> trainers = new ArrayList<>();
-        List<Integer> validTrainersId = new ArrayList<>();
-        List<Integer> invalidTrainerId = new ArrayList<>();
-        Set<Trainer> trainersOfTheTrainee = new HashSet<>();
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        String qualification = trainee.getEmployee().getQualification().getCourse();
-        existingQualification = (Qualification)session.createCriteria(Qualification.class)
-                                .add(Restrictions.eq("course",qualification)).uniqueResult();
-        if (null != existingQualification) {
-            trainee.getEmployee().setQualification(existingQualification);
-        }
-        trainers = session.createCriteria(Trainer.class).list();
-        boolean isValidTrainerId;
-        for (Integer trainerId : trainee.getTrainersId()) {
-            isValidTrainerId = false;
-            for (Trainer trainer : trainers) {
-                if (trainer.getEmployee().getId() == trainerId) {
-                    trainersOfTheTrainee.add(trainer);
-                    validTrainersId.add(trainerId);
-                    isValidTrainerId = true;
-                    break;
-                }
-            }
-            if (!isValidTrainerId) {
-                invalidTrainerId.add(trainerId);
-            }
-        }
-        trainee.setTrainersId(validTrainersId);
-        trainee.setTrainers(trainersOfTheTrainee);
-        session.merge(trainee);
-        transaction.commit();
-        session.close();
-        if (!invalidTrainerId.isEmpty()) {
-            throw new EmployeeNotFound("Invalid Trainer Id.\n"
-                + invalidTrainerId.toString().replaceAll("[\\[\\]]",""));
-        }
     }
 
     /**
@@ -192,10 +133,16 @@ public class TraineeDaoImpl implements TraineeDaoIntf {
      **/
     public Trainee retrieveTraineeById(int id) {
         Trainee trainee = null;
-        Session session = sessionFactory.openSession();
-        trainee = (Trainee)session.createCriteria(Trainee.class)
-                  .add(Restrictions.eq("employee.id", id)).uniqueResult();
-        session.close();
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+            trainee = (Trainee)session.createCriteria(Trainee.class)
+                      .add(Restrictions.eq("employee.id", id)).uniqueResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
         return trainee;
     }
 }

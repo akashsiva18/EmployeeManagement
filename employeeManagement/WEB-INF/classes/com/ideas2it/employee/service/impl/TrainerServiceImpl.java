@@ -50,7 +50,7 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
     public List<Integer> validateAndAddTrainerDetails(final String name, 
             final String dateOfBirth, final String gender, final String qualification,
             final String address, final String mobileNumber, final String emailId, 
-            final String dateOfJoining) throws BadRequest {
+            final String dateOfJoining, Trainer oldTrainer) throws BadRequest {
         List<Integer> validationErrorList = new ArrayList<>();
         Integer slNo = 1;
         StringBuilder errorMessage = new StringBuilder("\nValidation Errors\n");
@@ -101,13 +101,25 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
         qualificationDetails.setCourse(qualification);
         Role role = new Role();
         role.setDescription("Trainer");
-
         if (validationErrorList.isEmpty()) {
-            Employee employee = new Employee(name, validDateOfBirth, gender, 
-                                qualificationDetails, address, validMobileNumber, 
-                                validEmailId, validDateOfJoining, role);
-            Trainer trainer = new Trainer(employee,trainingExperience);
-            dao.insertTrainer(trainer);
+            if (null == oldTrainer) {
+                Employee employee = new Employee(name, validDateOfBirth, gender, 
+                                    qualificationDetails, address, validMobileNumber, 
+                                    validEmailId, validDateOfJoining, role);
+                Trainer trainer = new Trainer(employee,trainingExperience);
+                dao.insertTrainer(trainer);
+            } else {
+                oldTrainer.getEmployee().setName(name);
+                oldTrainer.getEmployee().setDateOfBirth(validDateOfBirth);
+                oldTrainer.getEmployee().setGender(gender);
+                oldTrainer.getEmployee().setQualification(qualificationDetails);
+                oldTrainer.getEmployee().setAddress(address);
+                oldTrainer.getEmployee().setMobileNumber(validMobileNumber);
+                oldTrainer.getEmployee().setEmailId(validEmailId);
+                oldTrainer.getEmployee().setDateOfJoining(validDateOfJoining);
+                oldTrainer.setExperience(trainingExperience);
+                dao.insertTrainer(oldTrainer);
+            }
         } else {
             throw new BadRequest(errorMessage.toString(), validationErrorList);
         }
@@ -160,51 +172,5 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
            throw new EmployeeNotFound("Trainer Id " +id + " Not Found.");
         }  
         return oldTrainer;
-    }
-
-    /**
-     * <p>
-     * It valid the details if no error found update the details in the object that sent to dao.
-     * else add errors to list. Return List of errors.
-     * </p>
-     *
-     * @param {@link String} qualification - qualification of the trainer.
-     * @param {@link String} address - address of the trainer.
-     * @param {@link String} mobileNumber - mobile number of the trainer.
-     * @param {@link Trainer} trainer - this is the object we're going to update all the details.
-     *   
-     * @return {@link List<Integer>} return List of errors.
-     * @throws BadRequest
-     **/
-    public List<Integer> updateAllDetailsOfTrainerById( final String qualification, 
-            final String address, final String mobileNumber,final Trainer trainer)
-            throws BadRequest {
-        List<Integer> validationErrorList = new ArrayList<Integer>();
-        int slNo = 1;
-        StringBuilder errorMessage = new StringBuilder("\nValidation Errors\n");
-        if (qualification != "") {
-            trainer.getEmployee().getQualification().setCourse(qualification);
-        }
-        if (address != "") {
-            trainer.getEmployee().setAddress(address);
-        }
-        Long validMobileNumber = 0l;
-        if (mobileNumber != "") {
-            if (StringUtil.isValidMobileNumber(mobileNumber)) {
-                validMobileNumber =  Long.parseLong(mobileNumber);
-                trainer.getEmployee().setMobileNumber(validMobileNumber);
-            } else {
-                errorMessage.append(slNo++ + ". Invalid Mobile Number." 
-                    + " It must contain only Numbers\n");
-                validationErrorList.add(1);
-            }
-        }
-        if (!validationErrorList.isEmpty()) {
-            errorMessage.append("Please re-enter the valid information.\n");
-            throw new BadRequest(errorMessage.toString(), validationErrorList);
-        } else {
-            dao.updateTrainerDetails(trainer);
-        } 
-        return validationErrorList;
     }
 }
