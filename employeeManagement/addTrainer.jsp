@@ -22,11 +22,11 @@
 
 %>
 
-<form name = "login form" method = "get" action = "test">
+<form name = "login form" method = "post" action = "test">
   <input type="hidden" id="flag" name="flag" value="addTrainer" >
   <input type="hidden" id="flag" name="method" value=<%= ((action.equals("addTrainer")) ? "addTrainer" : "updateTrainer")%> >
   <% request.setAttribute("trainer",trainer); %>
-  <label for="name">Name:</label><br>
+  Name:<br>
   <input type="text" id="name" name="name" value ="<%=((action.equals("updateTrainer")) ? employee.getName() : "" )%>" required ><br><br>
 
   <label for="dateOfBirth">Date Of Birth (DD/MM/YYYY):</label><br>

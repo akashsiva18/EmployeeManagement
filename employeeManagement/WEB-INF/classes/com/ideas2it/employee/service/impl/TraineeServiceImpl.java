@@ -59,7 +59,7 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
      * @throws BadRequest
      * @throws EmployeeNotFound
      **/
-    public List<Integer> validateAndAddTraineeDetails(final String name, 
+    public List<Integer> validateAndAddOrUpdateTraineeDetails(final String name, 
             final String dateOfBirth, final String gender, final String qualification,
             final String address, final String mobileNumber, final String emailId, 
             final String dateOfJoining, final List<String> trainerIdAsList,
@@ -153,7 +153,7 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
                                     validDateOfJoining, role);
                 Trainee trainee = new Trainee(employee, validTrainingPeriod, validTrainerId);
                 trainee.setTrainers(trainersOfTheTrainee);
-                dao.insertTrainee(trainee);
+                dao.insertOrUpdateTrainee(trainee);
             } else {
                 oldTrainee.getEmployee().setName(name);
                 oldTrainee.getEmployee().setDateOfBirth(validDateOfBirth);
@@ -166,7 +166,7 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
                 oldTrainee.setTrainingPeriod(validTrainingPeriod);
                 oldTrainee.setTrainers(trainersOfTheTrainee);
                 oldTrainee.setTrainersId(validTrainerId);
-                dao.insertTrainee(oldTrainee);
+                dao.insertOrUpdateTrainee(oldTrainee);
             }
         } else {
             throw new BadRequest(errorMessage.toString(), validationErrorList);

@@ -39,6 +39,12 @@
 		    <td><%= employee.getDateOfJoining() %></td>
 		    <td><%= trainer.getExperience() %></td>
 		    <td><%= trainer.getTrainees().size() %></td>
+                    <td>
+                        <a href=test?flag=updateTrainer&ID=<%=employee.getId()%> ><input type="button" value="update"></a>
+                    </td>
+                    <td>
+                        <a href=test?flag=deleteTrainer&ID=<%=employee.getId()%>  ><input type="button" value="delete"></a>
+                    </td>
 		</tr>
 		<%}%>
 		</table>

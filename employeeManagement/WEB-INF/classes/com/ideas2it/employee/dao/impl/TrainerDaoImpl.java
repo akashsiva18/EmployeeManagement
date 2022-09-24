@@ -38,7 +38,7 @@ public class TrainerDaoImpl implements TrainerDaoIntf {
      *
      * @return {@link void} return nothing 
      **/
-    public void insertTrainer(Trainer trainer) {
+    public void insertOrUpdateTrainer(Trainer trainer) {
         Qualification existingQualification = null;
         Role existingRole = null;
         Session session = null;

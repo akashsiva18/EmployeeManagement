@@ -37,7 +37,7 @@ public interface TrainerServiceIntf {
      * @return {@link List<Integer>} return List of errors.
      * @throws BadRequest.
      **/
-    public List<Integer> validateAndAddTrainerDetails(final String name, final String dateOfBirth,
+    public List<Integer> validateAndAddOrUpdateTrainerDetails(final String name, final String dateOfBirth,
                                   final String gender, final String qualification, final String address, 
                                   final String mobileNumber, final String emailId, 
                                   final String dateOfJoining, Trainer oldTrainer) throws BadRequest;

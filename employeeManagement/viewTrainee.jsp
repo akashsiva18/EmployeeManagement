@@ -43,6 +43,12 @@
 		    <td><%= employee.getDateOfJoining() %></td>
 		    <td><%= trainee.getTrainingPeriod() %></td>
 		    <td><%= trainerIds.toString().replaceAll("[\\[\\]]","") %></td>
+                    <td>
+                        <a href=test?flag=updateTrainee&ID=<%=employee.getId()%> ><input type="button" value="update"></a>
+                    </td>
+                    <td>
+                        <a href=test?flag=deleteTrainee&ID=<%=employee.getId()%>  ><input type="button" value="delete"></a>
+                    </td>
 		</tr>
 		<%}%>
 		</table>

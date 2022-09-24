@@ -24,7 +24,7 @@ public interface TrainerDaoIntf {
      *
      * @return {@link void} return nothing 
      **/
-    public void insertTrainer(Trainer trainer);
+    public void insertOrUpdateTrainer(Trainer trainer);
 
     /**
      * <p>

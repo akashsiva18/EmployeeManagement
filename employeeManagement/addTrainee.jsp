@@ -28,7 +28,7 @@
         session.setAttribute("trainee",trainee);
 %>
 
-<form name = "login form" method = "get" action = "test">
+<form name = "login form" method = "Post" action = "test">
   <input type="hidden" id="flag" name="flag" value="addTrainee" >
   <input type="hidden" id="flag" name="method" value=<%= ((action.equals("addTrainee")) ? "addTrainee" : "updateTrainee")%> >
   

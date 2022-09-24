@@ -47,7 +47,7 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
      * @return {@link List<Integer>} return List of errors.
      * @throws BadRequest.
      **/
-    public List<Integer> validateAndAddTrainerDetails(final String name, 
+    public List<Integer> validateAndAddOrUpdateTrainerDetails(final String name, 
             final String dateOfBirth, final String gender, final String qualification,
             final String address, final String mobileNumber, final String emailId, 
             final String dateOfJoining, Trainer oldTrainer) throws BadRequest {
@@ -107,7 +107,7 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
                                     qualificationDetails, address, validMobileNumber, 
                                     validEmailId, validDateOfJoining, role);
                 Trainer trainer = new Trainer(employee,trainingExperience);
-                dao.insertTrainer(trainer);
+                dao.insertOrUpdateTrainer(trainer);
             } else {
                 oldTrainer.getEmployee().setName(name);
                 oldTrainer.getEmployee().setDateOfBirth(validDateOfBirth);
@@ -118,7 +118,7 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
                 oldTrainer.getEmployee().setEmailId(validEmailId);
                 oldTrainer.getEmployee().setDateOfJoining(validDateOfJoining);
                 oldTrainer.setExperience(trainingExperience);
-                dao.insertTrainer(oldTrainer);
+                dao.insertOrUpdateTrainer(oldTrainer);
             }
         } else {
             throw new BadRequest(errorMessage.toString(), validationErrorList);

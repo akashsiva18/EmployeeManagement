@@ -27,7 +27,7 @@ public interface TraineeDaoIntf {
      * @return {@link void} return nothing 
      * @throws EmployeeNotFound
      **/
-    public void insertTrainee(Trainee trainee);
+    public void insertOrUpdateTrainee(Trainee trainee);
 
     /**
      * <p>

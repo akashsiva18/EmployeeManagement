@@ -41,27 +41,19 @@ public class EmployeeController extends HttpServlet{
     private TraineeServiceIntf traineeService = new TraineeServiceImpl();
     private static final Logger logger = LogManager.getLogger(EmployeeController.class);
 
-    public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    public void doPost (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
-       String choice = req.getParameter("flag");
+        String choice = req.getParameter("flag");
 
-       switch (choice) {
+        switch (choice) {
            case "addTrainer" :
-               addEmployees(EmployeeType.TRAINER.type, req, res);
+               addOrUpdateEmployee(EmployeeType.TRAINER.type, req, res);
                break;
 
             case "addTrainee":
-               addEmployees(EmployeeType.TRAINEE.type, req, res);
+               addOrUpdateEmployee(EmployeeType.TRAINEE.type, req, res);
                break;
-
-            case "viewTrainers":
-               showTrainerDetails(req, res);
-               break;
-            
-            case "viewTrainees":
-               showTraineeDetails(req, res);
-               break;
-
+ 
             case "deleteTrainer":
                deleteTrainerDetailsById(req, res);
                break;
@@ -71,16 +63,27 @@ public class EmployeeController extends HttpServlet{
                break;
 
             case "updateTrainer":
-               updateTrainerDetailsById(req, res);
+               getTrainerDetailsById(req, res);
                break;
                
             case "updateTrainee":
-               updateTraineeDetailsById(req, res);
+               getTraineeDetailsById(req, res);
+               break;   
+
+            case "viewTrainers":
+               showTrainerDetails(req, res);
                break;
-               
+            
+            case "viewTrainees":
+               showTraineeDetails(req, res);
+               break;
         }
     }
 
+    public void doGet (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        doPost(req,res);
+    }
+  
     /**
      * <p>
      * This method is get input from user and sent the inputs to service for validation 
@@ -93,7 +96,7 @@ public class EmployeeController extends HttpServlet{
      *        for which employee is need to add is specified by the parameter.      
      * @return {@link void} return nothing
      **/
-    private void addEmployees(String employee, HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    private void addOrUpdateEmployee(String employee, HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         Trainer oldTrainer = null;
         Trainee oldTrainee = null;
         String trainingPeriod = "";
@@ -120,7 +123,6 @@ public class EmployeeController extends HttpServlet{
             }
             trainingPeriod = req.getParameter("TrainingPeriod");
         }
-
         HttpSession session = req.getSession(false);
         if (method.equals("updateTrainer")) {
             oldTrainer = (Trainer)session.getAttribute("trainer");
@@ -130,11 +132,11 @@ public class EmployeeController extends HttpServlet{
             
         try {
             if (employee.equals(EmployeeType.TRAINER.type)) {
-                validationError = trainerService.validateAndAddTrainerDetails(
+                validationError = trainerService.validateAndAddOrUpdateTrainerDetails(
                                   name, dateOfBirth, gender, qualification,
                                   address, mobileNumber, emailId, dateOfJoining, oldTrainer);
             } else {
-                validationError = traineeService.validateAndAddTraineeDetails(name,
+                validationError = traineeService.validateAndAddOrUpdateTraineeDetails(name,
                                   dateOfBirth,gender,qualification,address,
                                   mobileNumber, emailId, dateOfJoining,
                                   trainerIdAsList, trainingPeriod, oldTrainee);   
@@ -158,23 +160,6 @@ public class EmployeeController extends HttpServlet{
             rd.include(req, res);
             logger.warn(e1.getMessage()); 
         }
-    }
-
-    /**
-     * <p>
-     * Get id from user and store it in the list and then return List of Id's.
-     * </p>
-     *
-     * @param {@link int} noOfTrainers - no of trainer to add in the list.
-     * @return {@link List<String>} trainerNames -  return List of trainer ID.
-     **/
-    private List<String> addTrainersIdAsList(int noOfTrainers) {
-        List<String> trainersId = new ArrayList<>();
-        for (int i = 1; i <= noOfTrainers; i++) {
-            logger.info("id of Trainer " + i + " :");
-            trainersId.add(userInput.nextLine());
-        }
-        return trainersId;
     }
 
     /**
@@ -239,29 +224,13 @@ public class EmployeeController extends HttpServlet{
     private void deleteTrainerDetailsById(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
-        String tempId;
         List<Trainer> listOfTrainers = trainerService.getTrainers();
-        if (listOfTrainers.isEmpty()) {
-            out.println("<h3>No Trainer Data Found</h3>");
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
-            requestDispatcher.include(req, res);
-            logger.info("\nNo Trainer Data Found\n");
-        } else {
-            logger.info("\nEnter Trainer Id to delete data\n");
-            int id = Integer.parseInt(req.getParameter("ID"));
-            try {
-                trainerService.removeTrainerById(id);
-                out.print("<h3>Trainer " + id + " Successfully deleted.");
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
-                requestDispatcher.include(req, res);
-                logger.info("Trainer " + id + " Successfully deleted.");
-            } catch (EmployeeNotFound e) {
-                out.print("<h3>" + e.getMessage() + "</h3>");
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
-                requestDispatcher.include(req, res);
-                logger.error(e.getMessage());
-            }
-        }
+        int id = Integer.parseInt(req.getParameter("ID"));
+        trainerService.removeTrainerById(id);
+        out.print("<h3>Trainer " + id + " Successfully deleted.");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
+        requestDispatcher.include(req, res);
+        logger.info("Trainer " + id + " Successfully deleted.");
     }
 
     /**
@@ -278,63 +247,14 @@ public class EmployeeController extends HttpServlet{
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
         List<Trainee> listOfTrainees = traineeService.getTrainees();
-        if (listOfTrainees.isEmpty()) {
-            out.println("<h3>No Trainee Data Found</h3>");
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
-            requestDispatcher.include(req, res);
-            logger.info("\nNo Trainee Data Found\n");
-        } else {
-            logger.info("\nEnter Trainee Id to delete data\n");
-            int id = Integer.parseInt(req.getParameter("ID"));
-            try {
-                traineeService.removeTraineeById(id);
-                out.print("<h3>Trainee " + id + " Successfully deleted.");
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
-                requestDispatcher.include(req, res);
-                logger.info("Trainee " + id + " Successfully deleted.</h3>");
-            } catch (EmployeeNotFound e) {
-                out.print("<h3>" + e.getMessage() + "</h3>");
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
-                requestDispatcher.include(req, res);
-                logger.error(e.getMessage());
-            }
-        }
+        int id = Integer.parseInt(req.getParameter("ID"));
+        traineeService.removeTraineeById(id);
+        out.print("<h3>Trainee " + id + " Successfully deleted.");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
+        requestDispatcher.include(req, res);
+        logger.info("Trainee " + id + " Successfully deleted.</h3>");
     }
 
-    /**
-     * <p>
-     * Method asks for selecting a valid gender and return the Correct gender as a string  
-     * if selected the wrong option it will ask again and again until getting the correct input.
-     * </p>
-     *
-     * @return {@link String} return Gender
-     *          Gender name as String.
-     **/
-    private String getValidGender() {
-        String gender = null;
-        logger.info(Constant.AVAILABLE_GENDER);
-        do {
-            String genderOption = userInput.nextLine();
-            switch(genderOption) {
-                case "1":
-                    gender = Gender.MALE.type;
-                    break;
-
-                case "2":
-                    gender = Gender.FEMALE.type;
-                    break;
-
-                case "3":
-                    gender = Gender.OTHERS.type;
-                    break;
-
-                default:
-                    logger.warn("Please Select valid Option");
-            }
-        } while (null == gender);
-        return gender;
-    }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * <p>
      * Method that checks the List of trainers if it empties it shows a 
@@ -346,31 +266,16 @@ public class EmployeeController extends HttpServlet{
      *
      * @return {@link void} return nothing 
      **/
-    private void updateTrainerDetailsById(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    private void getTrainerDetailsById(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
         List<Trainer> listOfTrainers = trainerService.getTrainers();
-        if (listOfTrainers.size() != 0) {
-            logger.info("Please enter Trainer Id to Update Details");
-            int id = Integer.parseInt(req.getParameter("ID"));
-            try {
-                Trainer oldTrainer = trainerService.getTrainerById(id);
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("addTrainer.jsp?flag=updateTrainer"); 
-                req.setAttribute("oldTrainer", oldTrainer);
-                requestDispatcher.include(req,res);
-                logger.info(oldTrainer);
-            } catch (EmployeeNotFound e) {
-                out.print("<h3>" + e.getMessage() + "</h3>");
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
-                requestDispatcher.include(req, res);
-                logger.error(e.getMessage());
-            }
-        } else {
-            out.print("<h3>No Trainer Details found to Update.</h3>");
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
-            requestDispatcher.include(req, res);
-            logger.info("No Trainer Details found to Update.");
-        }
+        int id = Integer.parseInt(req.getParameter("ID"));
+        Trainer oldTrainer = trainerService.getTrainerById(id);
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("addTrainer.jsp?flag=updateTrainer"); 
+        req.setAttribute("oldTrainer", oldTrainer);
+        requestDispatcher.include(req,res);
+        logger.info(oldTrainer);
     }
 
     /**
@@ -384,30 +289,15 @@ public class EmployeeController extends HttpServlet{
      *
      * @return {@link void} return nothing 
      **/
-    private void updateTraineeDetailsById(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    private void getTraineeDetailsById(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
         List<Trainee> listOfTrainees = traineeService.getTrainees();
-        if (listOfTrainees.size() != 0) {
-            logger.info("Please enter Trainee Id to Update Details");
-            int id = Integer.parseInt(req.getParameter("ID"));
-            try {
-                Trainee oldTrainee = traineeService.getTraineeById(id);
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("addTrainee.jsp?flag=updateTrainee"); 
-                req.setAttribute("oldTrainee", oldTrainee);
-                requestDispatcher.include(req,res);
-                logger.info(oldTrainee);
-            } catch (EmployeeNotFound e) {
-                out.print("<h3>" + e.getMessage() + "</h3>");
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
-                requestDispatcher.include(req, res);
-                logger.error(e.getMessage());
-            }
-        } else {
-            out.print("<h3>No Trainee Details found to Update.</h3>");
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.html");  
-            requestDispatcher.include(req, res);
-            logger.info("No Trainee Details found to Update.");
-        }
+        int id = Integer.parseInt(req.getParameter("ID"));
+        Trainee oldTrainee = traineeService.getTraineeById(id);
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("addTrainee.jsp?flag=updateTrainee"); 
+        req.setAttribute("oldTrainee", oldTrainee);
+        requestDispatcher.include(req,res);
+        logger.info(oldTrainee);
     }
 }

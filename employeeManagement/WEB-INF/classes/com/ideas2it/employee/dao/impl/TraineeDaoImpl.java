@@ -42,7 +42,7 @@ public class TraineeDaoImpl implements TraineeDaoIntf {
      * @return {@link void} return nothing 
      * @throws EmployeeNotFound
      **/
-    public void insertTrainee(Trainee trainee) {
+    public void insertOrUpdateTrainee(Trainee trainee) {
         Session session = null;
         try {
             Qualification existingQualification = null;

@@ -42,7 +42,7 @@ public interface TraineeServiceIntf {
      * @throws BadRequest
      * @throws EmployeeNotFound
      **/
-    public List<Integer> validateAndAddTraineeDetails(final String name, final String dateOfBirth,
+    public List<Integer> validateAndAddOrUpdateTraineeDetails(final String name, final String dateOfBirth,
             final String gender, final String qualification, final String address, 
             final String mobileNumber, final String emailId, final String dateOfJoining,
             final List<String> trainerIdAsList, final String trainingPeriodInMonths,
