@@ -2,12 +2,15 @@
 <%@page import ="java.util.List, java.util.ArrayList" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<body>
 
+<html>
+<head>
+<body style="background-color:LightGray; font-size:20px;">
+
+<form name = "login_form" method = "Post" action = "test">
 <h2><%  String action = request.getParameter("flag");
         if (action.equals("addTrainee")) {
-            %>Add Trainee Details<%;
+            %><h2>Add Trainee Details</h2><%;
         } else {
             %>Update Trainee Details<%;
         }%></h2>
@@ -16,7 +19,6 @@
         String gender = "";
         List<Integer> trainerIds = new ArrayList<>();
         String trainerIdsAsString = "";
-        String name = "";
         if (null != trainee) {
             employee = trainee.getEmployee();
             gender = employee.getGender();
@@ -27,15 +29,13 @@
         }
         session.setAttribute("trainee",trainee);
 %>
-
-<form name = "login form" method = "Post" action = "test">
   <input type="hidden" id="flag" name="flag" value="addTrainee" >
   <input type="hidden" id="flag" name="method" value=<%= ((action.equals("addTrainee")) ? "addTrainee" : "updateTrainee")%> >
   
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="name" value= "<%=((action.equals("updateTrainee")) ? employee.getName(): "" )%>" required ><br><br>
 
-  <label for="dateOfBirth">Date Of Birth (DD/MM/YYYY):</label><br>
+  <label for="dateOfBirth">Date Of Birth:</label><br>
   <input type="date" id="dateOfBirth" name="dateOFBirth" value = "<%=((action.equals("updateTrainee")) ? employee.getDateOfBirth() : "" )%>" required ><br><br>
  
   <label for="gender">Gender :</label><br>
@@ -67,12 +67,15 @@
 
   <label for="TrainerIDs"> Trainer IDs </label><br>
   <sub>(You can enter multiple Trainer ID with each seperated by comma)</sub><br>
-  <input type="text" id="TrainerIDs" name = "TrainerIDs" required value ="<%=((action.equals("updateTrainee")) ? trainerIdsAsString : "" )%>" ><br><br>
+  <input type="text" id="TrainerIDs" name = "TrainerIDs" value ="<%=((action.equals("updateTrainee")) ? trainerIdsAsString : "" )%>" ><br><br>
 
   <input type="submit" value="Submit">
+  <a href=index.html ><input type="button" value="back"></a>
 </form>
 
 </body>
+
+</div>
 </html>
 
 

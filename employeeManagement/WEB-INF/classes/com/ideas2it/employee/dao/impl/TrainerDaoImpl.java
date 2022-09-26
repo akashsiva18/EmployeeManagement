@@ -27,7 +27,8 @@ import com.ideas2it.employee.common.Constant;
  * @since 12-08-2022
  **/
 public class TrainerDaoImpl implements TrainerDaoIntf {
-    private static SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+    private static SessionFactory sessionFactory = new Configuration()
+                                                  .configure("com/ideas2it/employee/config/hibernate.cfg.xml").buildSessionFactory();
 
     /**
      * <p>
@@ -45,15 +46,15 @@ public class TrainerDaoImpl implements TrainerDaoIntf {
         try {
             session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
-            String qualification = trainer.getEmployee().getQualification().getCourse();
-            existingQualification = (Qualification)session.createCriteria(Qualification.class)
-                    .add(Restrictions.eq("course",qualification)).uniqueResult();
+            existingQualification = (Qualification)session.createQuery("From Qualification where course = :user_course")
+                                    .setParameter("user_course", trainer.getEmployee().getQualification().getCourse())
+                                    .uniqueResult();
             if (null != existingQualification) {
                 trainer.getEmployee().setQualification(existingQualification);
             }
-            String role = trainer.getEmployee().getRole().getDescription();
-            existingRole = (Role)session.createCriteria(Role.class)
-                    .add(Restrictions.eq("description",role)).uniqueResult();
+            existingRole = (Role)session.createQuery("From Role where description = :description")
+                           .setParameter("description", trainer.getEmployee().getRole().getDescription())
+                           .uniqueResult();
             if (null != existingRole) {
                 trainer.getEmployee().setRole(existingRole);
             }
@@ -103,8 +104,8 @@ public class TrainerDaoImpl implements TrainerDaoIntf {
         try {
             session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
-            trainer = (Trainer)session.createCriteria(Trainer.class)
-                         .add(Restrictions.eq("employee.id", id)).uniqueResult();
+            trainer = (Trainer)session.createQuery("From Trainer where employee.id = :id")
+                      .setParameter("id", id).uniqueResult();
             if (null != trainer) {
                 session.remove(trainer);
                 transaction.commit();
@@ -131,8 +132,8 @@ public class TrainerDaoImpl implements TrainerDaoIntf {
         Session session = null;
         try {
             session = sessionFactory.openSession();
-            trainer = (Trainer)session.createCriteria(Trainer.class)
-                          .add(Restrictions.eq("employee.id", id)).uniqueResult();
+            trainer = (Trainer)session.createQuery("From Trainer where employee.id = :id")
+                      .setParameter("id", id).uniqueResult();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

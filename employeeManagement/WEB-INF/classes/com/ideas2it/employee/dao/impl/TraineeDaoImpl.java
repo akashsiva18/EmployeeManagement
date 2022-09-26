@@ -30,7 +30,7 @@ import com.ideas2it.employee.exception.EmployeeNotFound;
 public class TraineeDaoImpl implements TraineeDaoIntf {
 
     private static SessionFactory sessionFactory = new Configuration()
-                                                   .configure().buildSessionFactory();
+                                                   .configure("com/ideas2it/employee/config/hibernate.cfg.xml").buildSessionFactory();
 
     /**
      * <p>
@@ -49,15 +49,15 @@ public class TraineeDaoImpl implements TraineeDaoIntf {
             Role existingRole = null;
             session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
-            String qualification = trainee.getEmployee().getQualification().getCourse();
-            existingQualification = (Qualification)session.createCriteria(Qualification.class)
-                    .add(Restrictions.eq("course",qualification)).uniqueResult();
+            existingQualification = (Qualification)session.createQuery("From Qualification where course = :user_course")
+                                    .setParameter("user_course", trainee.getEmployee().getQualification().getCourse())
+                                    .uniqueResult();
             if (null != existingQualification) {
                 trainee.getEmployee().setQualification(existingQualification);
             }
-            String role = trainee.getEmployee().getRole().getDescription();
-            existingRole = (Role)session.createCriteria(Role.class)
-                    .add(Restrictions.eq("description",role)).uniqueResult();
+            existingRole = (Role)session.createQuery("From Role where description = :description")
+                           .setParameter("description", trainee.getEmployee().getRole().getDescription())
+                           .uniqueResult();
             if (null != existingRole) {
                 trainee.getEmployee().setRole(existingRole);
             }
@@ -81,7 +81,6 @@ public class TraineeDaoImpl implements TraineeDaoIntf {
         Session session = null;
         List<Trainee> traineeDetails = new ArrayList<>();
         try {
-            
             session = sessionFactory.openSession();
             String query = "From Trainee";
             traineeDetails = session.createQuery(query).list();
@@ -108,8 +107,8 @@ public class TraineeDaoImpl implements TraineeDaoIntf {
         try {
             session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
-            trainee = (Trainee)session.createCriteria(Trainee.class)
-                    .add(Restrictions.eq("employee.id", id)).uniqueResult();
+            trainee = (Trainee)session.createQuery("From Trainee where employee.id = :id")
+                      .setParameter("id", id).uniqueResult();
             if (null != trainee) {
                 session.remove(trainee);
                 transaction.commit();
@@ -136,8 +135,9 @@ public class TraineeDaoImpl implements TraineeDaoIntf {
         Session session = null;
         try {
             session = sessionFactory.openSession();
-            trainee = (Trainee)session.createCriteria(Trainee.class)
-                      .add(Restrictions.eq("employee.id", id)).uniqueResult();
+            trainee = (Trainee)session.createQuery("From Trainee where employee.id = :id")
+                      .setParameter("id", id).uniqueResult();
+            trainee.getEmployee().setName("AKASH");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

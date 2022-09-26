@@ -65,7 +65,7 @@ public class EmployeeController extends HttpServlet{
             case "updateTrainer":
                getTrainerDetailsById(req, res);
                break;
-               
+
             case "updateTrainee":
                getTraineeDetailsById(req, res);
                break;   
@@ -73,7 +73,7 @@ public class EmployeeController extends HttpServlet{
             case "viewTrainers":
                showTrainerDetails(req, res);
                break;
-            
+
             case "viewTrainees":
                showTraineeDetails(req, res);
                break;
@@ -117,9 +117,11 @@ public class EmployeeController extends HttpServlet{
         if (employee.equals(EmployeeType.TRAINEE.type)) {
             trainerIdAsList = new ArrayList<>();
             String trainerIds = req.getParameter("TrainerIDs");
+            if (!trainerIds.isEmpty()) {
             String[] tempTrainerIds = trainerIds.split("[,]",0);
             for (String id : tempTrainerIds) {
                 trainerIdAsList.add(id);
+            }
             }
             trainingPeriod = req.getParameter("TrainingPeriod");
         }

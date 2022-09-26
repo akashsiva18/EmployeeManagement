@@ -114,7 +114,6 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
             errorMessage.append(slNo++ + ". Invalid Date Of Joining.\n");
             validationErrorList.add(5);
         }
-
         for (String trainerId : trainerIdAsList) {
             try {
                 int validId = Integer.parseInt(trainerId);

@@ -8,7 +8,13 @@
 <title>Student List</title>
 </head>
 <body>
-        <style>table, th, td {border: 1px solid black;border-collapse: collapse;}</style>
+        <style>table, th, td {border: 1px solid black;border-collapse: collapse; background-color:Lightgray;}
+        th {background-color:black; color:white;}
+        h2 {
+           text-align: center;
+           font-size: 40px;    
+        }
+        </style>
         <body>
             <h2>Details of Trainee</h2> 
             <table style='width:100%'>
@@ -23,6 +29,7 @@
                     <th>Date Of Joining</th>
                     <th>Training Period</th>
                     <th>Trainer Id</th>
+                    <th colspan=2>Action</th>
                 </tr>
 		
 		<%ArrayList<Trainee> trainees = (ArrayList<Trainee>)request.getAttribute("Trainees");
@@ -52,6 +59,7 @@
 		</tr>
 		<%}%>
 		</table>
-                <input type="button" value="Go back!" onclick="history.back()">
+                <a href=index.html><input type="button" value="Go back!" ></a>
 	</body>
+    
 </html>
