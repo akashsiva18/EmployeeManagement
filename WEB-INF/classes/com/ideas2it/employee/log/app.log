@@ -1,0 +1,219 @@
+[INFO]	2022-09-29 15:02:33 Version:46 - HHH000412: Hibernate Core {5.3.28.Final}
+[INFO]	2022-09-29 15:02:33 Environment:213 - HHH000206: hibernate.properties not found
+[INFO]	2022-09-29 15:02:34 Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+[WARN]	2022-09-29 15:02:35 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-29 15:02:35 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-29 15:02:35 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-29 15:02:35 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-29 15:02:35 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-29 15:02:35 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-29 15:02:36 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@643674b7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN]	2022-09-29 15:02:37 pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO]	2022-09-29 15:02:37 pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testing]
+[INFO]	2022-09-29 15:02:37 pooling:138 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]	2022-09-29 15:02:37 pooling:143 - HHH10001003: Autocommit mode: false
+[INFO]	2022-09-29 15:02:37 DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO]	2022-09-29 15:02:37 Dialect:161 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO]	2022-09-29 15:02:37 access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4e801b45] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]	2022-09-29 15:02:37 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-29 15:02:37 QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+[INFO]	2022-09-29 15:02:37 EmployeeController:148 - Details Of trainee Added Successfully.
+[INFO]	2022-09-29 15:03:45 EmployeeController:210 - 
+Details of Trainee
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 66
+Name of the Trainee : akash trainee
+Age : 22
+Gender : male
+Qualifications : MCA
+Address : safdsfkj
+Mobile Number : 9876543211
+Email Id : asfjdsfjs@gmail.com
+Date Of Joining : 18/01/2020
+Training Period : 3
+Trainers : 61, 62
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 67
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : MCA
+Address : dsafsdf
+Mobile Number : 9876543211
+Email Id : asdfsjkd@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 68
+Name of the Trainee : AKASH
+Age : 22
+Gender : female
+Qualifications : MSC
+Address : asfdsaf
+Mobile Number : 9876543211
+Email Id : afsdfj@gmail.com
+Date Of Joining : 18/09/2022
+Training Period : 3
+Trainers : 
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 72
+Name of the Trainee : arun kumar
+Age : 22
+Gender : male
+Qualifications : bsc
+Address : askjfdsfjsdj
+Mobile Number : 9876543211
+Email Id : sajfdsjf@gmail.com
+Date Of Joining : 18/09/2022
+Training Period : 3
+Trainers : 45
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 99
+Name of the Trainee : Moki
+Age : 23
+Gender : male
+Qualifications :  MCA
+Address : 222/697, TH Road
+Mobile Number : 9876543211
+Email Id : mokiday@69420.com
+Date Of Joining : 18/09/2022
+Training Period : 3
+Trainers : 62
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 106
+Name of the Trainee : KARHICK TRAINEEda
+Age : 22
+Gender : male
+Qualifications : bca
+Address : jsafjsj
+Mobile Number : 9876543211
+Email Id : kjafkjds@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 45
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 107
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : MCA
+Address : dsakjfjs
+Mobile Number : 9876543211
+Email Id : skafjks@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 91, 83
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 108
+Name of the Trainee : ruban loose
+Age : 22
+Gender : male
+Qualifications : bca
+Address : asfjasjfsjfjs
+Mobile Number : 9876543211
+Email Id : asjfjdsfk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 91, 83
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 109
+Name of the Trainee : AKASH TRAINEES
+Age : 22
+Gender : male
+Qualifications : bca
+Address : SAKJFKASKFJ
+Mobile Number : 9876543211
+Email Id : jasdfsakjfdj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 87
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 110
+Name of the Trainee : amraibai
+Age : 22
+Gender : male
+Qualifications : MCA
+Address : sajfjajsk
+Mobile Number : 9876543211
+Email Id : dsajkfkjs@gamil.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 87
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 111
+Name of the Trainee : akash S
+Age : 22
+Gender : male
+Qualifications : b.com
+Address : skafkjdsafjds
+Mobile Number : 9876543211
+Email Id : ksafkjdsfkj@gamil.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 83
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 113
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : MCA
+Address : dsafkjsfj
+Mobile Number : 9876543211
+Email Id : asfdjsajdf@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 83
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 115
+Name of the Trainee : ammar mammar
+Age : 22
+Gender : male
+Qualifications : MCA
+Address : dsafslkdf
+Mobile Number : 9876543211
+Email Id : sdafjdsa@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 91, 83
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 116
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : bca
+Address : safkjdsa
+Mobile Number : 9876543211
+Email Id : sakjfkjdsa@gmail.com
+Date Of Joining : 18/09/2022
+Training Period : 6
+Trainers : 83
+
+[INFO]	2022-09-29 15:03:45 EmployeeController:214 - 
+ID of Employee : 120
+Name of the Trainee : ramasammmmmmy
+Age : 22
+Gender : male
+Qualifications : bca
+Address : safkjsdskjf
+Mobile Number : 9876543211
+Email Id : kjsjfdsaj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 5
+Trainers : 
+
+[INFO]	2022-09-29 15:03:49 EmployeeController:259 - Trainee 120 Successfully deleted.</h3>

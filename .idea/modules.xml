@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WEB-INF/WEB-INF.iml" filepath="$PROJECT_DIR$/WEB-INF/WEB-INF.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WEB-INF/classes/classes.iml" filepath="$PROJECT_DIR$/WEB-INF/classes/classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/employeeManagement.iml" filepath="$PROJECT_DIR$/.idea/employeeManagement.iml" />
+    </modules>
+  </component>
+</project>
