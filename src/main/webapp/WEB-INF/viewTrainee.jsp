@@ -1,6 +1,6 @@
 <%@page import="com.ideas2it.employee.model.Trainee, com.ideas2it.employee.model.Employee, com.ideas2it.employee.model.Trainer"%>
 <%@page import="java.util.ArrayList,java.util.List"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,33 +34,31 @@
                 </tr>
 
 		<%List<Trainee> trainees = (List<Trainee>)request.getAttribute("trainee");
-		for(Trainee trainee: trainees) {
-                    Employee employee = trainee.getEmployee();
-                    List<Integer> trainerIds = new ArrayList<>();
-                    for (Trainer trainer : trainee.getTrainers()) {
-                        trainerIds.add(trainer.getEmployee().getId());
-                    }%>
-		<tr>
-		    <td><%= employee.getId() %></td>
-		    <td><%= employee.getName() %></td>
-		    <td><%= employee.getGender() %></td>
-		    <td><%= employee.getQualification() %></td>
-		    <td><%= employee.getAddress() %></td>
-		    <td><%= employee.getMobileNumber() %></td>
-		    <td><%= employee.getEmailId() %></td>
-		    <td><%= employee.getDateOfJoining() %></td>
-		    <td><%= trainee.getTrainingPeriod() %></td>
-		    <td><%= trainerIds.toString().replaceAll("[\\[\\]]","") %></td>
-                    <td>
-                        <a href=test?flag=updateTrainee&ID=<%=employee.getId()%> ><input type="button" value="update"></a>
-                    </td>
-                    <td>
-                        <a href=deleteTrainee?ID=<%=employee.getId()%>  ><input type="button" value="delete"></a>
-                    </td>
-		</tr>
-		<%}%>
+		if (null != trainees) {
+            for(Trainee trainee: trainees) {
+                        Employee employee = trainee.getEmployee();
+                        List<Integer> trainerIds = new ArrayList<>();
+                        for (Trainer trainer : trainee.getTrainers()) {
+                            trainerIds.add(trainer.getEmployee().getId());
+                        }%>
+            <tr>
+                <td><%= employee.getId() %></td>
+                <td><%= employee.getName() %></td>
+                <td><%= employee.getGender() %></td>
+                <td><%= employee.getQualification() %></td>
+                <td><%= employee.getAddress() %></td>
+                <td><%= employee.getMobileNumber() %></td>
+                <td><%= employee.getEmailId() %></td>
+                <td><%= employee.getDateOfJoining() %></td>
+                <td><%= trainee.getTrainingPeriod() %></td>
+                <td><%= trainerIds.toString().replaceAll("[\\[\\]]","") %></td>
+                <td><a href=test?flag=updateTrainee&ID=<%=employee.getId()%> ><input type="button" value="update"></a></td>
+                <td><a href=deleteTrainee?ID=<%=employee.getId()%>  ><input type="button" value="delete"></a></td>
+            </tr>
+		<%}}%>
 		</table>
-                <a href=index.jsp><input type="button" value="Go back!" ></a>
+		<a href=><input type="button" value="Go back!" ></a>
+		<a href=/><input type="button" value="Go back!" ></a>
 	</body>
     
 </html>

@@ -1,6 +1,6 @@
 <%@page import="com.ideas2it.employee.model.Employee, com.ideas2it.employee.model.Trainer"%>
 <%@page import="java.util.ArrayList,java.util.List"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +17,8 @@
         </style>
         <body>
         <h4>${message}</h4>
-            <h2>Details of Trainer</h2> 
+            <h2>Details of Trainer</h2>
+
             <table style='width:100%'>
                 <tr>
                     <th>Employee Id</th>
@@ -34,28 +35,26 @@
                 </tr>
 		
 		<%ArrayList<Trainer> trainers = (ArrayList<Trainer>)request.getAttribute("Trainer");
-		for(Trainer trainer: trainers) {
-                    Employee employee = trainer.getEmployee();%>
-		<tr>
-		    <td><%= employee.getId() %></td>
-		    <td><%= employee.getName() %></td>
-		    <td><%= employee.getGender() %></td>
-		    <td><%= employee.getQualification() %></td>
-		    <td><%= employee.getAddress() %></td>
-		    <td><%= employee.getMobileNumber() %></td>
-		    <td><%= employee.getEmailId() %></td>
-		    <td><%= employee.getDateOfJoining() %></td>
-		    <td><%= trainer.getExperience() %></td>
-		    <td><%= trainer.getTrainees().size() %></td>
-                    <td>
-                        <a href=test?flag=updateTrainer&ID=<%=employee.getId()%> ><input type="button" value="update"></a>
-                    </td>
-                    <td>
-                        <a href=deleteTrainer?ID=<%=employee.getId()%>  ><input type="button" value="delete"></a>
-                    </td>
-		</tr>
-		<%}%>
-		</table>
-                <a href=index.jsp><input type="button" value="Go back!" ></a>
+		if (null != trainers) {
+            for(Trainer trainer: trainers) {
+                        Employee employee = trainer.getEmployee();%>
+            <tr>
+                <td><%= employee.getId() %></td>
+                <td><%= employee.getName() %></td>
+                <td><%= employee.getGender() %></td>
+                <td><%= employee.getQualification() %></td>
+                <td><%= employee.getAddress() %></td>
+                <td><%= employee.getMobileNumber() %></td>
+                <td><%= employee.getEmailId() %></td>
+                <td><%= employee.getDateOfJoining() %></td>
+                <td><%= trainer.getExperience() %></td>
+                <td><%= trainer.getTrainees().size() %></td>
+                <td><a href=/updateTrainerForm?flag=updateTrainer&ID=<%=employee.getId()%> ><input type="button" value="update"></a></td>
+                <td><a href=deleteTrainer?ID=<%=employee.getId()%>  ><input type="button" value="delete"></a></td>
+            </tr>
+            <%}}%>
+		</table><br>
+		<a href=/trainerForm?flag=addTrainer ><input type="button" value="Add Trainer"></a>
+        <a href=/><input type="button" value="Go back!" ></a>
 	</body>
 </html>

@@ -29,7 +29,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class TraineeDaoImpl implements TraineeDaoIntf {
 
-    private static SessionFactory sessionFactory = new Configuration()
+    private static final SessionFactory sessionFactory = new Configuration()
                                                    .configure("hibernate/properties/hibernate.cfg.xml").buildSessionFactory();
 
     /**

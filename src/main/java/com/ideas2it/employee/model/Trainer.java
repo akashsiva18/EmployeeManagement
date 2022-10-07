@@ -17,7 +17,8 @@ import com.ideas2it.employee.util.DateUtil;
  * @version 1.0
  * @since 12-08-2022
  **/
-public class Trainer {		
+public class Trainer {
+
 
     private int experience;
     private int noOfTrainees;
@@ -34,11 +35,10 @@ public class Trainer {
      *               - it is an object of employee that contains common details of employee
      * @param {@link int} experience - experience of trainer
      *
-     * @return {@link void} return nothing.
      **/
-    public Trainer(Employee employee, int experience) {
+    public Trainer(Employee employee) {
         this.employee = employee;
-        this.experience = experience;
+        this.experience = DateUtil.computeYears(employee.getDateOfJoining(),LocalDate.now());
     }
 
     /**
@@ -50,8 +50,9 @@ public class Trainer {
     public Trainer(){
     }
 
+
     public void setExperience(int experience) {
-	this.experience = experience;
+        this.experience = experience;
     }
 
     public int getExperience() {

@@ -25,34 +25,19 @@ public interface TraineeServiceIntf {
      * else add errors to list. Return List of errors.
      * </p>
      *
-     * @param {@link String} name - name of the trainee.
-     * @param {@link String} dateOfBirth = data Of Birth of the trainee.
-     * @param {@link String} gender - gender of the trainee.
-     * @param {@link Qualification} qualification - qualification of trainee.
-     * @param {@link String} address - address of the employee.
-     * @param {@link String} mobileNumber - mobileNumber of the trainee.
-     * @param {@link String} emailId - email of the trainee.
-     * @param {@link String} dateOfJoining - date of joining of the trainee.
-     * @param {@link List<String>} trainerIdAsList 
-                           - trainer Names who are in charge of the trainee.
-     * @param {@link String} trainingPeriodInMonths 
-                           - training period of the trainee.
-     *   
+     * @param {@link Trainee} trainee - Object of the Trainee.
+     *
      * @return {@link List<Integer>} return List of errors.
      * @throws BadRequest
      * @throws EmployeeNotFound
      **/
-    public List<Integer> validateAndAddOrUpdateTraineeDetails(final String name, final String dateOfBirth,
-            final String gender, final String qualification, final String address, 
-            final String mobileNumber, final String emailId, final String dateOfJoining,
-            final List<String> trainerIdAsList, final String trainingPeriodInMonths,
-            Trainee oldTrainee) throws BadRequest, EmployeeNotFound;
+    public List<Integer> validateAndAddOrUpdateTraineeDetails(Trainee trainee) throws BadRequest, EmployeeNotFound;
 
     /**
      * <p>
      * Return Trainee List.
      * </p>
-     * 
+     *
      * @return {@link List<Trainee>} return List of Trainees.
      **/
     public List<Trainee> getTrainees();

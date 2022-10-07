@@ -35,7 +35,6 @@ public class Trainee {
      *               - it is an object of employee that contains common details of employee
      * @param {@link int} trainingPeriod - training period of the trainee
      * @param {@link List<Integer>} trainersId - trainer ID who is in-charge for the trainee
-     * @return {@link void} return nothing.
      **/
     public Trainee(Employee employee, int trainingPeriod , List<Integer> trainersId) {
         this.employee = employee;

@@ -7,17 +7,16 @@ import com.ideas2it.employee.service.intf.TraineeServiceIntf;
 import com.ideas2it.employee.common.EmployeeType;
 import com.ideas2it.employee.exception.EmployeeNotFound;
 import com.ideas2it.employee.exception.BadRequest;
-
 import java.util.List;
 import java.util.ArrayList;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.core.appender.rewrite.MapRewritePolicy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.io.PrintWriter;
 import java.io.IOException;
 import javax.servlet.http.HttpServlet;
@@ -54,23 +53,62 @@ public class EmployeeController extends HttpServlet {
         return "index";
     }
 
-    @PostMapping(value = "/addTrainer")
-    public String addTrainer(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        PrintWriter out = res.getWriter();
-        String pageToShow;
-        try {
-            addOrUpdateEmployee(EmployeeType.TRAINER.type, req, res);
-            pageToShow = "index";
-        } catch (BadRequest e) {
-            logger.warn(e.getMessage());
-            pageToShow = "index";
-        } catch (EmployeeNotFound e1) {
-            out.println(e1.getMessage() + "<br>");
-            pageToShow = "index";
-            logger.warn(e1.getMessage());
-        }
-        return pageToShow;
+    @RequestMapping(value = "/trainerForm")
+    public String addTrainerForm(Model model) {
+        model.addAttribute("trainer", new Trainer());
+        return "/addTrainer";
     }
+
+    @RequestMapping(value = "/traineeForm")
+    public String addTraineeForm(Model model) {
+        model.addAttribute("trainer", new Trainee());
+        return "/addTrainee";
+    }
+
+
+
+    @RequestMapping(value = "/addTrainee")
+    public String addTraineeDetails(@ModelAttribute Trainee trainee, RedirectAttributes redirectAttributes) {
+        try {
+            traineeService.validateAndAddOrUpdateTraineeDetails(trainee);
+            if (trainee.getEmployee().getId() < 0) {
+                redirectAttributes.addFlashAttribute("message", "Trainer "
+                        + trainee.getEmployee().getName() + " Inserted Successfully");
+            } else {
+                redirectAttributes.addFlashAttribute("message", "Trainer "
+                        + trainee.getEmployee().getName() + " Updated Successfully");
+            }
+        } catch (BadRequest e) {
+            redirectAttributes.addFlashAttribute("message", e.getMessage());
+        }
+        return "redirect:/viewTrainer";
+    }
+
+
+    @RequestMapping(value = "/addTrainer")
+    public String addTrainerDetails(@ModelAttribute Trainer trainer, RedirectAttributes redirectAttributes) {
+        try {
+            trainerService.validateAndAddOrUpdateTrainerDetails(trainer);
+            if (trainer.getEmployee().getId() < 0) {
+                redirectAttributes.addFlashAttribute("message", "Trainer "
+                        + trainer.getEmployee().getName() + " Inserted Successfully");
+            } else {
+                redirectAttributes.addFlashAttribute("message", "Trainer "
+                        + trainer.getEmployee().getName() + " Updated Successfully");
+            }
+        } catch (BadRequest e) {
+            redirectAttributes.addFlashAttribute("message",e.getMessage());
+        }
+        return "redirect:/viewTrainer";
+    }
+
+
+    @RequestMapping(value = "/updateTrainerForm")
+    public String updateTrainerForm(Model model, @RequestParam ("ID") int id) {
+        model.addAttribute("trainer", trainerService.getTrainerById(id));
+        return "/addTrainer";
+    }
+
 
     /**
      * <p>
@@ -78,8 +116,9 @@ public class EmployeeController extends HttpServlet {
      * </p>
      * @param {@link String} employee - 
      *        for which employee is need to add is specified by the parameter.
-     **/
-    private void addOrUpdateEmployee(String employee, HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+     **//*
+    @RequestMapping(value = "/addTrainer")
+    private String addOrUpdateEmployee(String employee, HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         Trainer oldTrainer = null;
         Trainee oldTrainee = null;
         String trainingPeriod = "";
@@ -145,7 +184,8 @@ public class EmployeeController extends HttpServlet {
 
             logger.warn(e1.getMessage());
         }
-    }
+        return "redirect:/viewTrainer";
+    }*/
 
     /**
      * <p>
@@ -155,7 +195,7 @@ public class EmployeeController extends HttpServlet {
      * </p>
      *
      **/
-    @RequestMapping(value = "/viewTrainer", method = RequestMethod.GET)
+    @GetMapping(value = "/viewTrainer")
     private ModelAndView showTrainerDetails() {
         List<Trainer> listOfTrainers = trainerService.getTrainers();
         ModelAndView modelAndView = new ModelAndView();
@@ -202,30 +242,23 @@ public class EmployeeController extends HttpServlet {
      *
      **/
     @GetMapping("/deleteTrainer")
-    @RequestMapping(value = "/deleteTrainer", method = RequestMethod.GET)
-    private void deleteTrainerDetailsById(@RequestParam int ID) {
-        List<Trainer> listOfTrainers = trainerService.getTrainers();
-        trainerService.removeTrainerById(ID);
-
+    private String deleteTrainerDetailsById(@RequestParam ("ID")int id, RedirectAttributes redirectAttributes) {
+        trainerService.removeTrainerById(id);
+        redirectAttributes.addFlashAttribute("message","Trainer " + id + " deleted Successfully");
+        return "redirect:/viewTrainer";
     }
 
     /**
      * <p>
-     * Get list from service class, remove Trainee object from the list by using
-     * id that get from the user and sent the id to a method in service class
-     * If the list is empty, it shows an message.
-     * If Object deleted or not it shows message.
+     * Get list from service class, remove Trainee object from the Database by using Id
      * </p>
      *
      **/
     @GetMapping("/deleteTrainee")
-    private ModelAndView deleteTraineeDetailsById(@RequestParam int ID) {
-        List<Trainee> listOfTrainees = traineeService.getTrainees();
-        traineeService.removeTraineeById(ID);
-        ModelAndView modelView = new ModelAndView();
-        modelView.setViewName("viewTrainee");
-        modelView.addObject("message","Trainer " + ID + " deleted Successfully");
-        return modelView;
+    private String deleteTraineeDetailsById(@RequestParam ("ID")int id, RedirectAttributes redirectAttributes) {
+        traineeService.removeTraineeById(id);
+        redirectAttributes.addFlashAttribute("message","Trainee " + id + " deleted Successfully");
+        return "redirect:/viewTrainee";
    }
 
     /**
@@ -244,7 +277,7 @@ public class EmployeeController extends HttpServlet {
         List<Trainer> listOfTrainers = trainerService.getTrainers();
         int id = Integer.parseInt(req.getParameter("ID"));
         Trainer oldTrainer = trainerService.getTrainerById(id);
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("addTrainer.jsp?flag=updateTrainer"); 
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("addTrainer.jsp?flag=updateTrainer");
         req.setAttribute("oldTrainer", oldTrainer);
         requestDispatcher.include(req,res);
         logger.info(oldTrainer);

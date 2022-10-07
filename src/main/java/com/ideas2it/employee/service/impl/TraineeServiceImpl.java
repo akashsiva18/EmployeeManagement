@@ -65,11 +65,7 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
      * @throws BadRequest
      * @throws EmployeeNotFound
      **/
-    public List<Integer> validateAndAddOrUpdateTraineeDetails(final String name, 
-            final String dateOfBirth, final String gender, final String qualification,
-            final String address, final String mobileNumber, final String emailId, 
-            final String dateOfJoining, final List<String> trainerIdAsList,
-            final String trainingPeriodInMonths, Trainee oldTrainee) throws BadRequest, EmployeeNotFound {
+    public List<Integer> validateAndAddOrUpdateTraineeDetails(Trainee trainee) throws BadRequest, EmployeeNotFound {
         
         List<Trainer> trainerAsList = trainerService.getTrainers();
         List<Integer> validationErrorList = new ArrayList<>();
@@ -78,48 +74,32 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
         Set<Trainer> trainersOfTheTrainee = new HashSet<>();
         Integer slNo = 1;
         StringBuilder errorMessage = new StringBuilder("\nValidation Errors\n");
-        if (!StringUtil.isValidName(name)) {
-            errorMessage.append(slNo++ + ". Invalid Name. It must contain Alphabet.\n");
+        if (!StringUtil.isValidName(trainee.getEmployee().getName())) {
+            errorMessage.append(slNo++).append(". Invalid Name. It must contain Alphabet.\n");
             validationErrorList.add(1);
         }
         LocalDate validDateOfBirth = LocalDate.now();
         Integer age = 0;
-        if (DateUtil.isValidDateOfBirth(dateOfBirth,18)) {
-            validDateOfBirth = DateUtil.parseStringToDate(dateOfBirth);
-            age = DateUtil.computeYears(validDateOfBirth,LocalDate.now());
-        } else {
-            errorMessage.append(slNo++ + ". Invalid Date Of Birth.\n\ta) " 
-                                + "Age must above 18.\n");   
+        if (!DateUtil.isAgeEligible(trainee.getEmployee().getDateOfBirth(),18)) {
+            errorMessage.append(slNo++).append(". Invalid Date Of Birth.\n\ta)")
+                    .append(" Date must in DD/MM/YYYY format.")
+                    .append("\n\tb) Age must above 18.\n");
             validationErrorList.add(2);
         }
-
-        Long validMobileNumber = 0l;
-        if (StringUtil.isValidMobileNumber(mobileNumber)) {
-            validMobileNumber =  Long.parseLong(mobileNumber);
-        } else {
-            errorMessage.append(slNo++ + ". Invalid Mobile Number."
-                                + " It must contain only Numbers\n");
+        String mobileNumber = Long.toString(trainee.getEmployee().getMobileNumber());
+        if (!StringUtil.isValidMobileNumber(mobileNumber)) {
+            errorMessage.append(slNo++).append(". Invalid Mobile Number. It must contain only Numbers\n");
             validationErrorList.add(3);
         }
-
-        String validEmailId = "";
-        if (StringUtil.isEmailValid(emailId)) {
-            validEmailId = emailId;
-        } else {
-            errorMessage.append(slNo++ + ". Invalid Mail Id.\n");
+        if (!StringUtil.isEmailValid(trainee.getEmployee().getEmailId())) {
+            errorMessage.append(slNo++).append(". Invalid Mail Id.\n");
             validationErrorList.add(4);
         }
-        LocalDate validDateOfJoining = LocalDate.now();
-        if (DateUtil.isValidDateFormat(dateOfJoining)) {
-            validDateOfJoining = DateUtil.parseStringToDate(dateOfJoining);
-            if (DateUtil.isFutureDate(validDateOfJoining)) {
-                errorMessage.append(slNo++ + ". The date of joining must not be a future Date.\n");
-                validationErrorList.add(5);
-            }
-        } else {
-            errorMessage.append(slNo++ + ". Invalid Date Of Joining.\n");
+        if (DateUtil.isFutureDate(trainee.getEmployee().getDateOfJoining())) {
+            errorMessage.append(slNo++).append(". Date of joining must not be a future Date.\n");
             validationErrorList.add(5);
         }
+
         for (String trainerId : trainerIdAsList) {
             try {
                 int validId = Integer.parseInt(trainerId);
@@ -147,32 +127,10 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
             errorMessage.append(slNo++ + ". The training period must be in Numerical value.\n");
             validationErrorList.add(7);
         }
-        Qualification qualificationDetails = new Qualification();
-        qualificationDetails.setCourse(qualification);
         Role role = new Role();
         role.setDescription("Trainee");
         if (validationErrorList.isEmpty()) {
-            if (null == oldTrainee) {
-                Employee employee = new Employee(name, validDateOfBirth, gender, qualificationDetails,
-                                    address, validMobileNumber, validEmailId, 
-                                    validDateOfJoining, role);
-                Trainee trainee = new Trainee(employee, validTrainingPeriod, validTrainerId);
-                trainee.setTrainers(trainersOfTheTrainee);
                 dao.insertOrUpdateTrainee(trainee);
-            } else {
-                oldTrainee.getEmployee().setName(name);
-                oldTrainee.getEmployee().setDateOfBirth(validDateOfBirth);
-                oldTrainee.getEmployee().setGender(gender);
-                oldTrainee.getEmployee().setQualification(qualificationDetails);
-                oldTrainee.getEmployee().setAddress(address);
-                oldTrainee.getEmployee().setMobileNumber(validMobileNumber);
-                oldTrainee.getEmployee().setEmailId(validEmailId);
-                oldTrainee.getEmployee().setDateOfJoining(validDateOfJoining);
-                oldTrainee.setTrainingPeriod(validTrainingPeriod);
-                oldTrainee.setTrainers(trainersOfTheTrainee);
-                oldTrainee.setTrainersId(validTrainerId);
-                dao.insertOrUpdateTrainee(oldTrainee);
-            }
         } else {
             throw new BadRequest(errorMessage.toString(), validationErrorList);
         }

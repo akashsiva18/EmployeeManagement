@@ -7,7 +7,6 @@
 h1 {font-size: 50px;}
 h2 {
   font-size: 45px;
-  text-decoration: Underline;
 }
 h3 {font-size: 35px;}
 a:link {text-decoration: none;}
@@ -17,10 +16,9 @@ a:hover {color: Red;}
 <div class = "center">
  <h1 style="color:blue;">EMPLOYEE MANAGEMENT</h1>
 
- <h2>Trainer</h2>
 
- <h3><a href="addTrainer.jsp?flag=addTrainer">Add Trainer</a></br>
-  <a href="/viewTrainer">View Trainer</a></br></h3>
+
+  <h2><a href="/viewTrainer">Trainer</a></br></h2>
 
  <h2>Trainee</h2>
 

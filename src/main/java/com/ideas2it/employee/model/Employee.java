@@ -1,5 +1,7 @@
 package com.ideas2it.employee.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.time.LocalDate;
 
 /**
@@ -16,12 +18,14 @@ import java.time.LocalDate;
 public class Employee {
     private int id;
     private String name;
+    @DateTimeFormat(pattern = "yyyy-MM-d")
     private LocalDate dateOfBirth;
     private String gender;
     private Qualification qualification;
     private String address;
     private long mobileNumber;
     private String emailId;
+    @DateTimeFormat(pattern = "yyyy-MM-d")
     private LocalDate dateOfJoining;
     private Role role;
 

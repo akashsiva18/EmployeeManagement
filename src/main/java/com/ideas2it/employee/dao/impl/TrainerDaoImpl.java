@@ -2,7 +2,6 @@ package com.ideas2it.employee.dao.impl;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.time.LocalDate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -12,8 +11,6 @@ import com.ideas2it.employee.model.Trainer;
 import com.ideas2it.employee.model.Role;
 import com.ideas2it.employee.model.Qualification;
 import com.ideas2it.employee.dao.intf.TrainerDaoIntf;
-import com.ideas2it.employee.common.Constant;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 /**

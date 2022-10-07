@@ -1,5 +1,6 @@
 package com.ideas2it.employee.service.impl;
 
+import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
 import java.time.LocalDate;
@@ -39,19 +40,54 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
      * else add errors to list. Return List of errors.
      * </p>
      *
-     * @param {@link String} name - name of trainer.
-     * @param {@link String} dateOfBirth - data of birth of trainer.
-     * @param {@link String} gender - gender of trainer.
-     * @param {@link String} qualification - qualification of trainer.
-     * @param {@link String} address - address of trainer.
-     * @param {@link String} mobileNumber - mobileNumber of trainer.
-     * @param {@link String} emailId - email of trainer.
-     * @param {@link String} dateOfJoining - date of joining of trainer.
+     * @param {@link Trainer} trainer - Object of the trainer
      * 
      * @return {@link List<Integer>} return List of errors.
      * @throws BadRequest
-     * **/
-    public List<Integer> validateAndAddOrUpdateTrainerDetails(final String name, 
+     *
+     **/
+
+    public List<Integer> validateAndAddOrUpdateTrainerDetails(Trainer trainer) throws BadRequest {
+        List<Integer> validationErrorList = new ArrayList<>();
+        Integer slNo = 1;
+        StringBuilder errorMessage = new StringBuilder("\nValidation Errors\n");
+        if (!StringUtil.isValidName(trainer.getEmployee().getName())) {
+            errorMessage.append(slNo++).append(". Invalid Name. It must contain Alphabet.\n");
+            validationErrorList.add(1);
+        }
+        LocalDate validDateOfBirth = LocalDate.now();
+        Integer age = 0;
+        if (!DateUtil.isAgeEligible(trainer.getEmployee().getDateOfBirth(),18)) {
+            errorMessage.append(slNo++).append(". Invalid Date Of Birth.\n\ta)")
+                    .append(" Date must in DD/MM/YYYY format.")
+                    .append("\n\tb) Age must above 18.\n");
+            validationErrorList.add(2);
+        }
+        String mobileNumber = Long.toString(trainer.getEmployee().getMobileNumber());
+        if (!StringUtil.isValidMobileNumber(mobileNumber)) {
+            errorMessage.append(slNo++).append(". Invalid Mobile Number. It must contain only Numbers\n");
+            validationErrorList.add(3);
+        }
+        if (!StringUtil.isEmailValid(trainer.getEmployee().getEmailId())) {
+            errorMessage.append(slNo++).append(". Invalid Mail Id.\n");
+            validationErrorList.add(4);
+        }
+        if (DateUtil.isFutureDate(trainer.getEmployee().getDateOfJoining())) {
+                errorMessage.append(slNo++).append(". Date of joining must not be a future Date.\n");
+                validationErrorList.add(5);
+        }
+        Role role = new Role();
+        role.setDescription("Trainer");
+        trainer.getEmployee().setRole(role);
+        if (validationErrorList.isEmpty()) {
+            dao.insertOrUpdateTrainer(trainer);
+        } else {
+            throw new BadRequest(errorMessage.toString(), validationErrorList);
+        }
+        return validationErrorList;
+    }
+/*
+    public List<Integer> validateAndAddOrUpdateTrainerDetails(final String name,
             final String dateOfBirth, final String gender, final String qualification,
             final String address, final String mobileNumber, final String emailId, 
             final String dateOfJoining, Trainer oldTrainer) throws BadRequest {
@@ -110,7 +146,7 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
                 Employee employee = new Employee(name, validDateOfBirth, gender, 
                                     qualificationDetails, address, validMobileNumber, 
                                     validEmailId, validDateOfJoining, role);
-                Trainer trainer = new Trainer(employee,trainingExperience);
+                Trainer trainer = new Trainer(employee);
                 dao.insertOrUpdateTrainer(trainer);
             } else {
                 oldTrainer.getEmployee().setName(name);
@@ -121,7 +157,6 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
                 oldTrainer.getEmployee().setMobileNumber(validMobileNumber);
                 oldTrainer.getEmployee().setEmailId(validEmailId);
                 oldTrainer.getEmployee().setDateOfJoining(validDateOfJoining);
-                oldTrainer.setExperience(trainingExperience);
                 dao.insertOrUpdateTrainer(oldTrainer);
             }
         } else {
@@ -129,6 +164,7 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
         }
         return validationErrorList;
     }
+*/
 
    /**
      * <p>

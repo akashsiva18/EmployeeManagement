@@ -35,12 +35,9 @@ public interface TrainerServiceIntf {
      * @param {@link String} dateOfJoining - date of joining of trainer.
      * 
      * @return {@link List<Integer>} return List of errors.
-     * @throws BadRequest.
+     * @throws BadRequest
      **/
-    public List<Integer> validateAndAddOrUpdateTrainerDetails(final String name, final String dateOfBirth,
-                                  final String gender, final String qualification, final String address, 
-                                  final String mobileNumber, final String emailId, 
-                                  final String dateOfJoining, Trainer oldTrainer) throws BadRequest;
+    public List<Integer> validateAndAddOrUpdateTrainerDetails(Trainer trainer) throws BadRequest;
 
    /**
      * <p>
@@ -70,7 +67,7 @@ public interface TrainerServiceIntf {
      * 
      * @param {@link int} id - id of the Trainer.
      *
-     * @return {@link Trainee} 
+     * @return {@link Trainer}
      *         - that contain a copy of the Trainer matches to the id.
      * @throws EmployeeNotFound
      **/
