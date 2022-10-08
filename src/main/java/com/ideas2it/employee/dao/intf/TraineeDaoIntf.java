@@ -24,7 +24,6 @@ public interface TraineeDaoIntf {
      * 
      * @param {@link Trainee} trainee - trainee Object that contails all the details.
      *
-     * @throws EmployeeNotFound
      **/
     public void insertOrUpdateTrainee(Trainee trainee);
 

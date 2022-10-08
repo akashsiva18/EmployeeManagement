@@ -9065,3 +9065,1556 @@ No Trainee Data Found
 [INFO]2022-10-07 19:49:03 EmployeeController:200 - 
 No Trainee Data Found
 
+[INFO]2022-10-08 10:07:44 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:07:46 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:07:50 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:07:50 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:07:50 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:07:50 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:07:50 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:07:50 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:07:50 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:07:50 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:07:50 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:07:50 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:07:50 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:07:52 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:07:52 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:07:56 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5d699e19] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:07:56 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:07:56 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:07:56 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:07:56 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:07:56 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:07:56 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:07:56 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:07:56 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:07:56 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:07:56 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:07:56 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:07:56 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:07:56 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:07:56 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:07:57 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@ba8d7c7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:07:57 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:07:58 DispatcherServlet:547 - Completed initialization in 13943 ms
+[INFO]2022-10-08 10:08:52 EmployeeController:225 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 10:10:33 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:10:35 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:10:39 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:10:40 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:10:40 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:10:40 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:10:40 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:10:40 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:10:40 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:10:40 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:10:40 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:10:40 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:10:40 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:10:41 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:10:41 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:10:45 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3b086139] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:10:45 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:10:46 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:10:46 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:10:46 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:10:46 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:10:46 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:10:46 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:10:46 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:10:46 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:10:46 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:10:46 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:10:46 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:10:46 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:10:46 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:10:46 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6ba88a47] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:10:46 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:10:47 DispatcherServlet:547 - Completed initialization in 14025 ms
+[INFO]2022-10-08 10:11:08 EmployeeController:225 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 10:16:28 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:16:29 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:16:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:16:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:16:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:16:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:16:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:16:33 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:16:33 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:16:33 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:16:33 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:16:33 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:16:33 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:16:34 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:16:34 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:16:37 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@37533190] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:16:37 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:16:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:16:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:16:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:16:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:16:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:16:38 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:16:38 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:16:38 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:16:38 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:16:38 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:16:38 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:16:38 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:16:38 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:16:38 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@69e87cbe] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:16:38 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:16:39 DispatcherServlet:547 - Completed initialization in 11238 ms
+[INFO]2022-10-08 10:16:55 EmployeeController:225 - 
+No Trainee Data Found
+
+[WARN]2022-10-08 10:17:24 PageNotFound:1282 - No mapping for GET /index.html
+[INFO]2022-10-08 10:17:30 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:18:18 EmployeeController:225 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 10:18:44 EmployeeController:205 - 
+Details of Trainer
+
+[WARN]2022-10-08 10:20:16 DefaultHandlerExceptionResolver:208 - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'trainee' on field 'trainingPeriod': rejected value []; codes [typeMismatch.trainee.trainingPeriod,typeMismatch.trainingPeriod,typeMismatch.int,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainee.trainingPeriod,trainingPeriod]; arguments []; default message [trainingPeriod]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'int' for property 'trainingPeriod'; nested exception is java.lang.NumberFormatException: For input string: ""]]
+[INFO]2022-10-08 10:28:16 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:28:38 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:29:50 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:29:52 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:29:55 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:29:55 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:29:55 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:29:55 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:29:55 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:29:55 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:29:55 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:29:55 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:29:55 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:29:55 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:29:55 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:29:56 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:29:56 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:30:00 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@23e782e0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:30:01 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:30:01 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:30:01 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:30:01 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:30:01 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:30:01 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:30:01 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:30:01 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:30:01 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:30:01 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:30:01 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:30:01 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:30:01 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:30:01 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:30:01 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@fadd58] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:30:01 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:30:03 DispatcherServlet:547 - Completed initialization in 12687 ms
+[INFO]2022-10-08 10:30:11 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:30:22 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:30:44 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:31:38 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:31:40 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:31:44 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:31:44 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:31:44 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:31:44 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:31:44 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:31:44 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:31:44 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:31:44 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:31:44 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:31:44 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:31:44 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:31:46 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:31:46 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:31:50 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@78c9502c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:31:51 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:31:51 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:31:51 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:31:51 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:31:51 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:31:51 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:31:51 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:31:51 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:31:51 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:31:51 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:31:51 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:31:51 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:31:51 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:31:51 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:31:51 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@485e52c9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:31:52 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:31:53 DispatcherServlet:547 - Completed initialization in 14699 ms
+[INFO]2022-10-08 10:32:18 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:32:53 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:35:38 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:35:40 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:35:43 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:35:43 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:35:43 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:35:43 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:35:43 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:35:43 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:35:43 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:35:43 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:35:43 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:35:43 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:35:43 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:35:44 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:35:44 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:35:48 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1fa67a80] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:35:48 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:35:49 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:35:49 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:35:49 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:35:49 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:35:49 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:35:49 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:35:49 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:35:49 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:35:49 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:35:49 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:35:49 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:35:49 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:35:49 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:35:49 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3c21bab4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:35:49 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:35:50 DispatcherServlet:547 - Completed initialization in 11979 ms
+[INFO]2022-10-08 10:36:02 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:36:38 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:38:05 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:38:07 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:38:11 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:38:11 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:38:11 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:38:11 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:38:11 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:38:11 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:38:11 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:38:11 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:38:11 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:38:11 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:38:11 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:38:12 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:38:12 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:38:16 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4140f94c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:38:16 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:38:17 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:38:17 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:38:17 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:38:17 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:38:17 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:38:17 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:38:17 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:38:17 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:38:17 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:38:17 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:38:17 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:38:17 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:38:17 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:38:17 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4c963d59] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:38:17 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:38:18 DispatcherServlet:547 - Completed initialization in 13049 ms
+[INFO]2022-10-08 10:38:38 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:40:17 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:41:06 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:41:08 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:41:11 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:41:11 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:41:11 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:41:11 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:41:11 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:41:11 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:41:11 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:41:11 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:41:11 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:41:11 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:41:11 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:41:12 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:41:12 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:41:16 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4140f94c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:41:16 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:41:16 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:41:16 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:41:16 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:41:16 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:41:16 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:41:16 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:41:16 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:41:16 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:41:16 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:41:16 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:41:16 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:41:16 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:41:16 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:41:17 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4c963d59] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:41:17 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:41:18 DispatcherServlet:547 - Completed initialization in 11644 ms
+[INFO]2022-10-08 10:42:08 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:42:18 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:42:47 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:43:32 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:43:34 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:43:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:43:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:43:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:43:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:43:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:43:38 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:43:38 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:43:38 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:43:38 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:43:38 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:43:38 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:43:40 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:43:40 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:43:44 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2d36a825] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:43:45 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:43:45 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:43:45 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:43:45 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:43:45 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:43:45 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:43:45 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:43:45 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:43:45 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:43:45 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:43:45 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:43:45 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:43:45 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:43:45 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:43:45 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1f4e9eee] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:43:45 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:43:46 DispatcherServlet:547 - Completed initialization in 14131 ms
+[INFO]2022-10-08 10:43:58 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:44:16 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:44:41 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:51:33 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:51:35 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:51:39 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:51:39 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:51:39 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:51:39 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:51:39 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:51:39 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:51:39 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:51:39 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:51:39 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:51:39 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:51:39 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:51:40 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:51:40 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:51:44 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@49b7eb3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:51:45 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:51:45 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:51:45 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:51:45 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:51:45 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:51:45 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:51:45 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:51:45 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:51:45 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:51:45 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:51:45 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:51:45 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:51:45 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:51:45 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:51:45 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@62497b5d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:51:45 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:51:47 DispatcherServlet:547 - Completed initialization in 13659 ms
+[INFO]2022-10-08 10:52:03 EmployeeController:225 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 10:52:11 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:52:31 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:54:10 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:56:51 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 10:56:53 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 10:56:57 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:56:57 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:56:57 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:56:57 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:56:57 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:56:57 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:56:57 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:56:57 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:56:57 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:56:57 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:56:57 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:56:58 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:56:58 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:57:02 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c556af2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:57:02 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 10:57:02 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:57:02 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:57:02 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:57:02 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:57:02 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 10:57:02 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 10:57:02 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 10:57:02 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 10:57:02 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 10:57:02 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 10:57:02 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 10:57:02 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 10:57:02 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 10:57:03 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@26338386] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 10:57:03 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 10:57:04 DispatcherServlet:547 - Completed initialization in 12287 ms
+[INFO]2022-10-08 10:57:31 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:57:43 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:58:04 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:59:36 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:59:46 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 10:59:56 EmployeeController:205 - 
+Details of Trainer
+
+[INFO]2022-10-08 12:02:04 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 12:02:06 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 12:02:10 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:02:10 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:02:10 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:02:10 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:02:10 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:02:10 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 12:02:10 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 12:02:10 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 12:02:10 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 12:02:10 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 12:02:10 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 12:02:11 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 12:02:11 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 12:02:15 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7720e110] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 12:02:15 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 12:02:16 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:02:16 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:02:16 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:02:16 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:02:16 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:02:16 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 12:02:16 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 12:02:16 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 12:02:16 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 12:02:16 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 12:02:16 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 12:02:16 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 12:02:16 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 12:02:16 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7122b1ff] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 12:02:16 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 12:02:17 DispatcherServlet:547 - Completed initialization in 13482 ms
+[INFO]2022-10-08 12:02:52 EmployeeController:207 - 
+Details of Trainer
+
+[INFO]2022-10-08 12:02:55 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 12:04:26 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 12:05:33 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 12:08:18 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 12:09:13 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 12:10:57 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 12:12:30 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 12:12:32 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 12:12:36 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:12:36 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:12:36 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:12:36 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:12:36 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:12:36 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 12:12:36 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 12:12:36 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 12:12:36 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 12:12:36 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 12:12:36 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 12:12:37 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 12:12:37 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 12:12:40 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4140f94c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 12:12:41 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 12:12:41 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:12:41 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:12:41 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:12:41 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:12:41 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:12:41 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 12:12:41 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 12:12:41 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 12:12:41 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 12:12:41 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 12:12:41 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 12:12:41 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 12:12:41 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 12:12:41 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4c963d59] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 12:12:41 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 12:12:43 DispatcherServlet:547 - Completed initialization in 12015 ms
+[INFO]2022-10-08 12:17:48 EmployeeController:225 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 12:20:27 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 12:20:29 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 12:20:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:20:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:20:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:20:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:20:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:20:33 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 12:20:33 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 12:20:33 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 12:20:33 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 12:20:33 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 12:20:33 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 12:20:34 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 12:20:34 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 12:20:38 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4140f94c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 12:20:38 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 12:20:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:20:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:20:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:20:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:20:38 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 12:20:38 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 12:20:38 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 12:20:38 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 12:20:38 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 12:20:38 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 12:20:38 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 12:20:38 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 12:20:38 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 12:20:38 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4c963d59] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 12:20:39 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 12:20:40 DispatcherServlet:547 - Completed initialization in 12114 ms
+[INFO]2022-10-08 12:21:14 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 14:19:21 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 14:19:23 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 14:19:27 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:19:27 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:19:27 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:19:27 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:19:27 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:19:27 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 14:19:27 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 14:19:27 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 14:19:27 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 14:19:27 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 14:19:27 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 14:19:28 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 14:19:28 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 14:19:32 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@fe8344c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 14:19:32 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 14:19:32 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:19:32 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:19:32 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:19:32 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:19:32 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:19:32 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 14:19:32 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 14:19:32 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 14:19:32 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 14:19:32 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 14:19:32 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 14:19:33 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 14:19:33 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 14:19:33 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1aaf110c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 14:19:33 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 14:19:34 DispatcherServlet:547 - Completed initialization in 12656 ms
+[INFO]2022-10-08 14:19:44 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 14:43:23 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 14:43:25 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 14:43:28 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:43:28 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:43:28 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:43:28 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:43:28 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:43:29 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 14:43:29 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 14:43:29 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 14:43:29 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 14:43:29 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 14:43:29 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 14:43:30 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 14:43:30 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 14:43:34 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6d548d27] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 14:43:34 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 14:43:35 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:43:35 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:43:35 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:43:35 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:43:35 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 14:43:35 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 14:43:35 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 14:43:35 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 14:43:35 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 14:43:35 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 14:43:35 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 14:43:35 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 14:43:35 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 14:43:35 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4cf2bf26] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 14:43:35 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 14:43:36 DispatcherServlet:547 - Completed initialization in 13548 ms
+[INFO]2022-10-08 14:44:09 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 14:45:42 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 14:59:38 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 15:00:03 EmployeeController:227 - 
+No Trainee Data Found
+
+[INFO]2022-10-08 15:01:38 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 15:01:39 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 15:01:42 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:01:42 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:01:42 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:01:42 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:01:42 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:01:42 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 15:01:42 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 15:01:42 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 15:01:42 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 15:01:42 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 15:01:42 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 15:01:43 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 15:01:43 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 15:01:46 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@743fc1ee] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 15:01:46 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 15:01:46 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:01:46 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:01:46 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:01:46 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:01:46 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:01:46 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 15:01:46 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 15:01:46 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 15:01:46 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 15:01:46 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 15:01:46 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 15:01:47 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 15:01:47 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 15:01:47 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c83aa9a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 15:01:47 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 15:01:48 DispatcherServlet:547 - Completed initialization in 9848 ms
+[INFO]2022-10-08 15:05:50 EmployeeController:151 - 
+Details of Trainee
+
+[INFO]2022-10-08 15:05:50 EmployeeController:152 - 
+ID of Employee : 11
+Name of the Trainee : karthil
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 
+
+[INFO]2022-10-08 15:06:05 EmployeeController:129 - 
+Details of Trainer
+
+[INFO]2022-10-08 15:21:19 EmployeeController:151 - 
+Details of Trainee
+
+[INFO]2022-10-08 15:21:19 EmployeeController:152 - 
+ID of Employee : 11
+Name of the Trainee : karthil
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 
+
+[WARN]2022-10-08 15:21:22 PageNotFound:1282 - No mapping for GET /test
+[INFO]2022-10-08 15:22:09 EmployeeController:151 - 
+Details of Trainee
+
+[INFO]2022-10-08 15:22:09 EmployeeController:152 - 
+ID of Employee : 11
+Name of the Trainee : karthil
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 
+
+[WARN]2022-10-08 15:22:12 PageNotFound:1282 - No mapping for GET /updateTraineeForm
+[INFO]2022-10-08 15:23:17 EmployeeController:151 - 
+Details of Trainee
+
+[INFO]2022-10-08 15:23:17 EmployeeController:152 - 
+ID of Employee : 11
+Name of the Trainee : karthil
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 
+
+[WARN]2022-10-08 15:23:20 PageNotFound:1282 - No mapping for GET /updateTraineeForm
+[INFO]2022-10-08 15:23:33 EmployeeController:129 - 
+Details of Trainer
+
+[INFO]2022-10-08 15:38:01 EmployeeController:151 - 
+Details of Trainee
+
+[INFO]2022-10-08 15:38:01 EmployeeController:152 - 
+ID of Employee : 11
+Name of the Trainee : karthil
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 
+
+[INFO]2022-10-08 15:38:04 EmployeeController:151 - 
+Details of Trainee
+
+[INFO]2022-10-08 15:38:04 EmployeeController:152 - 
+ID of Employee : 11
+Name of the Trainee : karthil
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 
+
+[WARN]2022-10-08 15:38:11 PageNotFound:1282 - No mapping for GET /updateTraineeForm
+[INFO]2022-10-08 15:39:13 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 15:39:14 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 15:39:18 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:39:18 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:39:18 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:39:18 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:39:18 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:39:18 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 15:39:18 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 15:39:18 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 15:39:18 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 15:39:18 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 15:39:18 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 15:39:19 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 15:39:19 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 15:39:22 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@757e13b2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 15:39:22 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 15:39:22 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:39:22 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:39:22 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:39:22 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:39:22 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:39:22 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 15:39:22 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 15:39:22 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 15:39:22 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 15:39:22 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 15:39:22 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 15:39:22 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 15:39:22 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 15:39:23 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@440e28fa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 15:39:23 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 15:39:24 DispatcherServlet:547 - Completed initialization in 10592 ms
+[INFO]2022-10-08 15:41:43 EmployeeController:156 - 
+Details of Trainee
+
+[INFO]2022-10-08 15:41:43 EmployeeController:157 - 
+ID of Employee : 11
+Name of the Trainee : karthil
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 
+
+[INFO]2022-10-08 15:57:57 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 15:57:58 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 15:58:01 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:58:01 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:58:01 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:58:01 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:58:01 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:58:01 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 15:58:01 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 15:58:01 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 15:58:01 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 15:58:01 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 15:58:01 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 15:58:02 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 15:58:02 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 15:58:04 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5dd52021] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 15:58:05 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 15:58:05 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:58:05 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:58:05 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:58:05 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:58:05 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 15:58:05 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 15:58:05 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 15:58:05 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 15:58:05 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 15:58:05 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 15:58:05 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 15:58:05 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 15:58:05 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 15:58:05 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@adf9ab9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 15:58:05 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 15:58:06 DispatcherServlet:547 - Completed initialization in 9636 ms
+[INFO]2022-10-08 15:58:20 EmployeeController:156 - 
+Details of Trainee
+
+[INFO]2022-10-08 15:58:20 EmployeeController:157 - 
+ID of Employee : 11
+Name of the Trainee : karthil
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 
+
+[INFO]2022-10-08 16:00:24 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 16:00:25 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 16:00:28 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:00:28 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:00:28 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:00:28 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:00:28 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:00:28 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 16:00:28 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 16:00:28 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 16:00:28 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 16:00:28 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 16:00:28 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 16:00:29 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 16:00:29 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 16:00:32 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d40f584] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 16:00:32 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 16:00:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:00:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:00:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:00:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:00:33 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:00:33 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 16:00:33 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 16:00:33 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 16:00:33 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 16:00:33 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 16:00:33 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 16:00:33 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 16:00:33 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 16:00:33 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2ece1629] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 16:00:33 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 16:00:34 DispatcherServlet:547 - Completed initialization in 9648 ms
+[INFO]2022-10-08 16:00:45 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:00:45 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : karthil
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 
+
+[INFO]2022-10-08 16:00:56 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:00:56 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 5
+
+[WARN]2022-10-08 16:01:04 PageNotFound:1282 - No mapping for GET /index.html
+[INFO]2022-10-08 16:03:02 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:03:02 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 5
+
+[INFO]2022-10-08 16:03:08 EmployeeController:135 - 
+Details of Trainer
+
+[INFO]2022-10-08 16:03:13 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:03:13 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 5
+
+[INFO]2022-10-08 16:07:14 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 16:07:15 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 16:07:18 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:07:18 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:07:18 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:07:18 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:07:18 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:07:18 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 16:07:18 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 16:07:18 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 16:07:18 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 16:07:18 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 16:07:18 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 16:07:19 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 16:07:19 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 16:07:22 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@fe8344c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 16:07:22 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 16:07:22 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:07:22 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:07:22 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:07:22 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:07:22 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:07:22 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 16:07:22 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 16:07:22 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 16:07:22 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 16:07:22 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 16:07:22 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 16:07:22 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 16:07:22 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 16:07:22 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1aaf110c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 16:07:22 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 16:07:23 DispatcherServlet:547 - Completed initialization in 9278 ms
+[INFO]2022-10-08 16:28:54 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:28:54 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 5
+
+[WARN]2022-10-08 16:29:53 DefaultHandlerExceptionResolver:208 - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'trainee' on field 'trainers': rejected value [<EOL><EOL>ID of Employee : 4<EOL><EOL>Name of the Trainer : Rohith<EOL><EOL>Age : 22<EOL><EOL>Gender : male<EOL><EOL>Qualifications : bca<EOL><EOL>Address : asdfdsafsadj<EOL><EOL>Mobile Number : 9876543211<EOL><EOL>Email Id : sakdfalkdslk@gmail.com<EOL><EOL>Date Of Joining : 18/09/2020<EOL><EOL>Training Experience : 3<EOL><EOL>No Of Trainees : 0,<EOL><EOL>ID of Employee : 7<EOL><EOL>Name of the Trainer : ammar ji<EOL><EOL>Age : 22<EOL><EOL>Gender : male<EOL><EOL>Qualifications : bca<EOL><EOL>Address : kjfdsakjdfjhsad<EOL><EOL>Mobile Number : 9876543211<EOL><EOL>Email Id : kjdfakjshfj@gmail.com<EOL><EOL>Date Of Joining : 18/09/2000<EOL><EOL>Training Experience : 3<EOL><EOL>No Of Trainees : 0,<EOL><EOL>ID of Employee : 9<EOL><EOL>Name of the Trainer : ramki<EOL><EOL>Age : 22<EOL><EOL>Gender : male<EOL><EOL>Qualifications : mca<EOL><EOL>Address : kdsajfsafj<EOL><EOL>Mobile Number : 9876543211<EOL><EOL>Email Id : sadfsafdj@gmail.com<EOL><EOL>Date Of Joining : 18/09/2020<EOL><EOL>Training Experience : 3<EOL><EOL>No Of Trainees : 0]; codes [typeMismatch.trainee.trainers,typeMismatch.trainers,typeMismatch.java.util.Set,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainee.trainers,trainers]; arguments []; default message [trainers]]; default message [Failed to convert property value of type 'java.lang.String[]' to required type 'java.util.Set' for property 'trainers'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.ideas2it.employee.model.Trainer' for property 'trainers[0]': no matching editors or conversion strategy found]]
+[WARN]2022-10-08 16:31:07 DefaultHandlerExceptionResolver:208 - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'trainee' on field 'trainers': rejected value [<EOL><EOL>ID of Employee : 1<EOL><EOL>Name of the Trainer : ammar ji<EOL><EOL>Age : 22<EOL><EOL>Gender : male<EOL><EOL>Qualifications : mca<EOL><EOL>Address : dkjsafjsahf<EOL><EOL>Mobile Number : 9876543211<EOL><EOL>Email Id : jksadfs@gmail.com<EOL><EOL>Date Of Joining : 18/09/2020<EOL><EOL>Training Experience : 3<EOL><EOL>No Of Trainees : 0,<EOL><EOL>ID of Employee : 2<EOL><EOL>Name of the Trainer : akash<EOL><EOL>Age : 22<EOL><EOL>Gender : male<EOL><EOL>Qualifications : mca<EOL><EOL>Address : sakdflkjsk<EOL><EOL>Mobile Number : 9876543221<EOL><EOL>Email Id : safdsfdf@gmail.com<EOL><EOL>Date Of Joining : 18/09/2020<EOL><EOL>Training Experience : 3<EOL><EOL>No Of Trainees : 1,<EOL><EOL>ID of Employee : 5<EOL><EOL>Name of the Trainer : ram prasaad<EOL><EOL>Age : 22<EOL><EOL>Gender : male<EOL><EOL>Qualifications : mca<EOL><EOL>Address : ksajfkjsaf<EOL><EOL>Mobile Number : 9876543211<EOL><EOL>Email Id : sakjfsdkjfsjd@gmail.com<EOL><EOL>Date Of Joining : 18/09/2020<EOL><EOL>Training Experience : 3<EOL><EOL>No Of Trainees : 1]; codes [typeMismatch.trainee.trainers,typeMismatch.trainers,typeMismatch.java.util.Set,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainee.trainers,trainers]; arguments []; default message [trainers]]; default message [Failed to convert property value of type 'java.lang.String[]' to required type 'java.util.Set' for property 'trainers'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.String' to required type 'com.ideas2it.employee.model.Trainer' for property 'trainers[0]': no matching editors or conversion strategy found]]
+[INFO]2022-10-08 16:31:36 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:31:36 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 5
+
+[INFO]2022-10-08 16:41:20 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 16:41:22 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 16:41:26 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:41:26 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:41:26 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:41:26 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:41:26 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:41:26 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 16:41:26 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 16:41:26 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 16:41:26 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 16:41:26 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 16:41:26 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 16:41:27 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 16:41:27 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 16:41:31 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5e5e680b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 16:41:32 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 16:41:32 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:41:32 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:41:32 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:41:32 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:41:32 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:41:32 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 16:41:32 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 16:41:32 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 16:41:32 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 16:41:32 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 16:41:32 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 16:41:32 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 16:41:32 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 16:41:32 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@472d3c57] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 16:41:32 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 16:41:33 DispatcherServlet:547 - Completed initialization in 12914 ms
+[INFO]2022-10-08 16:42:11 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:42:11 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 5
+
+[INFO]2022-10-08 16:45:05 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 16:45:07 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 16:45:10 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:45:10 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:45:10 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:45:10 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:45:10 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:45:10 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 16:45:10 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 16:45:10 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 16:45:10 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 16:45:10 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 16:45:10 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 16:45:11 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 16:45:11 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 16:45:15 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4b330722] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 16:45:15 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 16:45:15 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:45:15 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:45:15 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:45:15 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:45:15 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 16:45:16 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 16:45:16 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 16:45:16 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 16:45:16 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 16:45:16 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 16:45:16 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 16:45:16 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 16:45:16 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 16:45:16 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e3e1b7b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 16:45:16 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 16:45:17 DispatcherServlet:547 - Completed initialization in 11657 ms
+[INFO]2022-10-08 16:45:50 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:45:50 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 5
+
+[INFO]2022-10-08 16:46:03 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:46:03 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 16:47:18 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:47:18 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 16:47:18 EmployeeController:158 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 16:51:39 EmployeeController:135 - 
+Details of Trainer
+
+[INFO]2022-10-08 16:51:42 EmployeeController:135 - 
+Details of Trainer
+
+[INFO]2022-10-08 16:51:46 EmployeeController:157 - 
+Details of Trainee
+
+[INFO]2022-10-08 16:51:46 EmployeeController:158 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 16:51:46 EmployeeController:158 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 17:33:30 DispatcherServlet:525 - Initializing Servlet 'dispatcher'
+[INFO]2022-10-08 17:33:32 Version:44 - HHH000412: Hibernate ORM core version 6.1.3.Final
+[WARN]2022-10-08 17:33:35 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 17:33:35 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 17:33:35 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 17:33:35 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 17:33:35 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 17:33:35 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 17:33:35 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 17:33:35 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 17:33:35 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 17:33:35 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 17:33:35 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 17:33:36 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 17:33:36 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 17:33:40 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@78ceb8cd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 17:33:40 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN]2022-10-08 17:33:41 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainer.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 17:33:41 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Trainee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 17:33:41 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Employee.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 17:33:41 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Qualification.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 17:33:41 deprecation:223 - HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : hibernate/classes/Role.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+[WARN]2022-10-08 17:33:41 pooling:77 - HHH10001002: Using built-in connection pool (not intended for production use)
+[INFO]2022-10-08 17:33:41 pooling:136 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[INFO]2022-10-08 17:33:41 pooling:158 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/testing]
+[INFO]2022-10-08 17:33:41 pooling:167 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO]2022-10-08 17:33:41 pooling:171 - HHH10001003: Autocommit mode: false
+[INFO]2022-10-08 17:33:41 pooling:363 - HHH10001115: Connection pool size: 20 (min=1)
+[INFO]2022-10-08 17:33:41 SQL dialect:66 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[WARN]2022-10-08 17:33:41 deprecation:73 - HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[INFO]2022-10-08 17:33:41 access:45 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@61e8fbfc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO]2022-10-08 17:33:41 JtaPlatformInitiator:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO]2022-10-08 17:33:42 DispatcherServlet:547 - Completed initialization in 11956 ms
+[INFO]2022-10-08 17:38:19 EmployeeController:131 - 
+Details of Trainer
+
+[INFO]2022-10-08 17:38:25 EmployeeController:153 - 
+Details of Trainee
+
+[INFO]2022-10-08 17:38:25 EmployeeController:154 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 17:38:25 EmployeeController:154 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 17:38:30 EmployeeController:153 - 
+Details of Trainee
+
+[INFO]2022-10-08 17:38:30 EmployeeController:154 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 17:38:30 EmployeeController:154 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 17:38:37 EmployeeController:153 - 
+Details of Trainee
+
+[INFO]2022-10-08 17:38:37 EmployeeController:154 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 17:38:37 EmployeeController:154 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 17:39:31 EmployeeController:153 - 
+Details of Trainee
+
+[INFO]2022-10-08 17:39:31 EmployeeController:154 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 17:39:31 EmployeeController:154 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 17:40:01 EmployeeController:153 - 
+Details of Trainee
+
+[INFO]2022-10-08 17:40:01 EmployeeController:154 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 17:40:01 EmployeeController:154 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 17:40:08 EmployeeController:131 - 
+Details of Trainer
+
+[INFO]2022-10-08 17:40:16 EmployeeController:153 - 
+Details of Trainee
+
+[INFO]2022-10-08 17:40:16 EmployeeController:154 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 17:40:16 EmployeeController:154 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 17:40:21 EmployeeController:153 - 
+Details of Trainee
+
+[INFO]2022-10-08 17:40:21 EmployeeController:154 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 17:40:21 EmployeeController:154 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 17:40:28 EmployeeController:153 - 
+Details of Trainee
+
+[INFO]2022-10-08 17:40:28 EmployeeController:154 - 
+ID of Employee : 11
+Name of the Trainee : AKASH
+Age : 22
+Gender : male
+Qualifications : mca
+Address : afjsfjhkjak
+Mobile Number : 9876543211
+Email Id : safskj@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 3
+Trainers : 2, 4
+
+[INFO]2022-10-08 17:40:28 EmployeeController:154 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 17:40:32 EmployeeController:153 - 
+Details of Trainee
+
+[INFO]2022-10-08 17:40:32 EmployeeController:154 - 
+ID of Employee : 12
+Name of the Trainee : moki
+Age : 22
+Gender : male
+Qualifications : mca
+Address : dsjahjfdhs
+Mobile Number : 9876543211
+Email Id : ajfsajfsk@gmail.com
+Date Of Joining : 18/09/2020
+Training Period : 4
+Trainers : 1, 5
+
+[INFO]2022-10-08 17:40:41 EmployeeController:131 - 
+Details of Trainer
+
+[INFO]2022-10-08 17:40:45 EmployeeController:131 - 
+Details of Trainer
+
+[INFO]2022-10-08 17:41:29 EmployeeController:131 - 
+Details of Trainer
+
+[INFO]2022-10-08 17:41:36 EmployeeController:131 - 
+Details of Trainer
+

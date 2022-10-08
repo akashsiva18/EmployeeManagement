@@ -8,7 +8,6 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 import com.ideas2it.employee.model.Trainee;
-import com.ideas2it.employee.model.Trainer;
 import com.ideas2it.employee.model.Role;
 import com.ideas2it.employee.model.Qualification;
 import com.ideas2it.employee.dao.intf.TraineeDaoIntf;

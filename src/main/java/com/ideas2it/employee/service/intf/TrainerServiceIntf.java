@@ -25,17 +25,11 @@ public interface TrainerServiceIntf {
      * else add errors to list. Return List of errors.
      * </p>
      *
-     * @param {@link String} name - name of trainer.
-     * @param {@link String} dateOfBirth - data of birth of trainer.
-     * @param {@link String} gender - gender of trainer.
-     * @param {@link String} qualification - qualification of trainer.
-     * @param {@link String} address - address of trainer.
-     * @param {@link String} mobileNumber - mobileNumber of trainer.
-     * @param {@link String} emailId - email of trainer.
-     * @param {@link String} dateOfJoining - date of joining of trainer.
-     * 
+     * @param {@link Trainer} trainer - Object of the trainer
+     *
      * @return {@link List<Integer>} return List of errors.
      * @throws BadRequest
+     *
      **/
     public List<Integer> validateAndAddOrUpdateTrainerDetails(Trainer trainer) throws BadRequest;
 
@@ -56,20 +50,18 @@ public interface TrainerServiceIntf {
      * @param {@link String} id.
      *
      * @return {@link boolean} - if deleted return true else false
-     * @throws EmployeeNotFound
      **/
-    public boolean removeTrainerById(int id) throws EmployeeNotFound;
+    public boolean removeTrainerById(int id);
 
     /**
      * <p>
-     * Return trainer if id is matched else throws Exception.
+     * Return trainer by id.
      * </p>
      * 
      * @param {@link int} id - id of the Trainer.
      *
      * @return {@link Trainer}
      *         - that contain a copy of the Trainer matches to the id.
-     * @throws EmployeeNotFound
      **/
-    public Trainer getTrainerById(int id) throws EmployeeNotFound;    
+    public Trainer getTrainerById(int id);
 }

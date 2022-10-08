@@ -11,7 +11,5 @@ package com.ideas2it.employee.common;
  * @since 12-08-2022
  **/
 public class Constant{
-    public static final String EMP_ID_PREFIX = "I2I-";
-    public static final String AVAILABLE_GENDER = "Gender : \n1. Male\n2. Female\n3. Others";
     public static final String DATE_FORMAT = "yyyy-M-d";
 }

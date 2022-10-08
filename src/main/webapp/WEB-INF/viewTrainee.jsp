@@ -32,7 +32,6 @@
                     <th>Trainer Id</th>
                     <th colspan=2>Action</th>
                 </tr>
-
 		<%List<Trainee> trainees = (List<Trainee>)request.getAttribute("trainee");
 		if (null != trainees) {
             for(Trainee trainee: trainees) {
@@ -52,12 +51,12 @@
                 <td><%= employee.getDateOfJoining() %></td>
                 <td><%= trainee.getTrainingPeriod() %></td>
                 <td><%= trainerIds.toString().replaceAll("[\\[\\]]","") %></td>
-                <td><a href=test?flag=updateTrainee&ID=<%=employee.getId()%> ><input type="button" value="update"></a></td>
+                <td><a href=/updateTraineeForm?flag=updateTrainee&ID=<%=employee.getId()%> ><input type="button" value="update"></a></td>
                 <td><a href=deleteTrainee?ID=<%=employee.getId()%>  ><input type="button" value="delete"></a></td>
             </tr>
 		<%}}%>
-		</table>
-		<a href=><input type="button" value="Go back!" ></a>
+		</table><br>
+		<a href=/traineeForm?flag=addTrainee><input type="button" value="Add Trainee" ></a>
 		<a href=/><input type="button" value="Go back!" ></a>
 	</body>
     

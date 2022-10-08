@@ -29,9 +29,8 @@ public interface TraineeServiceIntf {
      *
      * @return {@link List<Integer>} return List of errors.
      * @throws BadRequest
-     * @throws EmployeeNotFound
      **/
-    public List<Integer> validateAndAddOrUpdateTraineeDetails(Trainee trainee) throws BadRequest, EmployeeNotFound;
+    public List<Integer> validateAndAddOrUpdateTraineeDetails(Trainee trainee) throws BadRequest;
 
     /**
      * <p>
@@ -50,9 +49,8 @@ public interface TraineeServiceIntf {
      * @param {@link int} id.
      *
      * @return {@link boolean} - if deleted return true else false
-     * @throws EmployeeNotFound
      **/
-    public boolean removeTraineeById(int id) throws EmployeeNotFound;
+    public boolean removeTraineeById(int id);
 
     /**
      * <p>
@@ -62,7 +60,6 @@ public interface TraineeServiceIntf {
      * @param {@link int} id - trainee Object that contails all the details.
      *
      * @return {@link Trainee}.
-     * @throws EmployeeNotFound
      **/
-    public Trainee getTraineeById(int id) throws EmployeeNotFound;       
+    public Trainee getTraineeById(int id);
 }
