@@ -9,18 +9,25 @@
 </head>
 <body>
         <style>table, th, td {border: 1px solid black;border-collapse: collapse; background-color:Lightgray;}
+        table {height: 20% page; overflow-y:scroll;}
         th {background-color:black; color:white;}
         h2 {
            text-align: center;
            font-size: 40px;    
         }
+        .scrollTable {
+             height: 300px;
+             width: 100%;
+             overflow-y: scroll;
+        }
         </style>
         <body>
          <h4>${message}</h4>
-            <h2>Details of Trainee</h2> 
+            <h2>Details of Trainee</h2>
+            <div class="scrollTable">
             <table style='width:100%'>
                 <tr>
-                    <th>Employee Id</th>
+                    <th>Id</th>
                     <th>Name</th>
                     <th>Gender</th>
                     <th>Qualification</th>
@@ -41,21 +48,21 @@
                             trainerIds.add(trainer.getEmployee().getId());
                         }%>
             <tr>
-                <td><%= employee.getId() %></td>
+                <td style ="width:4%; text-align: right;"><%= employee.getId() %></td>
                 <td><%= employee.getName() %></td>
-                <td><%= employee.getGender() %></td>
-                <td><%= employee.getQualification() %></td>
-                <td><%= employee.getAddress() %></td>
-                <td><%= employee.getMobileNumber() %></td>
-                <td><%= employee.getEmailId() %></td>
-                <td><%= employee.getDateOfJoining() %></td>
-                <td><%= trainee.getTrainingPeriod() %></td>
-                <td><%= trainerIds.toString().replaceAll("[\\[\\]]","") %></td>
-                <td><a href=/updateTraineeForm?flag=updateTrainee&ID=<%=employee.getId()%> ><input type="button" value="update"></a></td>
-                <td><a href=deleteTrainee?ID=<%=employee.getId()%>  ><input type="button" value="delete"></a></td>
+                <td style="width:5%; text-align:center;"><%= employee.getGender() %></td>
+                <td style="width:6%; text-align:center;"><%= employee.getQualification() %></td>
+                <td style="width:18%;"><%= employee.getAddress() %></td>
+                <td style="width:7%; text-align:center;"><%= employee.getMobileNumber() %></td>
+                <td style="width:15%;"><%= employee.getEmailId() %></td>
+                <td style="width:9%; text-align:center;"><%= employee.getDateOfJoining() %></td>
+                <td style="width:5%; text-align:center;"><%= trainee.getTrainingPeriod() %></td>
+                <td style="width:5%;"><%= trainerIds.toString().replaceAll("[\\[\\]]","") %></td>
+                <td style="width:2%;"><a href=/updateTraineeForm?flag=updateTrainee&ID=<%=employee.getId()%> ><input type="button" value="update"></a></td>
+                <td style="width:2%;"><a href=deleteTrainee?ID=<%=employee.getId()%>  ><input type="button" value="delete"></a></td>
             </tr>
 		<%}}%>
-		</table><br>
+		</table><br></div>
 		<a href=/traineeForm?flag=addTrainee><input type="button" value="Add Trainee" ></a>
 		<a href=/><input type="button" value="Go back!" ></a>
 	</body>

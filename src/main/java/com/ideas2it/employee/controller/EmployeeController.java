@@ -36,18 +36,18 @@ public class EmployeeController {
     private TraineeServiceIntf traineeService;
     private static final Logger logger = LogManager.getLogger(EmployeeController.class);
 
-    @RequestMapping("/")
+    @GetMapping("/")
     public String showIndex() {
         return "index";
     }
 
-    @RequestMapping(value = "/trainerForm")
+    @GetMapping(value = "/trainerForm")
     public String TrainerForm(Model model) {
         model.addAttribute("trainer", new Trainer());
         return "/addTrainer";
     }
 
-    @RequestMapping(value = "/traineeForm")
+    @GetMapping(value = "/traineeForm")
     public ModelAndView TraineeForm(Model model) {
         model.addAttribute("trainee", new Trainee());
         ModelAndView modelAndView = new ModelAndView("/addTrainee");
@@ -55,7 +55,7 @@ public class EmployeeController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "/addTrainee")
+    @PostMapping(value = "/addTrainee")
     public String addTraineeDetails(@ModelAttribute Trainee trainee, @RequestParam("method") String action, RedirectAttributes redirectAttributes) {
         try {
             traineeService.validateAndAddOrUpdateTraineeDetails(trainee);
@@ -72,7 +72,7 @@ public class EmployeeController {
         return "redirect:/viewTrainee";
     }
 
-    @RequestMapping(value = "/addTrainer")
+    @PostMapping(value = "/addTrainer")
     public String addTrainerDetails(@ModelAttribute Trainer trainer, @RequestParam("method") String action, RedirectAttributes redirectAttributes) {
         try {
             trainerService.validateAndAddOrUpdateTrainerDetails(trainer);
@@ -89,13 +89,13 @@ public class EmployeeController {
         return "redirect:/viewTrainer";
     }
 
-    @RequestMapping(value = "/updateTrainerForm")
+    @GetMapping(value = "/updateTrainerForm")
     public String updateTrainerForm(Model model, @RequestParam("ID") int id) {
         model.addAttribute("trainer", trainerService.getTrainerById(id));
         return "/addTrainer";
     }
 
-    @RequestMapping(value = "/updateTraineeForm")
+    @GetMapping(value = "/updateTraineeForm")
     public String updateTraineeForm(Model model, @RequestParam("ID") int id) {
         model.addAttribute("trainee", traineeService.getTraineeById(id));
         model.addAttribute("trainers", trainerService.getTrainers());
@@ -145,9 +145,9 @@ public class EmployeeController {
      * If Object deleted or not it shows message.
      * </p>
      *
-     * @param id                 - id of the trainer
-     * @param redirectAttributes - used for send data
-     * @return - redirect to view Trainer mapping
+     * @param id - id of the trainer
+     * @param redirectAttributes - used for redirect the request.
+     * @return String - redirect to view Trainer mapping
      */
     @GetMapping("/deleteTrainer")
     private String deleteTrainerDetailsById(@RequestParam("ID") int id, RedirectAttributes redirectAttributes) {

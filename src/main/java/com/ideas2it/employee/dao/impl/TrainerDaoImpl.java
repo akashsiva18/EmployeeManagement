@@ -138,4 +138,27 @@ public class TrainerDaoImpl implements TrainerDaoIntf {
         }
         return trainer;
     }
+
+    /**
+     * <p>
+     * It checks the list of Id's of Trainer and return the list of trainers as List.
+     * </p>
+     *
+     * @param trainerIds - Trainers Id as list
+     * @return - List<Trainer>
+     **/
+    public List<Trainer> retrieveMultipleTrainerById(List<Integer> trainerIds) {
+        List<Trainer> trainers = null;
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+            trainers = session.createQuery("From Trainer where employee.id   in :trainerIds")
+                       .setParameter("trainerIds",trainerIds).list();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+        return trainers;
+    }
 }

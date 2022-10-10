@@ -10,50 +10,56 @@
 <body>
         <style>table, th, td {border: 1px solid black;border-collapse: collapse; background-color:Lightgray;}
         th {background-color:black; color:white;}
+        table {width:100%;}
         h2 {
            text-align: center;
            font-size: 40px;    
+        }
+        .scrollTable {
+          height: 300px;
+          width: 100%;
+          overflow-y: scroll;
         }
         </style>
         <body>
         <h4>${message}</h4>
             <h2>Details of Trainer</h2>
-
-            <table style='width:100%'>
-                <tr>
-                    <th>Employee Id</th>
+           <div class="scrollTable">
+            <table>
+                <tr style="position:sticky; top:0;">
+                    <th>Id</th>
                     <th>Name</th>
                     <th>Gender</th>
                     <th>Qualification</th>
                     <th>Address</th>
-                    <th>MobileNumber</th>
+                    <th>Mobile Number</th>
                     <th>Email Id</th>
                     <th>Date Of Joining</th>
                     <th>Training Experience</th>
                     <th>No of Trainees</th>
                     <th colspan=2>Action</th>
                 </tr>
-		
+
 		<%ArrayList<Trainer> trainers = (ArrayList<Trainer>)request.getAttribute("Trainer");
 		if (null != trainers) {
             for(Trainer trainer: trainers) {
                         Employee employee = trainer.getEmployee();%>
             <tr>
-                <td><%= employee.getId() %></td>
+                <td style ="width:4%; text-align: right;"><%= employee.getId() %></td>
                 <td><%= employee.getName() %></td>
-                <td><%= employee.getGender() %></td>
-                <td><%= employee.getQualification() %></td>
-                <td><%= employee.getAddress() %></td>
-                <td><%= employee.getMobileNumber() %></td>
-                <td><%= employee.getEmailId() %></td>
-                <td><%= employee.getDateOfJoining() %></td>
-                <td><%= trainer.getExperience() %></td>
-                <td><%= trainer.getTrainees().size() %></td>
-                <td><a href=/updateTrainerForm?flag=updateTrainer&ID=<%=employee.getId()%> ><input type="button" value="update"></a></td>
-                <td><a href=deleteTrainer?ID=<%=employee.getId()%>  ><input type="button" value="delete"></a></td>
+                <td style="width:5%; text-align:center;"><%= employee.getGender() %></td>
+                <td style="width:6%; text-align:center;"><%= employee.getQualification() %></td>
+                <td style="width:18%;"><%= employee.getAddress() %></td>
+                <td style="width:7%; text-align:center;"><%= employee.getMobileNumber() %></td>
+                <td style="width:15%;"><%= employee.getEmailId() %></td>
+                <td style="width:9%; text-align:center;"><%= employee.getDateOfJoining() %></td>
+                <td style="width:8%; text-align:center;"><%= trainer.getExperience() %></td>
+                <td style="width:6%; text-align:center;"><%= trainer.getTrainees().size() %></td>
+                <td style="width:2%;"><a href=/updateTrainerForm?flag=updateTrainer&ID=<%=employee.getId()%> ><input type="button" value="update"></a></td>
+                <td style="width:2%;"><a href=deleteTrainer?ID=<%=employee.getId()%>  ><input type="button" value="delete"></a></td>
             </tr>
             <%}}%>
-		</table><br>
+		</table></div><br>
 		<a href=/trainerForm?flag=addTrainer ><input type="button" value="Add Trainer"></a>
         <a href=/><input type="button" value="Go back!" ></a>
 	</body>

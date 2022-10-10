@@ -125,4 +125,15 @@ public class TrainerServiceImpl implements TrainerServiceIntf {
     public Trainer getTrainerById(int id) {
         return dao.retrieveTrainerById(id);
     }
+
+    /**
+     * It returns the trainers object as list.
+     *
+     * @param trainerIds - list of Trainers Ids.
+     * @return List<Trainers> - it contains the trainers.
+     *
+     **/
+    public List<Trainer> getMultipleTrainerByIds(List<Integer> trainerIds) {
+        return dao.retrieveMultipleTrainerById(trainerIds);
+    }
 }

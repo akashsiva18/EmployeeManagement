@@ -14,6 +14,7 @@ import com.ideas2it.employee.exception.EmployeeNotFound;
 import com.ideas2it.employee.exception.BadRequest;
 import com.ideas2it.employee.service.impl.TrainerServiceImpl;
 import com.ideas2it.employee.service.intf.TrainerServiceIntf;
+import org.hibernate.tool.schema.internal.exec.ScriptTargetOutputToFile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -57,8 +58,7 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
     public List<Integer> validateAndAddOrUpdateTraineeDetails(Trainee trainee) throws BadRequest {
 
         List<Integer> validationErrorList = new ArrayList<>();
-        List<Integer> invalidTrainerId = new ArrayList<>();
-        Set<Trainer> trainersOfTheTrainee = new HashSet<>();
+        Set<Trainer> trainersOfTrainee;
         Integer slNo = 1;
         StringBuilder errorMessage = new StringBuilder("\nValidation Errors\n");
         if (!StringUtil.isValidName(trainee.getEmployee().getName())) {
@@ -85,15 +85,23 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
             errorMessage.append(slNo++).append(". Date of joining must not be a future Date.\n");
             validationErrorList.add(5);
         }
-        for (int trainerId : trainee.getTrainersId()) {
-            trainersOfTheTrainee.add(trainerService.getTrainerById(trainerId));
+       /* for (int trainerId : trainee.getTrainersId()) {
+            trainersOfTrainee.add(trainerService.getTrainerById(trainerId));
         }
-        trainee.setTrainers(trainersOfTheTrainee);
+        trainee.setTrainers(trainersOfTrainee);
+        *//*List<Trainer> trainers= trainerService.getMultipleTrainerByIds(trainee.getTrainersId());
+        for (Trainer trainer:trainers) {
+            trainersOfTrainee.add(trainer);
+        }
+        trainee.setTrainers(trainersOfTrainee);
+        */
+        trainersOfTrainee = new HashSet<>(trainerService.getMultipleTrainerByIds(trainee.getTrainersId()));
+        trainee.setTrainers(trainersOfTrainee);
         Role role = new Role();
         role.setDescription("Trainee");
         trainee.getEmployee().setRole(role);
         if (validationErrorList.isEmpty()) {
-                dao.insertOrUpdateTrainee(trainee);
+            dao.insertOrUpdateTrainee(trainee);
         } else {
             throw new BadRequest(errorMessage.toString(), validationErrorList);
         }
@@ -136,7 +144,7 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
      * @return {@link Trainee}.
      **/
     @Override
-    public Trainee getTraineeById(int id) throws EmployeeNotFound {
+    public Trainee getTraineeById(int id) {
         Trainee oldTrainee = dao.retrieveTraineeById(id);
         List<Integer> trainerIds = new ArrayList<>();
         for (Trainer trainer : oldTrainee.getTrainers()) {

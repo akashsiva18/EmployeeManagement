@@ -21,8 +21,6 @@ public interface TrainerDaoIntf {
      * </p>
      * 
      * @param {@link Trainer} trainer - trainer Object that contails all the details.
-     *
-     * @return {@link void} return nothing 
      **/
     public void insertOrUpdateTrainer(Trainer trainer);
 
@@ -48,7 +46,7 @@ public interface TrainerDaoIntf {
 
     /**
      * <p>
-     * return new trainer object that conations the old information in the given id of the trainer.
+     * Return new trainer object that conations the old information in the given id of the trainer.
      * </p>
      * 
      * @param {@link String} id - used to check the trainer is available.
@@ -56,4 +54,14 @@ public interface TrainerDaoIntf {
      * @return {@link Trainer} if id exist return new trainer object else null.
      **/
     public Trainer retrieveTrainerById(int id);
+
+    /**
+     * <p>
+     * It checks the list of Id's of Trainer and return the list of trainers as List.
+     * </p>
+     *
+     * @param trainerIds - Trainers ID as list
+     * @return - List<Trainer>
+     **/
+    public List<Trainer> retrieveMultipleTrainerById(List<Integer> trainerIds);
 }

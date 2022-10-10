@@ -7,6 +7,7 @@
 h1 {font-size: 40px;}
 h2 {
   font-size: 30px;
+  color:DarkBlue;
 }
 a:link {text-decoration: none;}
 a:hover {color: Red;}

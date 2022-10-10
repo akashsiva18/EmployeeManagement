@@ -64,4 +64,13 @@ public interface TrainerServiceIntf {
      *         - that contain a copy of the Trainer matches to the id.
      **/
     public Trainer getTrainerById(int id);
+
+    /**
+     * It returns the trainers object as list.
+     *
+     * @param trainerIds - list of Trainers Ids.
+     * @return List<Trainers> - it contains the trainers.
+     *
+     **/
+    public List<Trainer> getMultipleTrainerByIds(List<Integer> trainerIds);
 }
