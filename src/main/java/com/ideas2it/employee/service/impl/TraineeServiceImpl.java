@@ -7,16 +7,15 @@ import com.ideas2it.employee.model.Trainee;
 import com.ideas2it.employee.model.Trainer;
 import com.ideas2it.employee.model.Role;
 import com.ideas2it.employee.dao.TraineeDao;
-import com.ideas2it.employee.service.intf.TraineeServiceIntf;
+import com.ideas2it.employee.service.TraineeService;
 import com.ideas2it.employee.util.DateUtil;
 import com.ideas2it.employee.util.StringUtil;
 import com.ideas2it.employee.exception.BadRequest;
-import com.ideas2it.employee.service.intf.TrainerServiceIntf;
+import com.ideas2it.employee.service.TrainerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.time.LocalDate;
 
 
 /**
@@ -30,7 +29,7 @@ import java.time.LocalDate;
  * @since 12-08-2022
  **/
 @Service
-public class TraineeServiceImpl implements TraineeServiceIntf{
+public class TraineeServiceImpl implements TraineeService {
     @Autowired
     private TraineeDao traineeDao;
 
@@ -41,7 +40,7 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
     private RoleDao roleDao;
 
     @Autowired
-    private TrainerServiceIntf trainerService;
+    private TrainerService trainerService;
 
     /**
      * <p>
@@ -65,8 +64,6 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
             errorMessage.append(slNo++).append(". Invalid Name. It must contain Alphabet.\n");
             validationErrorList.add(1);
         }
-        LocalDate validDateOfBirth = LocalDate.now();
-        Integer age = 0;
         if (!DateUtil.isAgeEligible(trainee.getDateOfBirth(),18)) {
             errorMessage.append(slNo++).append(". Invalid Date Of Birth.\n\t")
                     .append("\n\tb) Age must above 18.\n");
@@ -86,9 +83,7 @@ public class TraineeServiceImpl implements TraineeServiceIntf{
             validationErrorList.add(5);
         }
         Optional<Qualification> retrieveQualification = qualificationDao.findByCourse(trainee.getQualification().getCourse());
-        if (retrieveQualification.isPresent()) {
-            trainee.setQualification(retrieveQualification.get());
-        }
+        retrieveQualification.ifPresent(trainee::setQualification);
         Optional<Role> retrieveRole = roleDao.findByDescription("Trainee");
         if (retrieveRole.isPresent()) {
             trainee.setRole(retrieveRole.get());

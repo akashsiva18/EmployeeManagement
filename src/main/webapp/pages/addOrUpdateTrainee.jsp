@@ -18,13 +18,13 @@
     <input type="hidden" id="flag" name="method" value=<%= ((action.equals("addTrainee")) ? "addTrainee" : "updateTrainee")%> >
 
     <form:input type="hidden" path="id" />
-    <table>
+    <table style="font-size:20px">
         <tr>
             <td>
-                Name
+                Name:
             </td>
             <td>
-            :<form:input path="name" required="required"/>
+            <form:input path="name" required="required"/>
             </td>
         </tr>
         <tr>
@@ -90,7 +90,7 @@
                 Training Period(in months):
             </td>
             <td>
-                <form:input path="trainingPeriod" required="required"/>
+                <form:input type="number" path="trainingPeriod" required="required"/>
             </td>
         </tr>
         <tr>
@@ -99,7 +99,7 @@
         </td>
         <td>
             <form:select path="trainersId">
-                <c:forEach items="${trainers}"  var="trainer">
+                <c:forEach items="${trainers}" var="trainer">
                     <form:option value="${trainer.id}">${trainer.id}.${trainer.name}</form:option>
                 </c:forEach>
             </form:select>

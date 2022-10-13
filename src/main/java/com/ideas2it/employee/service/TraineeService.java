@@ -1,11 +1,9 @@
-package com.ideas2it.employee.service.intf;
+package com.ideas2it.employee.service;
 
 import com.ideas2it.employee.model.Trainee;
-import com.ideas2it.employee.exception.EmployeeNotFound;
 import com.ideas2it.employee.exception.BadRequest;
 
 import java.util.List;
-import java.util.ArrayList;
 
 /**
  * <h2>TraineeServiceImpl</h2>
@@ -17,7 +15,7 @@ import java.util.ArrayList;
  * @version 1.0
  * @since 12-08-2022
  **/
-public interface TraineeServiceIntf {
+public interface TraineeService {
 
     /**
      * <p>

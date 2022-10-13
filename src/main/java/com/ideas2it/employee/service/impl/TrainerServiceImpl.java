@@ -11,7 +11,7 @@ import com.ideas2it.employee.dao.TrainerDao;
 import com.ideas2it.employee.model.Qualification;
 import com.ideas2it.employee.model.Trainer;
 import com.ideas2it.employee.model.Role;
-import com.ideas2it.employee.service.intf.TrainerServiceIntf;
+import com.ideas2it.employee.service.TrainerService;
 import com.ideas2it.employee.util.DateUtil;
 import com.ideas2it.employee.util.StringUtil;
 import com.ideas2it.employee.exception.EmployeeNotFound;
@@ -31,7 +31,7 @@ import org.springframework.stereotype.Service;
  * @since 12-08-2022
  **/
 @Service
-public class TrainerServiceImpl implements TrainerServiceIntf {
+public class TrainerServiceImpl implements TrainerService {
     @Autowired
     private TrainerDao trainerDao;
 

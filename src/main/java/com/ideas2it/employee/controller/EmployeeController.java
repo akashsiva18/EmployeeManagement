@@ -2,8 +2,8 @@ package com.ideas2it.employee.controller;
 
 import com.ideas2it.employee.model.Trainee;
 import com.ideas2it.employee.model.Trainer;
-import com.ideas2it.employee.service.intf.TrainerServiceIntf;
-import com.ideas2it.employee.service.intf.TraineeServiceIntf;
+import com.ideas2it.employee.service.TrainerService;
+import com.ideas2it.employee.service.TraineeService;
 import com.ideas2it.employee.exception.BadRequest;
 import java.util.List;
 import org.apache.logging.log4j.Logger;
@@ -27,39 +27,87 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
  * @version 1.0
  * @since 12-08-2022
  **/
-
 @Controller
 public class EmployeeController {
     @Autowired
-    private TrainerServiceIntf trainerService;
+    private TrainerService trainerService;
     @Autowired
-    private TraineeServiceIntf traineeService;
+    private TraineeService traineeService;
     private static final Logger logger = LogManager.getLogger(EmployeeController.class);
 
+    /**
+     * It gets the url request and sent to index page
+     *
+     * @return String - index page
+     */
     @GetMapping("/")
     public String showIndex() {
         return "index";
     }
 
+    /**
+     * It gets the url request and sent to addOrUpdateTrainer page with new object of trainer.
+     *
+     * @return String - addOrUpdateTrainer
+     */
     @GetMapping(value = "/trainerForm")
     public String TrainerForm(Model model) {
         model.addAttribute("trainer", new Trainer());
-        return "/addTrainer";
+        return "/addOrUpdateTrainer";
     }
 
+    /**
+     * It gets the url request and sent to addOrUpdateTrainee page with new object of trainee.
+     *
+     * @param model - it hold the object of the trainee
+     * @return ModelAndView - that contains trainers list.
+     */
     @GetMapping(value = "/traineeForm")
     public ModelAndView TraineeForm(Model model) {
         model.addAttribute("trainee", new Trainee());
-        ModelAndView modelAndView = new ModelAndView("/addTrainee");
+        ModelAndView modelAndView = new ModelAndView("/addOrUpdateTrainee");
         modelAndView.addObject("trainers", trainerService.getTrainers());
         return modelAndView;
     }
 
-    @PostMapping(value = "/error")
-    public String errorPage() {
-        return "/error";
+    /**
+     * It gets the url request with trainee object and add to the database
+     * then shows message to the user in the view page of trainee else
+     * show error page with the error information.
+     *
+     * @param trainer - trainer object that set in previous request.
+     * @param action - which process is activated that from the request.
+     * @param redirectAttributes - redirect the page to view if error arise redirect to error page.
+     * @return String- redirect page.
+     **/
+    @PostMapping(value = "/addTrainer")
+    public String addTrainerDetails(@ModelAttribute Trainer trainer, @RequestParam("method") String action, RedirectAttributes redirectAttributes) {
+        try {
+            trainerService.validateAndAddOrUpdateTrainerDetails(trainer);
+            if (action.equals("addTrainer")) {
+                redirectAttributes.addFlashAttribute("message", "Trainer "
+                        + trainer.getName() + " Inserted Successfully");
+            } else {
+                redirectAttributes.addFlashAttribute("message", "Trainer "
+                        + trainer.getName() + " Updated Successfully");
+            }
+        } catch (BadRequest e) {
+            redirectAttributes.addFlashAttribute("message", e.getMessage());
+            return "redirect:/error";
+        }
+        return "redirect:/viewTrainer";
     }
 
+    /**
+     * It gets the url request with trainee object and add to the database
+     * then shows message to the user in the view page of trainee else
+     * show error page with the error information.
+     *
+     * @param trainee - trainee object from the model
+     * @param action - which process is activated that from the request
+     * @param redirectAttributes - redirect the page to view if error arise redirect to error page.
+     * @return String - redirect page.
+     **/
     @PostMapping(value = "/addTrainee")
     public String addTraineeDetails(@ModelAttribute Trainee trainee, @RequestParam("method") String action, RedirectAttributes redirectAttributes) {
         try {
@@ -78,49 +126,57 @@ public class EmployeeController {
         return "redirect:/viewTrainee";
     }
 
-    @PostMapping(value = "/addTrainer")
-    public String addTrainerDetails(@ModelAttribute Trainer trainer, @RequestParam("method") String action, RedirectAttributes redirectAttributes) {
-        try {
-            trainerService.validateAndAddOrUpdateTrainerDetails(trainer);
-            if (action.equals("addTrainer")) {
-                redirectAttributes.addFlashAttribute("message", "Trainer "
-                        + trainer.getName() + " Inserted Successfully");
-            } else {
-                redirectAttributes.addFlashAttribute("message", "Trainer "
-                        + trainer.getName() + " Updated Successfully");
-            }
-        } catch (BadRequest e) {
-            redirectAttributes.addFlashAttribute("message", e.getMessage());
-        }
-        return "redirect:/viewTrainer";
-    }
 
+    /**
+     * It gets the url request and sent to addOrUpdateTrainer page with
+     * existing object of trainer that retrieve from the database.
+     *
+     * @param model - used to set the old trainer in the form.
+     * @param id - id for get trainer details.
+     * @return String - addOrUpdateTrainee Form.
+     */
     @GetMapping(value = "/updateTrainerForm")
     public String updateTrainerForm(Model model, @RequestParam("ID") int id) {
         model.addAttribute("trainer", trainerService.getTrainerById(id));
-        return "/addTrainer";
+        return "/addOrUpdateTrainer";
     }
 
+
+    /**
+     * It gets the url request and sent to addOrUpdateTrainee page with
+     * existing object of trainer that retrieve from the database.
+     *
+     * @param model - used to set the old trainer in the form.
+     * @param id - id for get trainer details.
+     * @return String - addOrUpdateTrainee Form.
+     */
     @GetMapping(value = "/updateTraineeForm")
     public String updateTraineeForm(Model model, @RequestParam("ID") int id) {
         model.addAttribute("trainee", traineeService.getTraineeById(id));
         model.addAttribute("trainers", trainerService.getTrainers());
-        return "/addTrainee";
+        return "/addOrUpdateTrainee";
     }
 
     /**
-     * <p>
-     * It prints the Trainer details stored as Object in a list by using a loop.
-     * get list Trainer List from the service class by a method.
-     * If the list is empty, it shows an message.
-     * </p>
-     **/
+     * It gets the url request and sent to the error page.
+     *
+     * @return String - error page
+     */
+    @PostMapping(value = "/error")
+    public String errorPage() {
+        return "/error";
+    }
+
+    /**
+     * It retrieves all the trainers from the database and sent to the JSP to show.
+     *
+     * @return ModelAndView - It show the viewTrainer page and add list of trainers to the session.
+     */
     @GetMapping(value = "/viewTrainer")
     private ModelAndView showTrainerDetails() {
         List<Trainer> listOfTrainers = trainerService.getTrainers();
         ModelAndView modelAndView = new ModelAndView();
         logger.info("\nDetails of Trainer\n");
-        listOfTrainers.forEach(trainer -> System.out.println(trainer));
         listOfTrainers.forEach(trainer -> logger.info(trainer + "\n"));
         modelAndView.setViewName("viewTrainer");
         modelAndView.addObject("Trainer", listOfTrainers);
@@ -128,11 +184,10 @@ public class EmployeeController {
     }
 
     /**
-     * <p>
-     * It prints the Trainer details stored as Object in a list by using a loop.
-     * get list Trainee List from the service class by a method.
-     * </p>
-     **/
+     * It retrieves all the trainees from the database and sent to the JSP to show.
+     *
+     * @return ModelAndView - It show the viewTrainer page and add list of trainees to the session.
+     */
     @GetMapping(value = "/viewTrainee")
     private ModelAndView showTraineeDetails() {
         List<Trainee> listOfTrainees = traineeService.getTrainees();
@@ -145,16 +200,12 @@ public class EmployeeController {
     }
 
     /**
-     * <p>
-     * Get list from service class, remove Trainer object from the list by using
-     * id that get from the user and sent the id to a method in service class
-     * If the list is empty, it shows an message.
-     * If Object deleted or not it shows message.
-     * </p>
+     * It deletes trainer from the database by using I'd and
+     * redirect to the view trainer page with message.
      *
      * @param id - id of the trainer
      * @param redirectAttributes - used for redirect the request.
-     * @return String - redirect to view Trainer mapping
+     * @return String - redirect to view Trainer form
      */
     @GetMapping("/deleteTrainer")
     private String deleteTrainerDetailsById(@RequestParam("ID") int id, RedirectAttributes redirectAttributes) {
@@ -164,10 +215,13 @@ public class EmployeeController {
     }
 
     /**
-     * <p>
-     * Get list from service class, remove Trainee object from the Database by using Id
-     * </p>
-     **/
+     * It deletes trainee from the database using I'd and
+     * redirect to the view trainer page with message.
+     *
+     * @param id - id of the trainee
+     * @param redirectAttributes - used for redirect the request.
+     * @return String - redirect to view trainee form
+     */
     @GetMapping("/deleteTrainee")
     private String deleteTraineeDetailsById(@RequestParam("ID") int id, RedirectAttributes redirectAttributes) {
         traineeService.removeTraineeById(id);

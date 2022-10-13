@@ -5,7 +5,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.Set;
 
 import com.ideas2it.employee.util.DateUtil;
-
 import javax.persistence.*;
 
 /**
@@ -92,31 +91,31 @@ public class Trainer extends Employee{
      *
      * @return {@link String} return formatted string.
      **/
-    /*@Override
+    @Override
     public String toString() {
         int size = trainees.size();
-        int age = DateUtil.computeYears(getEmployee().getDateOfBirth(),LocalDate.now());
-	return "\nID of Employee : " + employee.getId() + "\nName of the Trainer : " 
-               + employee.getName() + "\nAge : " + age + "\nGender : " + employee.getGender() 
-               + "\nQualifications : " + employee.getQualification() +"\nAddress : " 
-               + employee.getAddress() + "\nMobile Number : " + employee.getMobileNumber() 
-               + "\nEmail Id : " + employee.getEmailId() + "\nDate Of Joining : " 
-               + employee.getDateOfJoining().format(DateTimeFormatter.ofPattern("d/MM/yyyy")) 
+        int age = DateUtil.computeYears(getDateOfBirth(),LocalDate.now());
+	return "\nID of Employee : " + getId() + "\nName of the Trainer : "
+               + getName() + "\nAge : " + age + "\nGender : " + getGender()
+               + "\nQualifications : " + getQualification() +"\nAddress : "
+               + getAddress() + "\nMobile Number : " + getMobileNumber()
+               + "\nEmail Id : " + getEmailId() + "\nDate Of Joining : "
+               + getDateOfJoining().format(DateTimeFormatter.ofPattern("d/MM/yyyy"))
                + "\nTraining Experience : " + getExperience() + "\nNo Of Trainees : " + size;
     }
-    */
+
     /**
      * <p>
      * override the hashCode method. to generate the hashcode for the trainee object as ID * 32.
      * </p>
      *
      * @return {@link int} return hashcode of all object as 0;
-     **/    /*
+     **/
     @Override
     public int hashCode() {
-        return getEmployee().getId() * 32;
+        return getId() * 32;
     }
-*/
+
 }
 
     

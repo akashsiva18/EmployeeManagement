@@ -16,7 +16,6 @@ import javax.persistence.*;
  **/
 @Entity(name = "qualification")
 public class Qualification{
-
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "qualification_id")
