@@ -29,11 +29,12 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
  **/
 @Controller
 public class EmployeeController {
+
+    private static final Logger logger = LogManager.getLogger(EmployeeController.class);
     @Autowired
     private TrainerService trainerService;
     @Autowired
     private TraineeService traineeService;
-    private static final Logger logger = LogManager.getLogger(EmployeeController.class);
 
     /**
      * It gets the url request and sent to index page
@@ -81,7 +82,8 @@ public class EmployeeController {
      * @return String- redirect page.
      **/
     @PostMapping(value = "/addTrainer")
-    public String addTrainerDetails(@ModelAttribute Trainer trainer, @RequestParam("method") String action, RedirectAttributes redirectAttributes) {
+    public String addTrainerDetails(@ModelAttribute Trainer trainer, @RequestParam("method") String action,
+                                    RedirectAttributes redirectAttributes) {
         try {
             trainerService.validateAndAddOrUpdateTrainerDetails(trainer);
             if (action.equals("addTrainer")) {
@@ -109,7 +111,8 @@ public class EmployeeController {
      * @return String - redirect page.
      **/
     @PostMapping(value = "/addTrainee")
-    public String addTraineeDetails(@ModelAttribute Trainee trainee, @RequestParam("method") String action, RedirectAttributes redirectAttributes) {
+    public String addTraineeDetails(@ModelAttribute Trainee trainee, @RequestParam("method") String action,
+                                    RedirectAttributes redirectAttributes) {
         try {
             traineeService.validateAndAddOrUpdateTraineeDetails(trainee);
             if (action.equals("addTrainee")) {
@@ -210,7 +213,8 @@ public class EmployeeController {
     @GetMapping("/deleteTrainer")
     private String deleteTrainerDetailsById(@RequestParam("ID") int id, RedirectAttributes redirectAttributes) {
         trainerService.removeTrainerById(id);
-        redirectAttributes.addFlashAttribute("message", "Trainer " + id + " deleted Successfully");
+        redirectAttributes.addFlashAttribute("message", "Trainer " + id
+                + " deleted Successfully");
         return "redirect:/viewTrainer";
     }
 
@@ -223,9 +227,11 @@ public class EmployeeController {
      * @return String - redirect to view trainee form
      */
     @GetMapping("/deleteTrainee")
-    private String deleteTraineeDetailsById(@RequestParam("ID") int id, RedirectAttributes redirectAttributes) {
+    private String deleteTraineeDetailsById(@RequestParam("ID") int id,
+                                            RedirectAttributes redirectAttributes) {
         traineeService.removeTraineeById(id);
-        redirectAttributes.addFlashAttribute("message", "Trainee " + id + " deleted Successfully");
+        redirectAttributes.addFlashAttribute("message", "Trainee " + id
+                + " deleted Successfully");
         return "redirect:/viewTrainee";
     }
 }

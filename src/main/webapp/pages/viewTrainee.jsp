@@ -35,15 +35,15 @@
                     <th>Email Id</th>
                     <th>Date Of Joining</th>
                     <th>Training Period</th>
-                    <th>Trainer Id</th>
+                    <th>Trainer Name</th>
                     <th colspan=2>Action</th>
                 </tr>
 		<%List<Trainee> trainees = (List<Trainee>)request.getAttribute("trainee");
 		if (null != trainees) {
             for(Trainee trainee: trainees) {
-                List<Integer> trainerIds = new ArrayList<>();
+                List<String> trainerIds = new ArrayList<>();
                 for (Trainer trainer : trainee.getTrainers()) {
-                    trainerIds.add(trainer.getId());
+                    trainerIds.add(trainer.getName());
                 }%>
             <tr>
                 <td style ="width:4%; text-align: right;"><%= trainee.getId() %></td>

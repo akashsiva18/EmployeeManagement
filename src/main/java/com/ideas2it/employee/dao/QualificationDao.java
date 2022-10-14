@@ -19,5 +19,11 @@ import java.util.Optional;
 @Repository
 public interface QualificationDao extends JpaRepository<Qualification, Integer> {
 
+    /**
+     * It checks the course from the Qualification table and return.
+     *
+     * @param course - description of the role.
+     * @return - optional Qualification object
+     */
     Optional<Qualification> findByCourse(String course);
 }

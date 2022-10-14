@@ -18,5 +18,12 @@ import java.util.Optional;
  **/
 @Repository
 public interface RoleDao extends JpaRepository<Role, Integer> {
+
+    /**
+     * It checks the description from the role table.
+     *
+     * @param description - description of the role.
+     * @return - optional role object
+     */
     Optional<Role> findByDescription(String description);
 }

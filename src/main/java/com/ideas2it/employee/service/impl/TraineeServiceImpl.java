@@ -14,9 +14,7 @@ import com.ideas2it.employee.exception.BadRequest;
 import com.ideas2it.employee.service.TrainerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.*;
-
 
 /**
  * <h2>TraineeServiceImpl</h2>

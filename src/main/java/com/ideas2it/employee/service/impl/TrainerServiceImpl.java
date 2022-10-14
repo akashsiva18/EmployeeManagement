@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.ArrayList;
 import java.time.LocalDate;
 import java.util.Optional;
-
 import com.ideas2it.employee.dao.QualificationDao;
 import com.ideas2it.employee.dao.RoleDao;
 import com.ideas2it.employee.dao.TrainerDao;
@@ -14,11 +13,9 @@ import com.ideas2it.employee.model.Role;
 import com.ideas2it.employee.service.TrainerService;
 import com.ideas2it.employee.util.DateUtil;
 import com.ideas2it.employee.util.StringUtil;
-import com.ideas2it.employee.exception.EmployeeNotFound;
 import com.ideas2it.employee.exception.BadRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 
 /**
  * <h2>TrainerServiceImpl</h2>
@@ -49,7 +46,7 @@ public class TrainerServiceImpl implements TrainerService {
      * </p>
      *
      * @param {@link Trainer} trainer - Object of the trainer
-     * 
+     *
      * @return {@link List<Integer>} return List of errors.
      * @throws BadRequest
      *
@@ -80,15 +77,14 @@ public class TrainerServiceImpl implements TrainerService {
             validationErrorList.add(4);
         }
         if (DateUtil.isFutureDate(trainer.getDateOfJoining())) {
-                errorMessage.append(slNo++).append(". Date of joining must not be a future Date.\n");
-                validationErrorList.add(5);
+            errorMessage.append(slNo++).append(". Date of joining must not be a future Date.\n");
+            validationErrorList.add(5);
         }
         Optional<Qualification> retrieveQualification = qualificationDao.findByCourse(trainer.getQualification().getCourse());
         if (retrieveQualification.isPresent()) {
             trainer.setQualification(retrieveQualification.get());
         }
         Optional<Role> retrieveRole = roleDao.findByDescription("Trainer");
-
         if (retrieveRole.isPresent()) {
             trainer.setRole(retrieveRole.get());
         } else {
@@ -103,45 +99,43 @@ public class TrainerServiceImpl implements TrainerService {
         return validationErrorList;
     }
 
-   /**
+    /**
      * <p>
      * Return Trainer List.
      * </p>
-     * 
+     *
      * @return {@link List<Trainer>} return List of Trainers.
      **/
     @Override
     public List<Trainer> getTrainers() {
-         return trainerDao.findAll();
-    } 
+        return trainerDao.findAll();
+    }
 
     /**
      * <p>
      * Remove Trainer by using Id of the trainer. 
      * </p>
-     * 
+     *
      * @param {@link String} id.
      *
      * @return {@link boolean} - if deleted return true else false
-     * @throws EmployeeNotFound
      **/
     @Override
     public boolean removeTrainerById(int id) {
         trainerDao.deleteById(id);
         Optional<Trainer> retrieveTrainer = trainerDao.findById(id);
         return retrieveTrainer.isEmpty();
-    }  
+    }
 
     /**
      * <p>
      * Return trainer if id is matched else throws Exception.
      * </p>
-     * 
+     *
      * @param {@link int} id - id of the Trainer.
      *
      * @return {@link Trainer}
      *         - that contain a copy of the Trainer matches to the id.
-     * @throws EmployeeNotFound
      **/
     @Override
     public Trainer getTrainerById(int id) {
@@ -158,7 +152,6 @@ public class TrainerServiceImpl implements TrainerService {
      *
      * @param trainerIds - list of Trainers Ids.
      * @return List<Trainers> - it contains the trainers.
-     *
      **/
     public List<Trainer> getMultipleTrainerByIds(List<Integer> trainerIds) {
         return trainerDao.findAllById(trainerIds);
