@@ -1,7 +1,9 @@
 package com.ideas2it.employee.service.impl;
 
+import com.ideas2it.employee.DTO.TraineeDTO;
 import com.ideas2it.employee.dao.QualificationDao;
 import com.ideas2it.employee.dao.RoleDao;
+import com.ideas2it.employee.mapper.TraineeMapper;
 import com.ideas2it.employee.model.Qualification;
 import com.ideas2it.employee.model.Trainee;
 import com.ideas2it.employee.model.Trainer;
@@ -28,17 +30,22 @@ import java.util.*;
  **/
 @Service
 public class TraineeServiceImpl implements TraineeService {
-    @Autowired
+
     private TraineeDao traineeDao;
-
-    @Autowired
     private QualificationDao qualificationDao;
-
-    @Autowired
     private RoleDao roleDao;
+    private TrainerService trainerService;
+    private TraineeMapper traineeMapper;
 
     @Autowired
-    private TrainerService trainerService;
+    public TraineeServiceImpl ( TraineeDao traineeDao, QualificationDao qualificationDao, RoleDao roleDao,
+                                TrainerService trainerService ,TraineeMapper traineeMapper){
+        this.traineeDao = traineeDao;
+        this.trainerService = trainerService;
+        this.qualificationDao = qualificationDao;
+        this.roleDao = roleDao;
+        this.traineeMapper = traineeMapper;
+    }
 
     /**
      * <p>
@@ -52,46 +59,46 @@ public class TraineeServiceImpl implements TraineeService {
      * @throws BadRequest
      **/
     @Override
-    public List<Integer> validateAndAddOrUpdateTraineeDetails(Trainee trainee) throws BadRequest {
+    public List<Integer> validateAndAddOrUpdateTraineeDetails(TraineeDTO traineeDTO) throws BadRequest {
 
         List<Integer> validationErrorList = new ArrayList<>();
         Set<Trainer> trainersOfTrainee;
         Integer slNo = 1;
         StringBuilder errorMessage = new StringBuilder("\nValidation Errors\n");
-        if (!StringUtil.isValidName(trainee.getName())) {
+        if (!StringUtil.isValidName(traineeDTO.getName())) {
             errorMessage.append(slNo++).append(". Invalid Name. It must contain Alphabet.\n");
             validationErrorList.add(1);
         }
-        if (!DateUtil.isAgeEligible(trainee.getDateOfBirth(),18)) {
+        if (!DateUtil.isAgeEligible(traineeDTO.getDateOfBirth(),18)) {
             errorMessage.append(slNo++).append(". Invalid Date Of Birth.\n\t")
                     .append("\n\tb) Age must above 18.\n");
             validationErrorList.add(2);
         }
-        String mobileNumber = Long.toString(trainee.getMobileNumber());
+        String mobileNumber = Long.toString(traineeDTO.getMobileNumber());
         if (!StringUtil.isValidMobileNumber(mobileNumber)) {
             errorMessage.append(slNo++).append(". Invalid Mobile Number. It must contain 10 digits\n");
             validationErrorList.add(3);
         }
-        if (!StringUtil.isEmailValid(trainee.getEmailId())) {
+        if (!StringUtil.isEmailValid(traineeDTO.getEmailId())) {
             errorMessage.append(slNo++).append(". Invalid Mail Id.\n");
             validationErrorList.add(4);
         }
-        if (DateUtil.isFutureDate(trainee.getDateOfJoining())) {
+        if (DateUtil.isFutureDate(traineeDTO.getDateOfJoining())) {
             errorMessage.append(slNo++).append(". Date of joining must not be a future Date.\n");
             validationErrorList.add(5);
         }
-        Optional<Qualification> retrieveQualification = qualificationDao.findByCourse(trainee.getQualification().getCourse());
-        retrieveQualification.ifPresent(trainee::setQualification);
-        Optional<Role> retrieveRole = roleDao.findByDescription("Trainee");
-        if (retrieveRole.isPresent()) {
-            trainee.setRole(retrieveRole.get());
-        } else {
-            Role role = new Role("Trainee");
-            trainee.setRole(role);
-        }
-        trainersOfTrainee = new HashSet<>(trainerService.getMultipleTrainerByIds(trainee.getTrainersId()));
-        trainee.setTrainers(trainersOfTrainee);
+
         if (validationErrorList.isEmpty()) {
+            Trainee trainee = traineeMapper.traineeDtoToTrainee(traineeDTO);
+            Optional<Qualification> retrieveQualification = qualificationDao
+                    .findByCourse(trainee.getQualification().getCourse());
+            retrieveQualification.ifPresent(trainee::setQualification);
+            Optional<Role> retrieveRole = roleDao.findByDescription("Trainee");
+            if (retrieveRole.isPresent()) {
+                trainee.setRole(retrieveRole.get());
+            }
+            trainersOfTrainee = new HashSet<>(trainerService.getMultipleTrainerByIds(trainee.getTrainersId()));
+            trainee.setTrainers(trainersOfTrainee);
             traineeDao.save(trainee);
         } else {
             throw new BadRequest(errorMessage.toString(), validationErrorList);
@@ -107,24 +114,22 @@ public class TraineeServiceImpl implements TraineeService {
      * @return {@link List<Trainee>} return List of Trainees.
      **/
     @Override
-    public List<Trainee> getTrainees() {
-        return traineeDao.findAll();
+    public List<TraineeDTO> getTrainees() {
+        List<TraineeDTO> traineeDtoAsList = new ArrayList<>();
+        traineeDao.findAll().forEach(trainee -> traineeDtoAsList.add(traineeMapper.traineeToTraineeDTO(trainee)));
+        return traineeDtoAsList;
     }  
 
     /**
      * <p>
      * Remove Trainee by using Id.
      * </p>
-     * 
-     * @param {@link int} id.
      *
-     * @return {@link boolean} - if deleted return true else false
+     * @param {@link int} id.
      **/
     @Override
-    public boolean removeTraineeById(int id) {
+    public void removeTraineeById(int id) {
         traineeDao.deleteById(id);
-        Optional<Trainee> getTrainee = traineeDao.findById(id);
-        return getTrainee.isEmpty();
     }
 
     /**
@@ -137,7 +142,7 @@ public class TraineeServiceImpl implements TraineeService {
      * @return {@link Trainee}.
      **/
     @Override
-    public Trainee getTraineeById(int id) {
+    public TraineeDTO getTraineeById(int id) {
         Trainee trainee = null;
         Optional<Trainee> getTrainee = traineeDao.findById(id);
         if (getTrainee.isPresent()) {
@@ -148,6 +153,6 @@ public class TraineeServiceImpl implements TraineeService {
             trainerIds.add(trainer.getId());
         }
         trainee.setTrainersId(trainerIds);
-        return trainee;
+        return traineeMapper.traineeToTraineeDTO(trainee);
     }
 }

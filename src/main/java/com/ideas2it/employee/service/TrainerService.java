@@ -1,5 +1,6 @@
 package com.ideas2it.employee.service;
 
+import com.ideas2it.employee.DTO.TrainerDTO;
 import com.ideas2it.employee.model.Trainer;
 import com.ideas2it.employee.exception.BadRequest;
 
@@ -29,7 +30,7 @@ public interface TrainerService {
      * @throws BadRequest
      *
      **/
-    public List<Integer> validateAndAddOrUpdateTrainerDetails(Trainer trainer) throws BadRequest;
+    public List<Integer> validateAndAddOrUpdateTrainerDetails(TrainerDTO trainerDTO) throws BadRequest;
 
    /**
      * <p>
@@ -38,18 +39,16 @@ public interface TrainerService {
      * 
      * @return {@link List<Trainer>} return List of Trainers.
      **/
-    public List<Trainer> getTrainers();
+    public List<TrainerDTO> getTrainers();
 
     /**
      * <p>
-     * Remove Trainer by using Id of the trainer. 
+     * Remove Trainer by using Id of the trainer.
      * </p>
-     * 
-     * @param {@link String} id.
      *
-     * @return {@link boolean} - if deleted return true else false
+     * @param {@link String} id.
      **/
-    public boolean removeTrainerById(int id);
+    public void removeTrainerById(int id);
 
     /**
      * <p>
@@ -61,7 +60,7 @@ public interface TrainerService {
      * @return {@link Trainer}
      *         - that contain a copy of the Trainer matches to the id.
      **/
-    public Trainer getTrainerById(int id);
+    public TrainerDTO getTrainerById(int id);
 
     /**
      * It returns the trainers object as list.

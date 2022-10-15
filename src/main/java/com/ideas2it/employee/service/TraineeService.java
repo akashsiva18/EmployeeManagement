@@ -1,5 +1,6 @@
 package com.ideas2it.employee.service;
 
+import com.ideas2it.employee.DTO.TraineeDTO;
 import com.ideas2it.employee.model.Trainee;
 import com.ideas2it.employee.exception.BadRequest;
 
@@ -28,7 +29,7 @@ public interface TraineeService {
      * @return {@link List<Integer>} return List of errors.
      * @throws BadRequest
      **/
-    public List<Integer> validateAndAddOrUpdateTraineeDetails(Trainee trainee) throws BadRequest;
+    public List<Integer> validateAndAddOrUpdateTraineeDetails(TraineeDTO traineeDTO) throws BadRequest;
 
     /**
      * <p>
@@ -37,18 +38,16 @@ public interface TraineeService {
      *
      * @return {@link List<Trainee>} return List of Trainees.
      **/
-    public List<Trainee> getTrainees();
+    public List<TraineeDTO> getTrainees();
 
     /**
      * <p>
      * Remove Trainee by using Id of the trainee if no id not found it throws exception.
      * </p>
-     * 
-     * @param {@link int} id.
      *
-     * @return {@link boolean} - if deleted return true else false
+     * @param {@link int} id.
      **/
-    public boolean removeTraineeById(int id);
+    public void removeTraineeById(int id);
 
     /**
      * <p>
@@ -59,5 +58,5 @@ public interface TraineeService {
      *
      * @return {@link Trainee}.
      **/
-    public Trainee getTraineeById(int id);
+    public TraineeDTO getTraineeById(int id);
 }

@@ -1,4 +1,4 @@
-<%@page import="com.ideas2it.employee.model.Trainee, com.ideas2it.employee.model.Employee, com.ideas2it.employee.model.Trainer"%>
+<%@page import="com.ideas2it.employee.DTO.TraineeDTO"%>
 <%@page import="java.util.ArrayList,java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
@@ -38,24 +38,21 @@
                     <th>Trainer Name</th>
                     <th colspan=2>Action</th>
                 </tr>
-		<%List<Trainee> trainees = (List<Trainee>)request.getAttribute("trainee");
+		<%List<TraineeDTO> trainees = (List<TraineeDTO>)request.getAttribute("trainees");
 		if (null != trainees) {
-            for(Trainee trainee: trainees) {
-                List<String> trainerIds = new ArrayList<>();
-                for (Trainer trainer : trainee.getTrainers()) {
-                    trainerIds.add(trainer.getName());
-                }%>
+            for(TraineeDTO trainee: trainees) {
+                %>
             <tr>
                 <td style ="width:4%; text-align: right;"><%= trainee.getId() %></td>
                 <td><%= trainee.getName() %></td>
                 <td style="width:5%; text-align:center;"><%= trainee.getGender() %></td>
-                <td style="width:6%; text-align:center;"><%= trainee.getQualification() %></td>
+                <td style="width:6%; text-align:center;"><%= trainee.getQualificationDTO() %></td>
                 <td style="width:18%;"><%= trainee.getAddress() %></td>
                 <td style="width:7%; text-align:center;"><%= trainee.getMobileNumber() %></td>
                 <td style="width:15%;"><%= trainee.getEmailId() %></td>
                 <td style="width:9%; text-align:center;"><%= trainee.getDateOfJoining() %></td>
                 <td style="width:5%; text-align:center;"><%= trainee.getTrainingPeriod() %></td>
-                <td style="width:5%;"><%= trainerIds.toString().replaceAll("[\\[\\]]","") %></td>
+                <td style="width:5%;"><%= trainee.getTrainersName() %></td>
                 <td style="width:2%;"><a href=/updateTraineeForm?flag=updateTrainee&ID=<%=trainee.getId()%> ><input type="button" value="update"></a></td>
                 <td style="width:2%;"><a href=deleteTrainee?ID=<%=trainee.getId()%>  ><input type="button" value="delete"></a></td>
             </tr>

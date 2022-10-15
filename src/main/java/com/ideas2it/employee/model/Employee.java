@@ -31,7 +31,7 @@ public class Employee {
     private LocalDate dateOfBirth;
     @Column(name = "gender")
     private String gender;
-    @ManyToOne(cascade = {CascadeType.PERSIST})
+    @ManyToOne(cascade = {CascadeType.MERGE})
     @JoinColumn(name="qualification_id", referencedColumnName = "qualification_id")
     private Qualification qualification;
     @Column(name = "address")
@@ -43,7 +43,7 @@ public class Employee {
     @Column(name = "date_of_joining")
     @DateTimeFormat(pattern = "yyyy-MM-d")
     private LocalDate dateOfJoining;
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "role_id", referencedColumnName = "role_id")
     private Role role;
 

@@ -6,7 +6,7 @@
 <html>
 <body style="background-color:LightGray; font-size:20px; margin-left : 550px;">
 
-<form:form method ="Post" modelAttribute="trainee" action = "addTrainee">
+<form:form method ="Post" modelAttribute="traineeDTO" action = "addTrainee">
     <h2><%  String action = request.getParameter("flag");
         if (action.equals("addTrainee")) {
         %>Add Trainee Details<%;
@@ -16,6 +16,9 @@
 
     <input type="hidden" id="flag" name="flag" value="<%=action%>" >
     <input type="hidden" id="flag" name="method" value=<%= ((action.equals("addTrainee")) ? "addTrainee" : "updateTrainee")%> >
+    <form:select hidden="hidden" path="roleDTO.description">
+         <form:option value="Trainee" selected="selected"/>
+    </form:select>
 
     <form:input type="hidden" path="id" />
     <table style="font-size:20px">
@@ -50,7 +53,7 @@
                 Qualification :
             </td>
             <td>
-                <form:input path="qualification.course" required="required"/>
+                <form:input path="qualificationDTO.course" required="required"/>
             </td>
         </tr>
         <tr>
@@ -94,12 +97,12 @@
             </td>
         </tr>
         <tr>
-            <td>
+        <td>
         Trainers:
         </td>
         <td>
-            <form:select path="trainersId">
-                <c:forEach items="${trainers}" var="trainer">
+            <form:select path="trainerIds">
+                <c:forEach items="${trainerDTOs}" var="trainer">
                     <form:option value="${trainer.id}">${trainer.id}.${trainer.name}</form:option>
                 </c:forEach>
             </form:select>

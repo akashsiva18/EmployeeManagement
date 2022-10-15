@@ -2,11 +2,14 @@ package com.ideas2it.employee.service.impl;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.time.LocalDate;
 import java.util.Optional;
+
+import com.ideas2it.employee.DTO.TrainerDTO;
 import com.ideas2it.employee.dao.QualificationDao;
 import com.ideas2it.employee.dao.RoleDao;
 import com.ideas2it.employee.dao.TrainerDao;
+import com.ideas2it.employee.mapper.TraineeMapper;
+import com.ideas2it.employee.mapper.TrainerMapper;
 import com.ideas2it.employee.model.Qualification;
 import com.ideas2it.employee.model.Trainer;
 import com.ideas2it.employee.model.Role;
@@ -29,15 +32,19 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public class TrainerServiceImpl implements TrainerService {
-    @Autowired
     private TrainerDao trainerDao;
-
-    @Autowired
     private QualificationDao qualificationDao;
+    private RoleDao roleDao;
+    private TrainerMapper trainerMapper;
 
     @Autowired
-    private RoleDao roleDao;
-
+    public TrainerServiceImpl(TrainerDao trainerDao, QualificationDao qualificationDao,
+                              RoleDao roleDao, TrainerMapper trainerMapper) {
+        this.trainerDao = trainerDao;
+        this.qualificationDao = qualificationDao;
+        this.roleDao = roleDao;
+        this.trainerMapper = trainerMapper;
+    }
 
     /**
      * <p>
@@ -52,46 +59,43 @@ public class TrainerServiceImpl implements TrainerService {
      *
      **/
     @Override
-    public List<Integer> validateAndAddOrUpdateTrainerDetails(Trainer trainer) throws BadRequest {
+    public List<Integer> validateAndAddOrUpdateTrainerDetails(TrainerDTO trainerDTO) throws BadRequest {
         List<Integer> validationErrorList = new ArrayList<>();
         Integer slNo = 1;
         StringBuilder errorMessage = new StringBuilder("\nValidation Errors\n");
-        if (!StringUtil.isValidName(trainer.getName())) {
+        if (!StringUtil.isValidName(trainerDTO.getName())) {
             errorMessage.append(slNo++).append(". Invalid Name. It must contain Alphabet.\n");
             validationErrorList.add(1);
         }
-        LocalDate validDateOfBirth = LocalDate.now();
-        Integer age = 0;
-        if (!DateUtil.isAgeEligible(trainer.getDateOfBirth(),18)) {
+        if (!DateUtil.isAgeEligible(trainerDTO.getDateOfBirth(),18)) {
             errorMessage.append(slNo++).append(". Invalid Date Of Birth.\n\ta)")
                     .append("\n\tb) Age must above 18.\n");
             validationErrorList.add(2);
         }
-        String mobileNumber = Long.toString(trainer.getMobileNumber());
+        String mobileNumber = Long.toString(trainerDTO.getMobileNumber());
         if (!StringUtil.isValidMobileNumber(mobileNumber)) {
             errorMessage.append(slNo++).append(". Invalid Mobile Number. It must contain 10 digits\n");
             validationErrorList.add(3);
         }
-        if (!StringUtil.isEmailValid(trainer.getEmailId())) {
+        if (!StringUtil.isEmailValid(trainerDTO.getEmailId())) {
             errorMessage.append(slNo++).append(". Invalid Mail Id.\n");
             validationErrorList.add(4);
         }
-        if (DateUtil.isFutureDate(trainer.getDateOfJoining())) {
+        if (DateUtil.isFutureDate(trainerDTO.getDateOfJoining())) {
             errorMessage.append(slNo++).append(". Date of joining must not be a future Date.\n");
             validationErrorList.add(5);
         }
-        Optional<Qualification> retrieveQualification = qualificationDao.findByCourse(trainer.getQualification().getCourse());
-        if (retrieveQualification.isPresent()) {
-            trainer.setQualification(retrieveQualification.get());
-        }
-        Optional<Role> retrieveRole = roleDao.findByDescription("Trainer");
-        if (retrieveRole.isPresent()) {
-            trainer.setRole(retrieveRole.get());
-        } else {
-            Role role = new Role("Trainer");
-            trainer.setRole(role);
-        }
+        Trainer trainer = trainerMapper.trainerDtoToTrainer(trainerDTO);
         if (validationErrorList.isEmpty()) {
+            Optional<Qualification> retrieveQualification = qualificationDao
+                    .findByCourse(trainer.getQualification().getCourse());
+            if (retrieveQualification.isPresent()) {
+                trainer.setQualification(retrieveQualification.get());
+            }
+            Optional<Role> retrieveRole = roleDao.findByDescription("Trainer");
+            if (retrieveRole.isPresent()) {
+                trainer.setRole(retrieveRole.get());
+            }
             trainerDao.save(trainer);
         } else {
             throw new BadRequest(errorMessage.toString(), validationErrorList);
@@ -107,24 +111,22 @@ public class TrainerServiceImpl implements TrainerService {
      * @return {@link List<Trainer>} return List of Trainers.
      **/
     @Override
-    public List<Trainer> getTrainers() {
-        return trainerDao.findAll();
+    public List<TrainerDTO> getTrainers() {
+        List<TrainerDTO> trainerDTOList = new ArrayList<>();
+        trainerDao.findAll().forEach(trainer -> trainerDTOList.add(trainerMapper.trainerToTrainerDTO(trainer)));
+        return trainerDTOList;
     }
 
     /**
      * <p>
-     * Remove Trainer by using Id of the trainer. 
+     * Remove Trainer by using Id of the trainer.
      * </p>
      *
      * @param {@link String} id.
-     *
-     * @return {@link boolean} - if deleted return true else false
      **/
     @Override
-    public boolean removeTrainerById(int id) {
+    public void removeTrainerById(int id) {
         trainerDao.deleteById(id);
-        Optional<Trainer> retrieveTrainer = trainerDao.findById(id);
-        return retrieveTrainer.isEmpty();
     }
 
     /**
@@ -138,13 +140,13 @@ public class TrainerServiceImpl implements TrainerService {
      *         - that contain a copy of the Trainer matches to the id.
      **/
     @Override
-    public Trainer getTrainerById(int id) {
-        Trainer trainer = null;
+    public TrainerDTO getTrainerById(int id) {
+        TrainerDTO trainerDTO = null;
         Optional<Trainer> retrieveTrainer = trainerDao.findById(id);
         if (retrieveTrainer.isPresent()) {
-            trainer = retrieveTrainer.get();
+            trainerDTO = trainerMapper.trainerToTrainerDTO(retrieveTrainer.get());
         }
-        return trainer;
+        return trainerDTO;
     }
 
     /**

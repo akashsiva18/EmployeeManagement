@@ -31,7 +31,7 @@ public class Trainee extends Employee{
     @Transient
     private List<Integer> trainersId;
 
-    @ManyToMany(cascade = { CascadeType.ALL})
+    @ManyToMany(cascade = { CascadeType.PERSIST})
     @JoinTable(name = "employee_relationship",
             joinColumns = { @JoinColumn(name = "trainee_id") },
             inverseJoinColumns = { @JoinColumn(name = "trainer_id") })

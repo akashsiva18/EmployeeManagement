@@ -1,4 +1,4 @@
-<%@page import="com.ideas2it.employee.model.Employee, com.ideas2it.employee.model.Trainer"%>
+<%@page import="com.ideas2it.employee.DTO.EmployeeDTO, com.ideas2it.employee.DTO.TrainerDTO"%>
 <%@page import="java.util.ArrayList,java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
@@ -39,20 +39,20 @@
                     <th colspan=2>Action</th>
                 </tr>
 
-		<%ArrayList<Trainer> trainers = (ArrayList<Trainer>)request.getAttribute("Trainer");
-		if (null != trainers) {
-            for(Trainer trainer: trainers) {%>
+		<%ArrayList<TrainerDTO> trainersDTOs = (ArrayList<TrainerDTO>)request.getAttribute("trainerDTOs");
+		if (null != trainersDTOs) {
+            for(TrainerDTO trainer: trainersDTOs) {%>
             <tr>
                 <td style ="width:4%; text-align: right;"><%= trainer.getId() %></td>
                 <td><%= trainer.getName() %></td>
                 <td style="width:5%; text-align:center;"><%= trainer.getGender() %></td>
-                <td style="width:6%; text-align:center;"><%= trainer.getQualification() %></td>
+                <td style="width:6%; text-align:center;"><%= trainer.getQualificationDTO() %></td>
                 <td style="width:18%;"><%= trainer.getAddress() %></td>
                 <td style="width:7%; text-align:center;"><%= trainer.getMobileNumber() %></td>
                 <td style="width:15%;"><%= trainer.getEmailId() %></td>
                 <td style="width:9%; text-align:center;"><%= trainer.getDateOfJoining() %></td>
                 <td style="width:8%; text-align:center;"><%= trainer.getExperience() %></td>
-                <td style="width:6%; text-align:center;"><%= trainer.getTrainees().size() %></td>
+                <td style="width:6%; text-align:center;"><%= trainer.getNoOfTrainees() %></td>
                 <td style="width:2%;"><a href=/updateTrainerForm?flag=updateTrainer&ID=<%=trainer.getId()%> ><input type="button" value="update"></a></td>
                 <td style="width:2%;"><a href=deleteTrainer?ID=<%=trainer.getId()%>  ><input type="button" value="delete"></a></td>
             </tr>

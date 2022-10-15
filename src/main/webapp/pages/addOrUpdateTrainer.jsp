@@ -4,7 +4,7 @@
 <html>
 
 <body style="background-color:LightGray; font-size:20px; margin-left : 550px;">
-<form:form method = "Post" modelAttribute="trainer" action = "addTrainer">
+<form:form method = "Post" modelAttribute="trainerDTO" action = "addTrainer">
     <h2><% String action = request.getParameter("flag");
         if (action.equals("addTrainer")) {
         %>Add Trainer Details<%;
@@ -13,7 +13,9 @@
         }%></h2>
     <table>
         <input type="hidden" name="method" value="<%= ((action.equals("addTrainer")) ? "addTrainer" : "updateTrainer")%>" >
-
+        <form:select hidden="hidden" path="roleDTO.description">
+            <form:option value="Trainer" selected="selected"/>
+        </form:select>
         <form:input type="hidden" path="id" />
         <tr>
             <td>
@@ -43,7 +45,7 @@
                 Qualification :
                 </td>
                 <td>
-            <form:input path="qualification.course" required="required"/>
+            <form:input path="qualificationDTO.course" required="required"/>
             </td>
         </tr>
         <tr>
@@ -58,7 +60,6 @@
             <td>
                 Mobile Number :
             </td>
-
             <td>
                 <form:input type="number" path="mobileNumber" required="required"/>
             </td>
