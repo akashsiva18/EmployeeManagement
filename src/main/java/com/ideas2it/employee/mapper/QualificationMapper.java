@@ -6,11 +6,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class QualificationMapper {
-    public Qualification qualificationDtoToQualification(QualificationDTO qualificationDTO) {
+    public static Qualification qualificationDtoToQualification(QualificationDTO qualificationDTO) {
         return new Qualification(qualificationDTO.getCourse());
     }
 
-    public QualificationDTO qualificationToQualificationDto(Qualification qualification) {
+    public static QualificationDTO qualificationToQualificationDto(Qualification qualification) {
         return new QualificationDTO(qualification.getCourse());
     }
 }

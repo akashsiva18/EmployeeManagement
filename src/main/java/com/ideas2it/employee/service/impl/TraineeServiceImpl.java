@@ -35,16 +35,14 @@ public class TraineeServiceImpl implements TraineeService {
     private QualificationDao qualificationDao;
     private RoleDao roleDao;
     private TrainerService trainerService;
-    private TraineeMapper traineeMapper;
 
     @Autowired
     public TraineeServiceImpl ( TraineeDao traineeDao, QualificationDao qualificationDao, RoleDao roleDao,
-                                TrainerService trainerService ,TraineeMapper traineeMapper){
+                                TrainerService trainerService){
         this.traineeDao = traineeDao;
         this.trainerService = trainerService;
         this.qualificationDao = qualificationDao;
         this.roleDao = roleDao;
-        this.traineeMapper = traineeMapper;
     }
 
     /**
@@ -89,7 +87,7 @@ public class TraineeServiceImpl implements TraineeService {
         }
 
         if (validationErrorList.isEmpty()) {
-            Trainee trainee = traineeMapper.traineeDtoToTrainee(traineeDTO);
+            Trainee trainee = TraineeMapper.traineeDtoToTrainee(traineeDTO);
             Optional<Qualification> retrieveQualification = qualificationDao
                     .findByCourse(trainee.getQualification().getCourse());
             retrieveQualification.ifPresent(trainee::setQualification);
@@ -116,7 +114,7 @@ public class TraineeServiceImpl implements TraineeService {
     @Override
     public List<TraineeDTO> getTrainees() {
         List<TraineeDTO> traineeDtoAsList = new ArrayList<>();
-        traineeDao.findAll().forEach(trainee -> traineeDtoAsList.add(traineeMapper.traineeToTraineeDTO(trainee)));
+        traineeDao.findAll().forEach(trainee -> traineeDtoAsList.add(TraineeMapper.traineeToTraineeDTO(trainee)));
         return traineeDtoAsList;
     }  
 
@@ -153,6 +151,6 @@ public class TraineeServiceImpl implements TraineeService {
             trainerIds.add(trainer.getId());
         }
         trainee.setTrainersId(trainerIds);
-        return traineeMapper.traineeToTraineeDTO(trainee);
+        return TraineeMapper.traineeToTraineeDTO(trainee);
     }
 }

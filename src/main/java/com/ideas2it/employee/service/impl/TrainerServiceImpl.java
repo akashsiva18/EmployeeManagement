@@ -8,7 +8,6 @@ import com.ideas2it.employee.DTO.TrainerDTO;
 import com.ideas2it.employee.dao.QualificationDao;
 import com.ideas2it.employee.dao.RoleDao;
 import com.ideas2it.employee.dao.TrainerDao;
-import com.ideas2it.employee.mapper.TraineeMapper;
 import com.ideas2it.employee.mapper.TrainerMapper;
 import com.ideas2it.employee.model.Qualification;
 import com.ideas2it.employee.model.Trainer;
@@ -35,15 +34,13 @@ public class TrainerServiceImpl implements TrainerService {
     private TrainerDao trainerDao;
     private QualificationDao qualificationDao;
     private RoleDao roleDao;
-    private TrainerMapper trainerMapper;
 
     @Autowired
     public TrainerServiceImpl(TrainerDao trainerDao, QualificationDao qualificationDao,
-                              RoleDao roleDao, TrainerMapper trainerMapper) {
+                              RoleDao roleDao) {
         this.trainerDao = trainerDao;
         this.qualificationDao = qualificationDao;
         this.roleDao = roleDao;
-        this.trainerMapper = trainerMapper;
     }
 
     /**
@@ -85,7 +82,7 @@ public class TrainerServiceImpl implements TrainerService {
             errorMessage.append(slNo++).append(". Date of joining must not be a future Date.\n");
             validationErrorList.add(5);
         }
-        Trainer trainer = trainerMapper.trainerDtoToTrainer(trainerDTO);
+        Trainer trainer = TrainerMapper.trainerDtoToTrainer(trainerDTO);
         if (validationErrorList.isEmpty()) {
             Optional<Qualification> retrieveQualification = qualificationDao
                     .findByCourse(trainer.getQualification().getCourse());
@@ -113,7 +110,7 @@ public class TrainerServiceImpl implements TrainerService {
     @Override
     public List<TrainerDTO> getTrainers() {
         List<TrainerDTO> trainerDTOList = new ArrayList<>();
-        trainerDao.findAll().forEach(trainer -> trainerDTOList.add(trainerMapper.trainerToTrainerDTO(trainer)));
+        trainerDao.findAll().forEach(trainer -> trainerDTOList.add(TrainerMapper.trainerToTrainerDTO(trainer)));
         return trainerDTOList;
     }
 
@@ -144,7 +141,7 @@ public class TrainerServiceImpl implements TrainerService {
         TrainerDTO trainerDTO = null;
         Optional<Trainer> retrieveTrainer = trainerDao.findById(id);
         if (retrieveTrainer.isPresent()) {
-            trainerDTO = trainerMapper.trainerToTrainerDTO(retrieveTrainer.get());
+            trainerDTO = TrainerMapper.trainerToTrainerDTO(retrieveTrainer.get());
         }
         return trainerDTO;
     }
