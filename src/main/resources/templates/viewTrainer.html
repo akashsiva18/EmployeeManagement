@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleview.css" type="text/css">
+</head>
+<body>
+<div class="left">
+  <p><div class="image_set">
+  <img class="responsive" src="profile.png" alt="profilePicture" >
+  <p class="profile_name" th:text="${trainer.name}"></p>
+  <p class="profile_name"></p>
+  <p class="profile_role" th:text="${trainer.roleDTO.description}"></p>
+</div>
+  <div class="profile_data">
+    <div class="inline">
+    <img class="icon" src="smartphone.png" alt="smartphone" >
+    <p class="profile_Details" id="phone1" th:text="${trainer.mobileNumber}"> </p>
+    </div>
+    <div class="inline">
+      <img class="icon" src="calendar.png" alt="calendar" >
+    <p class="profile_Details" th:text="${trainer.dateOfBirth}"></p>
+    </div>
+    <div class="inline">
+      <img class="icon" src="open_book.png" alt="book" >
+    <p class="profile_Details" th:text="${trainer.qualificationDTO.course}"></p>
+    </div>
+    <div class="inline">
+      <img class="icon" src="email.png" alt="email" >
+      <p class="profile_Details" th:text="${trainer.emailId}"></p>
+    </div>
+    <div class="inline">
+      <img class="icon" src="location.png" alt="location" >
+    <p class="profile_Details" th:text="${trainer.address}"></p>
+    </div>
+  </div>
+</div>
+
+<div class="right">
+  <div class="top">
+    <p class="headings">Professional summary</p>
+    <p>
+      I recollect that my first exploit in squirrel-shooting was in a grove of tall walnut-trees that shades one side of
+      the valley. I had wandered into it at noontime, when all nature is peculiarly quiet, and was startled by the roar
+      of my own gun, as it broke the Sabbath stillness around and was prolonged and reverberated by the angry echoes.
+    </p>
+  </div>
+  <div class="middle">
+    <p class="headings">Work Experience</p>
+    <table class="custom_table">
+      <tr>
+        <td colspan="2" class="top_data">
+          Senior Front End Developer
+        </td>
+        <td  class="top_data_button">
+          Full Time
+        </td>
+      </tr>
+      <tr class="bottom_row">
+        <td class="bottom_data">
+          Apple Inc.
+        </td>
+        <td class="bottom_data">
+          Los Angeles.
+        </td>
+        <td class="right_float">
+          April 12,2020.
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="top_data">
+          Junior Front End Developer
+        </td>
+        <td  class="top_data_button">
+          Full Time
+        </td>
+      </tr>
+      <tr class="bottom_row">
+        <td class="bottom_data">
+          Figuma
+        </td>
+        <td class="bottom_data">
+          Los Angeles.
+        </td>
+        <td class="right_float">
+          April 12,2018 - April 01,2020.
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="top_data">
+          Intern Developer
+        </td>
+        <td  class="top_data_button">
+          Full Time
+        </td>
+      </tr>
+      <tr class="bottom_row">
+        <td class="bottom_data">
+          Microsoft
+        </td>
+        <td class="bottom_data">
+          New York City
+        </td>
+        <td class="right_float">
+          April 12,2017 - April 11,2018.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <p class="headings">Education</p>
+  <table class="custom_table">
+    <tr>
+      <td colspan="2" class="top_data">
+        Master in Software Engineering
+      </td>
+    </tr>
+    <tr class="bottom_row">
+      <td class="bottom_data">
+        Massachusetts Institute of Technology
+      </td>
+      <td class="right_float">
+        Jun 12,2014 - Dec 12,2016
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="top_data">
+        Bachelor in Software Engineering
+      </td>
+    </tr>
+    <tr class="bottom_row">
+      <td class="bottom_data">
+        Massachusetts Institute of Technology
+      </td>
+      <td class="right_float">
+        Jun 12,2014 - Dec 12,2016
+      </td>
+    </tr>
+
+  </table>
+
+
+</div>
+
+</body>
+</html>

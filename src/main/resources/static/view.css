@@ -1,0 +1,12 @@
+table, th, td {border: 1px solid black;border-collapse: collapse;background-color:Lightgray;width: 43%;}
+table {height: 20% page; overflow-y:scroll;}
+th {background-color:black; color:white;}
+h2 {
+text-align: left;
+font-size: 40px;
+}
+.scrollTable {
+height: 300px;
+width: 100%;
+overflow-y: scroll;
+}

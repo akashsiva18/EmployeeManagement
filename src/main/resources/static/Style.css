@@ -1,0 +1,29 @@
+.index_body {
+    padding-top: 190px;
+    text-align: center;
+}
+
+#heading{
+   font-size: 55px;
+   font-weight: bold;
+}
+
+.display {
+    background-color: LightGray;
+}
+
+.button {
+      background-color: #fffefe96;
+      padding: 15px 31px;
+      text-align: center;
+      border-radius: 12px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-size:25px;
+      color:black;
+}
+.button:hover {
+   background-color: #030303;
+   color:white;
+   border:none;
+}
