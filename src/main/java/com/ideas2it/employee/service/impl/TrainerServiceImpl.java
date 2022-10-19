@@ -146,13 +146,5 @@ public class TrainerServiceImpl implements TrainerService {
         return trainerDTO;
     }
 
-    /**
-     * It returns the trainers object as list.
-     *
-     * @param trainerIds - list of Trainers Ids.
-     * @return List<Trainers> - it contains the trainers.
-     **/
-    public List<Trainer> getMultipleTrainerByIds(List<Integer> trainerIds) {
-        return trainerDao.findAllById(trainerIds);
-    }
+
 }

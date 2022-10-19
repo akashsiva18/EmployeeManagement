@@ -3,6 +3,7 @@ package com.ideas2it.employee.service.impl;
 import com.ideas2it.employee.DTO.TraineeDTO;
 import com.ideas2it.employee.dao.QualificationDao;
 import com.ideas2it.employee.dao.RoleDao;
+import com.ideas2it.employee.helper.Helper;
 import com.ideas2it.employee.mapper.TraineeMapper;
 import com.ideas2it.employee.model.Qualification;
 import com.ideas2it.employee.model.Trainee;
@@ -34,13 +35,13 @@ public class TraineeServiceImpl implements TraineeService {
     private TraineeDao traineeDao;
     private QualificationDao qualificationDao;
     private RoleDao roleDao;
-    private TrainerService trainerService;
+    private Helper helper;
 
     @Autowired
     public TraineeServiceImpl ( TraineeDao traineeDao, QualificationDao qualificationDao, RoleDao roleDao,
-                                TrainerService trainerService){
+                                Helper helper){
         this.traineeDao = traineeDao;
-        this.trainerService = trainerService;
+        this.helper = helper;
         this.qualificationDao = qualificationDao;
         this.roleDao = roleDao;
     }
@@ -95,7 +96,7 @@ public class TraineeServiceImpl implements TraineeService {
             if (retrieveRole.isPresent()) {
                 trainee.setRole(retrieveRole.get());
             }
-            trainersOfTrainee = new HashSet<>(trainerService.getMultipleTrainerByIds(trainee.getTrainersId()));
+            trainersOfTrainee = new HashSet<>(helper.getMultipleTrainerByIds(trainee.getTrainersId()));
             trainee.setTrainers(trainersOfTrainee);
             traineeDao.save(trainee);
         } else {

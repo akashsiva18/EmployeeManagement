@@ -49,7 +49,7 @@ public class EmployeeController {
      */
     @GetMapping("/")
     public String showIndex() {
-        return "index";
+        return "viewTraineeOfTrainer";
     }
 
     /**
@@ -208,16 +208,36 @@ public class EmployeeController {
         ModelAndView modelAndView = new ModelAndView();
         logger.info("\nDetails of Trainee\n");
         listOfTraineesDTO.forEach((trainee) -> logger.info(trainee + "\n"));
-        modelAndView.setViewName("viewTrainee");
+        modelAndView.setViewName("viewTrainees");
         modelAndView.addObject("trainees", listOfTraineesDTO);
         return modelAndView;
     }
 
+    /**
+     * It gets Trainer by the id and redirect the trainer to the viewTrainer Page.
+     *
+     * @param id -  id to get a Trainer.
+     * @return modelAndView
+     */
     @RequestMapping(value = "/viewSingleTrainer")
     private ModelAndView showTrainerDetails(@RequestParam int id) {
         TrainerDTO trainerDTO = trainerService.getTrainerById(id);
-        ModelAndView modelAndView = new ModelAndView("viewTrainer");
-        modelAndView.addObject("trainer",trainerDTO);
+        ModelAndView modelAndView = new ModelAndView("viewEmployee");
+        modelAndView.addObject("employee",trainerDTO);
+        return modelAndView;
+    }
+
+    /**
+     * It gets Trainee by the id and redirect the trainer to the viewTrainee Page.
+     *
+     * @param id -  id to get a Trainee.
+     * @return modelAndView
+     */
+    @RequestMapping(value = "/viewSingleTrainee")
+    private ModelAndView showTraineeDetails(@RequestParam int id) {
+        TraineeDTO traineeDTO = traineeService.getTraineeById(id);
+        ModelAndView modelAndView = new ModelAndView("viewEmployee");
+        modelAndView.addObject("employee",traineeDTO);
         return modelAndView;
     }
 

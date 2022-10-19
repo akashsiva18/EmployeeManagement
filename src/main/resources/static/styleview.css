@@ -7,18 +7,18 @@ body {
 }
 
 .profile_data {
-    padding-left: 11%;
+    padding-left: 6%;
     padding-right: 13%;
     padding-top: 11%;
     font-size: 10px;
 }
 
 .profile_Details {
-    border-bottom: 1px solid rgba(119, 124, 142, 0.27);
-    margin: 12px 18px;
+    margin: 6px 38px;
     color: rgb(32, 4, 152);
     font-size: 14px;
-    padding-left: 26px;
+    padding-left: 17px;
+    margin-left: 0px;
     font-weight: 500;
 }
 
@@ -46,13 +46,11 @@ body {
     padding: 20px;
     float: left;
     width: 30%;
-    height: 100%;
 }
 
 .right {
-    padding: 20px 78px 12px 0px;
+    padding: 21px 78px 12px 17px;
     float: left;
-    height: 100%;
     width: 70%;
 }
 
@@ -67,7 +65,7 @@ body {
     MARGIN: 10PX;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
 
     .left,
     .right {
@@ -75,14 +73,12 @@ body {
     }
 }
 
-.top {
-    height: 30%;
-    padding: 0px;
-}
 
-.middle {
-    height: 38%;
-}
+.top {}
+
+.middle {}
+
+.bottom {}
 
 .headings {
     font-size: 24px;
@@ -96,7 +92,7 @@ body {
 
 tr.bottom_row {
     border-bottom: 1px solid rgba(174, 162, 163, 0.43);
-    font-size: 9px;
+    font-size: 12px;
 }
 
 td.top_data {
@@ -115,26 +111,56 @@ td.top_data_button {
 
 table {
     border-collapse: collapse;
+    margin-bottom: 22px;
+    width: 100%;
 }
 
 td.bottom_data {
     padding-bottom: 8px;
 }
 
-.icon {
-    height: 15px;
-    margin-left: 48px;
-}
-
 img {
     vertical-align: middle;
 }
 
-.inline {
-    display: flex;
+.icon {
+    height: 16px;
 }
 
-p#phone1 {
-    margin-left: -19px;
-    margin-top: -2px;
+.small_icon {
+    height: 12px;
+}
+
+td.icon_style {
+    width: 0;
+    padding-bottom: 14px;
+}
+
+td.button {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 19px;
+    font-weight: 600;
+}
+
+a.button {
+    text-decoration: none;
+    background: #2e64ffeb;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+a.button_back {
+    text-decoration: none;
+    background: #2e64ffeb;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+a:hover, a:active {
+  background-color: #0200ac;
 }

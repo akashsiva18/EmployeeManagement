@@ -90,7 +90,13 @@
         </tr>
     </table>
     <input type="submit" value="Submit">
-    <a href="/viewTrainer" ><input type="button" value="back"></a>
+    <%if (action.equals("addTrainer")) {%>
+        <a href="/viewTrainer"><input type="button" value="back"></a>
+        <%} else {%>
+        <a href="/viewSingleTrainer?id=${trainerDTO.id}" ><input type="button" value="back"></a>
+        <%}%>
+
+
 </form:form>
 
 </body>

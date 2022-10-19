@@ -111,7 +111,11 @@
     </table>
     <br>
     <input type="submit" value="Submit">
+    <%if (action.equals("addTrainee")) {%>
     <a href="/viewTrainee"><input type="button" value="back"></a>
+    <%} else {%>
+    <a href="/viewTrainee"><input type="button" value="back"></a>
+    <%}%>
 </form:form>
 </body>
 </html>
