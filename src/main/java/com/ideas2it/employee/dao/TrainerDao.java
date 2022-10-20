@@ -4,6 +4,8 @@ import com.ideas2it.employee.model.Trainer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * <h2>TrainerDao</h2>
  * <p>

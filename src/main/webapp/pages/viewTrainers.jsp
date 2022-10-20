@@ -23,7 +23,7 @@
         </style>
         <body style="margin-top : 100px;">
         <h4 style="text-align:center;">${message}</h4>
-            <h2 style="">Trainer Portal</h2>
+            <h2 >Trainer Portal</h2>
            <div class="scrollTable">
             <table>
                 <tr style="position:sticky; top:0;">

@@ -14,7 +14,7 @@ import com.ideas2it.employee.service.TraineeService;
 import com.ideas2it.employee.util.DateUtil;
 import com.ideas2it.employee.util.StringUtil;
 import com.ideas2it.employee.exception.BadRequest;
-import com.ideas2it.employee.service.TrainerService;
+import org.apache.catalina.mapper.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.*;
@@ -153,5 +153,18 @@ public class TraineeServiceImpl implements TraineeService {
         }
         trainee.setTrainersId(trainerIds);
         return TraineeMapper.traineeToTraineeDTO(trainee);
+    }
+
+    /**
+     * used trainer id to retrieve the trainees who assigned to the trainer.
+     *
+     * @param id - trainer id
+     * @return - list of trainee
+     **/
+    public List<TraineeDTO> getTraineesByTrainerId(int id) {
+        List<Trainee> trainees = traineeDao.retrieveTraineesByTrainerId(id);
+        List<TraineeDTO> traineeDTOs = new ArrayList<>();
+        trainees.forEach(trainee -> traineeDTOs.add(TraineeMapper.traineeToTraineeDTO(trainee)));
+        return traineeDTOs;
     }
 }

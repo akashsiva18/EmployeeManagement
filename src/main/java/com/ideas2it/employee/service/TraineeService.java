@@ -59,4 +59,13 @@ public interface TraineeService {
      * @return {@link Trainee}.
      **/
     public TraineeDTO getTraineeById(int id);
+
+
+    /**
+     * used trainer id to retrieve the trainees who assigned to the trainer.
+     *
+     * @param id - trainer id
+     * @return - list of trainee
+     **/
+    public List<TraineeDTO> getTraineesByTrainerId(int id);
 }

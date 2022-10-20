@@ -146,5 +146,4 @@ public class TrainerServiceImpl implements TrainerService {
         return trainerDTO;
     }
 
-
 }

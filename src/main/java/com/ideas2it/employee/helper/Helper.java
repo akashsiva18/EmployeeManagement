@@ -1,6 +1,8 @@
 package com.ideas2it.employee.helper;
 
+import com.ideas2it.employee.dao.TraineeDao;
 import com.ideas2it.employee.dao.TrainerDao;
+import com.ideas2it.employee.model.Trainee;
 import com.ideas2it.employee.model.Trainer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -24,4 +26,6 @@ public class Helper {
     public List<Trainer> getMultipleTrainerByIds(List<Integer> trainerIds) {
         return trainerDao.findAllById(trainerIds);
     }
+
+
 }

@@ -49,7 +49,7 @@ public class EmployeeController {
      */
     @GetMapping("/")
     public String showIndex() {
-        return "viewTraineeOfTrainer";
+        return "index";
     }
 
     /**
@@ -241,6 +241,17 @@ public class EmployeeController {
         return modelAndView;
     }
 
+    @GetMapping(value = "/TraineesOfTrainer")
+    private ModelAndView showTraineesOfTrainer(@RequestParam int id) {
+        ModelAndView modelAndView = new ModelAndView("viewTraineeOfTrainer");
+        TrainerDTO trainerDTO = trainerService.getTrainerById(id);
+        List<TraineeDTO> traineeDTOs = traineeService.getTraineesByTrainerId(id);
+        modelAndView.addObject("trainerDTO",trainerDTO);
+        modelAndView.addObject("traineeDTOs",traineeDTOs);
+        logger.info(traineeDTOs);
+        return modelAndView;
+    }
+
     /**
      * It deletes trainer from the database by using I'd and
      * redirect to the view trainer page with message.
@@ -273,4 +284,5 @@ public class EmployeeController {
                 + " deleted Successfully");
         return "redirect:/viewTrainee";
     }
+
 }

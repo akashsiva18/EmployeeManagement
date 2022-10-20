@@ -25,13 +25,14 @@ import javax.persistence.*;
 @Table(name = "trainee")
 @PrimaryKeyJoinColumn(name = "id")
 public class Trainee extends Employee{
+
     @Column(name = "training_period")
     private int trainingPeriod;
 
     @Transient
     private List<Integer> trainersId;
 
-    @ManyToMany(cascade = { CascadeType.PERSIST})
+    @ManyToMany(cascade = {CascadeType.PERSIST})
     @JoinTable(name = "employee_relationship",
             joinColumns = { @JoinColumn(name = "trainee_id") },
             inverseJoinColumns = { @JoinColumn(name = "trainer_id") })

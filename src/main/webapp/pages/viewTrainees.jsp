@@ -23,7 +23,7 @@
         }
         </style>
         <body style="margin-top : 100px;">
-         <h4>${message}</h4>
+         <h4 style="text-align:center;">${message}</h4>
             <h2>Details of Trainee</h2>
             <div class="scrollTable">
             <table style='width:100%'>

@@ -1,5 +1,6 @@
 <%@page import="com.ideas2it.employee.DTO.EmployeeDTO, com.ideas2it.employee.DTO.TrainerDTO"%>
 <%@page import="java.util.ArrayList,java.util.List"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
@@ -43,6 +44,15 @@
         <img class="icon" src="location.png" alt="location" ></td><td>
         <p class="profile_Details">${employee.address}</p>
       </td>
+    </tr>
+<tr>
+<td colspan="2" class="button">
+    <c:if test="${employee.roleDTO.description == 'Trainer'}">
+
+    <a class="button" href=/TraineesOfTrainer?id=${employee.id}>View Trainees</a><br>
+
+    </c:if>
+    </td>
     </tr>
     <tr>
     <td colspan="2" class="button">
