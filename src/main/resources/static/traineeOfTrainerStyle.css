@@ -94,8 +94,9 @@ th {
 .trainee_photo_width{width: 5%;}
 
 td.name {
+    TEXT-ALIGN: LEFT;
     width: 17%;
-    padding-left: 90px;
+    padding-left: 12px;
     padding-bottom: 6px;
     font-size: 21px;
     font-weight: 500;
@@ -111,6 +112,8 @@ th.blank {
     width:5%;
 }
 
-th:name {
-    width:20%;
+th.name {
+    width: 17%;
+    TEXT-ALIGN: LEFT;
+    PADDING-LEFT: 15PX;
 }

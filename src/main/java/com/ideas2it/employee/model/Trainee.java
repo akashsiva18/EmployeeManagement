@@ -24,7 +24,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "trainee")
 @PrimaryKeyJoinColumn(name = "id")
-public class Trainee extends Employee{
+public class Trainee extends Employee {
 
     @Column(name = "training_period")
     private int trainingPeriod;
