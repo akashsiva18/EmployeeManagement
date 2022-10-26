@@ -241,7 +241,7 @@ public class EmployeeController {
         return modelAndView;
     }
 
-    @GetMapping(value = "/TraineesOfTrainer")
+    @GetMapping(value = "/viewTraineesOfTrainer")
     private ModelAndView showTraineesOfTrainer(@RequestParam int id) {
         ModelAndView modelAndView = new ModelAndView("viewTraineeOfTrainer");
         TrainerDTO trainerDTO = trainerService.getTrainerById(id);

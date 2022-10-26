@@ -49,7 +49,7 @@
 <td colspan="2" class="button">
     <c:if test="${employee.roleDTO.description == 'Trainer'}">
 
-    <a class="button" href=/TraineesOfTrainer?id=${employee.id}>View Trainees</a><br>
+    <a class="button" href=/viewTraineesOfTrainer?id=${employee.id}>View Trainees</a><br>
 
     </c:if>
     </td>

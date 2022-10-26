@@ -27,3 +27,7 @@
    color:white;
    border:none;
 }
+
+.right_float {
+   float:right;
+}
