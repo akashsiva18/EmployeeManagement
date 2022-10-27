@@ -7,6 +7,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styleview.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="left">
@@ -20,40 +21,42 @@
     <table>
       <tr class="bottom_row">
         <td>
-          <img class="icon" src="smartphone.png" alt="smartphone" ></td><td>
+          <i class="fa fa-phone" aria-hidden="true"></i></td><td>
           <p class="profile_Details" > ${employee.mobileNumber}</p>
         </td>
       </tr>
       <tr class="bottom_row">
         <td>
-          <img class="icon" src="calendar.png" alt="calendar" ></td><td>
+          <i class="fa fa-calendar" aria-hidden="true"></i></td><td>
           <p class="profile_Details" > ${employee.dateOfBirth}</p>
         </td>
       </tr><tr class="bottom_row">
       <td>
-        <img class="icon" src="open-book.png" alt="book" ></td><td>
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i></td><td>
         <p class="profile_Details">${employee.qualificationDTO.course}</p>
       </td>
     </tr><tr class="bottom_row">
       <td>
-        <img class="icon" src="email.png" alt="email" ></td><td>
+        <i class="fa fa-envelope" aria-hidden="true"></i></td><td>
         <p class="profile_Details" >${employee.emailId}</p>
       </td>
     </tr><tr class="bottom_row">
       <td>
-        <img class="icon" src="location.png" alt="location" ></td><td>
+        <i class="fa fa-map-marker" aria-hidden="true"></i></td><td>
         <p class="profile_Details">${employee.address}</p>
       </td>
     </tr>
 <tr>
 <td colspan="2" class="button">
+
     <c:if test="${employee.roleDTO.description == 'Trainer'}">
-
     <a class="button" href=/viewTraineesOfTrainer?id=${employee.id}>View Trainees</a><br>
-
     </c:if>
+
     </td>
     </tr>
+
+    <c:if test="${authority == 'ROLE_ADMIN'}">
     <tr>
     <td colspan="2" class="button">
      <a class="button" href=/update${employee.roleDTO.description}Form?flag=updateTrainer&ID=${employee.id}>Update</a><br>
@@ -62,8 +65,9 @@
     <tr>
     <td colspan="2" class="button">
         <a class="button" href=delete${employee.roleDTO.description}?ID=${employee.id}>Delete</a><br>
-        </td>
+    </td>
     </tr>
+    </c:if>
     <tr>
     <td colspan="2" class="button">
     <a class="button_back" href="/view${employee.roleDTO.description}" >back</a>
@@ -97,19 +101,19 @@
       </tr>
       <tr class="bottom_row">
         <td class="icon_style">
-          <img class="small_icon" src="building.png" alt="building" >
+          <i class="fa fa-building" aria-hidden="true"></i>
         </td>
         <td class="bottom_data">
           Apple Inc.
         </td>
         <td class="icon_style">
-          <img class="icon" src="location.png" alt="location" >
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
         </td>
         <td class="bottom_data">
           Los Angeles.
         </td>
         <td class="right_float">
-          <img class="icon" src="calendar.png" alt="calendar" > April 12,2020.
+          <i class="fa fa-calendar" aria-hidden="true"></i> April 12,2020.
         </td>
       </tr>
       <tr>
@@ -122,19 +126,19 @@
       </tr>
       <tr class="bottom_row">
         <td class="icon_style">
-          <img class="small_icon" src="building.png" alt="building" >
+          <i class="fa fa-building" aria-hidden="true"></i>
         </td>
         <td class="bottom_data">
           Figuma
         </td>
         <td class="icon_style">
-          <img class="icon" src="location.png" alt="location" >
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
         </td>
         <td class="bottom_data">
           Los Angeles.
         </td>
         <td class="right_float">
-          <img class="icon" src="calendar.png" alt="calendar" > April 12,2018 - April 01,2020.
+          <i class="fa fa-calendar" aria-hidden="true"></i> April 12,2018 - April 01,2020.
         </td>
       </tr>
       <tr>
@@ -147,19 +151,19 @@
       </tr>
       <tr class="bottom_row">
         <td class="icon_style">
-          <img class="small_icon" src="building.png" alt="building" >
+          <i class="fa fa-building" aria-hidden="true"></i>
         </td>
         <td class="bottom_data">
           Microsoft
         </td>
         <td class="icon_style">
-          <img class="icon" src="location.png" alt="location" >
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
         </td>
         <td class="bottom_data">
           New York City
         </td>
         <td class="right_float">
-          <img class="icon" src="calendar.png" alt="calendar" > April 12,2017 - April 11,2018.
+          <i class="fa fa-calendar" aria-hidden="true"></i> April 12,2017 - April 11,2018.
         </td>
       </tr>
     </table>
@@ -181,7 +185,7 @@
         Massachusetts Institute of Technology
       </td>
       <td class="right_float">
-        <img class="small_icon" src="calendar.png" alt="calendar" > Jun 12,2014 - Dec 12,2016
+        <i class="fa fa-calendar" aria-hidden="true"></i> Jun 12,2014 - Dec 12,2016
       </td>
     </tr>
     <tr>
@@ -197,7 +201,7 @@
         Massachusetts Institute of Technology
       </td>
       <td class="right_float">
-        <img class="small_icon" src="calendar.png" alt="calendar" > Jun 12,2014 - Dec 12,2016
+        <i class="fa fa-calendar" aria-hidden="true"></i> Jun 12,2014 - Dec 12,2016
       </td>
     </tr>
 

@@ -35,7 +35,7 @@ border-top-left-radius: 18px;
 border-top-right-radius: 18px;
 }
 
-.profile_photo{width: 71%;margin: 14px 32px;}
+.profile_photo{width: 71%;margin: 14px 32px;color:black;}
 
 
 td.left_float {
@@ -45,11 +45,12 @@ td.left_float {
     font-size: x-large;
     text-align: -webkit-match-parent;
     font-weight: 500;
-    margin-top: 38px;
+    margin-top: 28px;
 }
 
-td.photo_widht {
- width: 11%;
+td.photo_width {
+ width: 7%;
+ color: black;
 }
 
 .mailid{
@@ -61,12 +62,9 @@ font-size: 14px;
 font-weight: 400;
 }
 
-#no_ofTrainee {
-
-}
 
 p.count{
-    text-align: right;
+    text-align: center;
     color: white;
     margin: 0;
 }
@@ -76,7 +74,7 @@ p.count{
     color:white;
     font-size: 17px;
     font-weight: 500;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-right: 17px;
 }
 
@@ -87,33 +85,49 @@ p.count{
 .profile_photo_trainee {width: 72%;margin-left: 16px;}
 
 th {
-    width:25%;
-    font-size:25px
+    width: 25%;
+    font-size: 19px;
+    font-weight: 500;
+    color: #1b1d629c;
 }
 
-.trainee_photo_width{width: 5%;}
+.trainee_photo_width{width: 3%;}
 
 td.name {
     TEXT-ALIGN: LEFT;
     width: 17%;
     padding-left: 12px;
     padding-bottom: 6px;
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 500;
 }
 
 td.center {
     text-align:center;
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 500;
 }
 
-th.blank {
-    width:5%;
-}
+th.blank {width: 0%;}
 
 th.name {
     width: 17%;
     TEXT-ALIGN: LEFT;
     PADDING-LEFT: 15PX;
+}
+
+.button {
+      background-color: #ffffffc4;
+      cursor: pointer;
+      font-size: 16px;
+      color: #040420;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 5px;
+      padding: 3px 12px;
+      border: black;
+}
+
+.back_button {
+      margin-top: 12px;
 }

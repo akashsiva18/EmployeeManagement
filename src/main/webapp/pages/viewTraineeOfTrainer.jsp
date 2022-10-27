@@ -7,6 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="traineeOfTrainerStyle.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Trainee Of the Trainer</title>
 </head>
 <body>
@@ -15,8 +16,8 @@
     <div class="Trainer_details">
         <table class="design">
             <tr>
-                <td class="photo_widht">
-                    <img class="profile_photo" src="profile.png" alt="profilePicture" >
+                <td class="photo_width">
+                    <i class="fa fa-user-circle-o fa-5x" style="colour:black;" aria-hidden="true"></i>
                 </td>
                 <td class="left_float">
                     ${trainerDTO.name}<p class="mailid">${trainerDTO.emailId}</p>
@@ -42,7 +43,7 @@
                     Qualification
                 </th>
                 <th>
-                    mailId
+                    Mail Id
                 </th>
                 <th>
                     Training period
@@ -51,7 +52,7 @@
             <c:forEach items="${traineeDTOs}" var="trainee">
             <tr>
                 <td class="trainee_photo_width">
-                    <img class="profile_photo_trainee" src="profile.png" alt="profilePicture" >
+                    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
                 </td>
                 <td class="name">
                     ${trainee.name}
@@ -68,8 +69,10 @@
             </tr>
             </c:forEach>
         </table>
-        <a  href="/viewSingleTrainer?id=${trainerDTO.id}">back</a>
     </div>
+</div>
+<div class="back_button">
+<a class="button" href="/viewSingleTrainer?id=${trainerDTO.id}">back</a>
 </div>
 </body>
 </html>

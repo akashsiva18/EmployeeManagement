@@ -83,38 +83,6 @@ public class Trainer extends Employee{
         return trainees;
     }
 
-    /**
-     * <p>
-     * override toString method
-     * </p>
-     *
-     * @return {@link String} return formatted string.
-     **/
-    @Override
-    public String toString() {
-        int size = trainees.size();
-        int age = DateUtil.computeYears(getDateOfBirth(),LocalDate.now());
-	return "\nID of Employee : " + getId() + "\nName of the Trainer : "
-               + getName() + "\nAge : " + age + "\nGender : " + getGender()
-               + "\nQualifications : " + getQualification() +"\nAddress : "
-               + getAddress() + "\nMobile Number : " + getMobileNumber()
-               + "\nEmail Id : " + getEmailId() + "\nDate Of Joining : "
-               + getDateOfJoining().format(DateTimeFormatter.ofPattern("d/MM/yyyy"))
-               + "\nTraining Experience : " + getExperience() + "\nNo Of Trainees : " + size;
-    }
-
-    /**
-     * <p>
-     * override the hashCode method. to generate the hashcode for the trainee object as ID * 32.
-     * </p>
-     *
-     * @return {@link int} return hashcode of all object as 0;
-     **/
-    @Override
-    public int hashCode() {
-        return getId() * 32;
-    }
-
 }
 
     

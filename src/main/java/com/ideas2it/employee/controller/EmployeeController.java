@@ -10,6 +10,8 @@ import java.util.List;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.neo4j.Neo4jProperties;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -187,13 +189,14 @@ public class EmployeeController {
      * @return ModelAndView - It show the viewTrainer page and add list of trainers to the session.
      */
     @GetMapping(value = "/viewTrainer")
-    private ModelAndView showTrainersDetails() {
+    private ModelAndView showTrainersDetails(Authentication authentication) {
         ModelAndView modelAndView = new ModelAndView();
         logger.info("\nDetails of TrainerDTO\n");
         modelAndView.setViewName("viewTrainers");
         List<TrainerDTO> trainerDTOs = trainerService.getTrainers();
         trainerDTOs.forEach(trainer -> logger.info(trainer + "\n"));
         modelAndView.addObject("trainerDTOs", trainerDTOs);
+        modelAndView.addObject("authority",authentication.getAuthorities().iterator().next().getAuthority());
         return modelAndView;
     }
 
@@ -203,13 +206,14 @@ public class EmployeeController {
      * @return ModelAndView - It show the viewTrainer page and add list of trainees to the session.
      */
     @GetMapping(value = "/viewTrainee")
-    private ModelAndView showTraineeDetails() {
+    private ModelAndView showTraineeDetails(Authentication authentication) {
         List<TraineeDTO> listOfTraineesDTO = traineeService.getTrainees();
         ModelAndView modelAndView = new ModelAndView();
         logger.info("\nDetails of Trainee\n");
         listOfTraineesDTO.forEach((trainee) -> logger.info(trainee + "\n"));
         modelAndView.setViewName("viewTrainees");
         modelAndView.addObject("trainees", listOfTraineesDTO);
+        modelAndView.addObject("authority",authentication.getAuthorities().iterator().next().getAuthority());
         return modelAndView;
     }
 
@@ -220,10 +224,11 @@ public class EmployeeController {
      * @return modelAndView
      */
     @RequestMapping(value = "/viewSingleTrainer")
-    private ModelAndView showTrainerDetails(@RequestParam int id) {
+    private ModelAndView showTrainerDetails(@RequestParam int id, Authentication authentication) {
         TrainerDTO trainerDTO = trainerService.getTrainerById(id);
         ModelAndView modelAndView = new ModelAndView("viewEmployee");
         modelAndView.addObject("employee",trainerDTO);
+        modelAndView.addObject("authority",authentication.getAuthorities().iterator().next().getAuthority());
         return modelAndView;
     }
 
@@ -234,10 +239,11 @@ public class EmployeeController {
      * @return modelAndView
      */
     @RequestMapping(value = "/viewSingleTrainee")
-    private ModelAndView showTraineeDetails(@RequestParam int id) {
+    private ModelAndView showTraineeDetails(@RequestParam int id, Authentication authentication) {
         TraineeDTO traineeDTO = traineeService.getTraineeById(id);
         ModelAndView modelAndView = new ModelAndView("viewEmployee");
         modelAndView.addObject("employee",traineeDTO);
+        modelAndView.addObject("authority",authentication.getAuthorities().iterator().next().getAuthority());
         return modelAndView;
     }
 
