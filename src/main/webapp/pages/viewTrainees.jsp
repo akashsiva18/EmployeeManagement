@@ -17,13 +17,17 @@
            text-align: center;
         }
         .scrollTable {
-           height: 300px;
+           height: 150px;
            width: 36%;
-           overflow-y: scroll;
+           overflow-y: auto;
            margin-left: 33%;
         }
         .buttons{
            margin-left:33%;
+        }
+        .table_head{
+           position:sticky;
+           top:0;
         }
         </style>
         <body style="margin-top : 100px;">
@@ -31,7 +35,7 @@
             <h2>Details of Trainee</h2>
             <div class="scrollTable">
             <table style='width:100%'>
-                <tr>
+                <tr class="table_head">
                     <th>Id</th>
                     <th>Name</th>
                     <th></th>

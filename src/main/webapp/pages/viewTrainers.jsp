@@ -8,7 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-        <style>table, th, td {border: 1px solid black;border-collapse: collapse; background-color:Lightgray;}
+        <style>
+        table, th, td {border: 1px solid black;border-collapse: collapse; background-color:Lightgray;}
         th {background-color:black; color:white;}
         table {width:100%;}
         h2 {
@@ -16,13 +17,17 @@
            text-align: center;
         }
         .scrollTable {
-          height: 300px;
-          width: 36%;
-          overflow-y: scroll;
-          margin-left: 33%;
+           height: 150px;
+           width: 36%;
+           overflow-y: auto;
+           margin-left: 33%;
         }
         .buttons{
-          margin-left:33%;
+           margin-left:33%;
+        }
+        .table_head{
+           position:sticky;
+           top:0;
         }
         </style>
         <body style="margin-top : 100px;">
@@ -30,7 +35,7 @@
             <h2 >Trainer Portal</h2>
            <div class="scrollTable">
             <table>
-                <tr style="position:sticky; top:0;">
+                <tr class="table_head">
                     <th>Id</th>
                     <th>Name</th>
                     <th></th>

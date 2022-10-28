@@ -12,7 +12,7 @@
 <body>
 <div class="left">
   <p><div class="image_set">
-  <img class="responsive" src="profile.png" alt="profilePicture" >
+   <i class="fa fa-user-circle-o fa-5x" style="colour:black;" aria-hidden="true"></i>
   <p class="profile_name" >${employee.name}</p>
   <p class="profile_name"></p>
   <p class="profile_role" >${employee.roleDTO.description}</p>
@@ -46,34 +46,27 @@
         <p class="profile_Details">${employee.address}</p>
       </td>
     </tr>
-<tr>
-<td colspan="2" class="button">
-
-    <c:if test="${employee.roleDTO.description == 'Trainer'}">
-    <a class="button" href=/viewTraineesOfTrainer?id=${employee.id}>View Trainees</a><br>
-    </c:if>
-
-    </td>
-    </tr>
-
-    <c:if test="${authority == 'ROLE_ADMIN'}">
-    <tr>
-    <td colspan="2" class="button">
-     <a class="button" href=/update${employee.roleDTO.description}Form?flag=updateTrainer&ID=${employee.id}>Update</a><br>
-     </td>
-    </tr>
-    <tr>
-    <td colspan="2" class="button">
-        <a class="button" href=delete${employee.roleDTO.description}?ID=${employee.id}>Delete</a><br>
-    </td>
-    </tr>
-    </c:if>
-    <tr>
-    <td colspan="2" class="button">
-    <a class="button_back" href="/view${employee.roleDTO.description}" >back</a>
-    </td>
-    </tr>
     </table>
+
+    <ul>
+    <li>
+    <c:if test="${employee.roleDTO.description == 'Trainer'}">
+        <a class="button" href=/viewTraineesOfTrainer?id=${employee.id}>Trainees</a>
+        </c:if>
+    </li>
+<c:if test="${authority == 'ROLE_ADMIN'}">
+    <li>
+       <a class="button" href=/update${employee.roleDTO.description}Form?flag=updateTrainer&ID=${employee.id}>Update</a>
+    </li>
+
+    <li>
+    <a class="button" href=delete${employee.roleDTO.description}?ID=${employee.id}>Delete</a>
+    </li>
+</c:if>
+    <li>
+    <a class="button_back" href="/view${employee.roleDTO.description}" >back</a>
+    </li>
+    </ul>
 
 
   </div>
@@ -179,7 +172,7 @@
     </tr>
     <tr class="bottom_row">
       <td class="icon_style">
-        <img class="small_icon" src="graduate.png" alt="studied" >
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
       </td>
       <td class="bottom_data">
         Massachusetts Institute of Technology
@@ -195,7 +188,7 @@
     </tr>
     <tr class="bottom_row">
       <td class="icon_style">
-        <img class="small_icon" src="graduate.png" alt="studied" >
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
       </td>
       <td class="bottom_data">
         Massachusetts Institute of Technology

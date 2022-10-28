@@ -132,8 +132,8 @@ img {
 }
 
 td.icon_style {
-    width: 0;
-    padding-bottom: 14px;
+    width: 12px;
+    padding-bottom: 10px;
 }
 
 td.button {
@@ -163,4 +163,16 @@ a.button_back {
 
 a:hover, a:active {
   background-color: #0200ac;
+}
+
+ul {
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+    font-size: medium;
+}
+
+li {
+    display: inline-block;
+    vertical-align: top;
 }
